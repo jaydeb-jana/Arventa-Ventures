@@ -1,0 +1,20 @@
+# Robots.txt for Arventa Ventures - Best Digital Marketing Agency
+# https://arventaventures.online
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /404
+
+# Specific Bots Optimization
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap Location
+Sitemap: https://arventaventures.online/sitemap.xml
