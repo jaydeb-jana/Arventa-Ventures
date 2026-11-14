@@ -18,7 +18,9 @@
 }
 
 @layer base {
-  :root {
+  /* Default: Dark Theme */
+  :root,
+  html.dark {
     --background: #020617; /* slate-950 */
     --foreground: #f8fafc; /* slate-50 */
 
@@ -29,8 +31,27 @@
     --primary-foreground: #ffffff;
 
     --border: #1e293b; /* slate-800 */
-
     --radius: 1rem;
+
+    color-scheme: dark;
+  }
+
+  /* Light Theme */
+  html:not(.dark),
+  html.light {
+    --background: #f8fafc; /* slate-50 */
+    --foreground: #0f172a; /* slate-900 */
+
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+
+    --primary: #f97316; /* orange-500 */
+    --primary-foreground: #ffffff;
+
+    --border: #e2e8f0; /* slate-200 */
+    --radius: 1rem;
+
+    color-scheme: light;
   }
 
   body {
@@ -39,6 +60,7 @@
     font-family: "Inter", system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.25s ease, color 0.25s ease;
   }
 
   /* Lenis Smooth Scroll Styles */
@@ -63,14 +85,14 @@
 
   /* Custom scrollbar for a premium feel */
   ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
   }
   ::-webkit-scrollbar-track {
-    background: #020617;
+    background: var(--background);
   }
   ::-webkit-scrollbar-thumb {
-    background: #334155;
+    background: #475569;
     border-radius: 9999px;
   }
   ::-webkit-scrollbar-thumb:hover {
@@ -80,7 +102,126 @@
   /* Firefox scrollbar support */
   * {
     scrollbar-width: thin;
-    scrollbar-color: #334155 #020617;
+    scrollbar-color: #475569 var(--background);
+  }
+}
+
+/* ==========================================================================
+   LIGHT MODE PROFESSIONAL OPTIMIZATIONS
+   ========================================================================== */
+html:not(.dark) {
+  /* Background overrides */
+  .bg-slate-950 {
+    background-color: #f8fafc !important;
+  }
+  .bg-slate-950\/50,
+  .bg-slate-950\/60,
+  .bg-slate-950\/70,
+  .bg-slate-950\/80,
+  .bg-slate-950\/90 {
+    background-color: rgba(241, 245, 249, 0.85) !important;
+  }
+  .bg-slate-900,
+  .bg-slate-900\/50,
+  .bg-slate-900\/60,
+  .bg-slate-900\/70,
+  .bg-slate-900\/80,
+  .bg-slate-900\/90 {
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+  }
+  .bg-card {
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+  }
+  .bg-card\/50 {
+    background-color: #f8fafc !important;
+  }
+  .bg-background {
+    background-color: #f8fafc !important;
+  }
+
+  /* Borders */
+  .border-slate-800,
+  .border-slate-800\/80,
+  .border-slate-900,
+  .border-slate-900\/50,
+  .border-slate-700,
+  .border-border {
+    border-color: #e2e8f0 !important;
+  }
+
+  /* Headings & Text Color Overrides for High Contrast in Light Mode */
+  h1.text-white,
+  h2.text-white,
+  h3.text-white,
+  h4.text-white,
+  h5.text-white,
+  h6.text-white,
+  span.text-white:not(button *):not([class*="bg-orange"] *):not([class*="bg-emerald"] *):not(.bg-gradient-to-r *):not(.badge *):not(button):not(a[class*="bg-"]),
+  div.text-white:not(button *):not([class*="bg-orange"] *):not([class*="bg-emerald"] *):not(.bg-gradient-to-r *):not(.badge *):not(button):not(a[class*="bg-"]),
+  p.text-white:not(button *):not([class*="bg-orange"] *):not([class*="bg-emerald"] *) {
+    color: #0f172a !important;
+  }
+
+  /* Slate muted text for high readability */
+  .text-slate-300 {
+    color: #334155 !important; /* slate-700 */
+  }
+  .text-slate-400 {
+    color: #475569 !important; /* slate-600 */
+  }
+  .text-slate-500 {
+    color: #64748b !important; /* slate-500 */
+  }
+
+  /* Navbar styling in Light Mode */
+  header.border-b {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-color: #e2e8f0 !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  }
+  header a.text-white {
+    color: #0f172a !important;
+  }
+  header a.text-slate-300 {
+    color: #475569 !important;
+  }
+  header a.text-slate-300:hover {
+    color: #f97316 !important;
+  }
+
+  /* Footer styling in Light Mode */
+  footer {
+    background-color: #f1f5f9 !important;
+    border-color: #e2e8f0 !important;
+  }
+  footer .text-white {
+    color: #0f172a !important;
+  }
+  footer .text-slate-400 {
+    color: #64748b !important;
+  }
+
+  /* Form inputs & controls */
+  input, textarea, select {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    border-color: #cbd5e1 !important;
+  }
+  input::placeholder, textarea::placeholder {
+    color: #94a3b8 !important;
+  }
+
+  /* Scrollbar in Light Mode */
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f97316;
+  }
+  * {
+    scrollbar-color: #cbd5e1 #f8fafc;
   }
 }
 
@@ -93,22 +234,21 @@
   }
 
   .blog-content h2 {
-    @apply text-3xl font-bold text-white mt-12 mb-6;
+    @apply text-3xl font-bold text-foreground mt-12 mb-6;
   }
   .blog-content h3 {
-    @apply text-2xl font-bold text-white mt-10 mb-4;
+    @apply text-2xl font-bold text-foreground mt-10 mb-4;
   }
   .blog-content p {
-    @apply text-lg text-slate-300 leading-relaxed mb-6;
+    @apply text-lg text-slate-400 leading-relaxed mb-6;
   }
   .blog-content ul {
-    @apply list-disc list-inside text-lg text-slate-300 leading-relaxed mb-6 space-y-2;
+    @apply list-disc list-inside text-lg text-slate-400 leading-relaxed mb-6 space-y-2;
   }
   .blog-content li {
-    @apply text-slate-300;
+    @apply text-slate-400;
   }
 }
-
 
 /* Hide Google Translate UI */
 .goog-te-banner-frame.skiptranslate, .goog-te-gadget-icon {

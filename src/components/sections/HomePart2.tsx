@@ -113,13 +113,12 @@ export function SEOSpecialization() {
             ))}
           </ul>
         </div>
-        <div>
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-transparent rounded-2xl blur-2xl"></div>
           <img
-            src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=800&h=600"
-            alt="SEO Strategy"
-            referrerPolicy="no-referrer"
-            onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/seo/800/600"; }}
-            className="rounded-2xl border border-border"
+            src="/images/seo-strategy.jpg"
+            alt="Arventa SEO Strategy and Keyword Rankings"
+            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[400px]"
           />
         </div>
       </div>
@@ -131,13 +130,12 @@ export function PaidAdsSpecialization() {
   return (
     <Section className="bg-background">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <div className="order-2 lg:order-1">
+        <div className="order-2 lg:order-1 relative">
+          <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-transparent rounded-2xl blur-2xl"></div>
           <img
-            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800&h=600"
-            alt="Paid Ads Strategy"
-            referrerPolicy="no-referrer"
-            onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/paidads/800/600"; }}
-            className="rounded-2xl border border-border"
+            src="/images/paid-ads.jpg"
+            alt="Arventa High-ROAS Paid Acquisition Strategy"
+            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[400px]"
           />
         </div>
         <div className="order-1 lg:order-2">
@@ -199,13 +197,12 @@ export function SocialMediaSpecialization() {
             ))}
           </ul>
         </div>
-        <div>
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-transparent rounded-2xl blur-2xl"></div>
           <img
-            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=800&h=600"
-            alt="Social Media Management"
-            referrerPolicy="no-referrer"
-            onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/smm/800/600"; }}
-            className="rounded-2xl border border-border"
+            src="/images/social-media.jpg"
+            alt="Arventa Social Media Community Management"
+            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[400px]"
           />
         </div>
       </div>
@@ -217,13 +214,12 @@ export function ContentMarketingFocus() {
   return (
     <Section className="bg-background">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <div className="order-2 lg:order-1">
+        <div className="order-2 lg:order-1 relative">
+          <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-transparent rounded-2xl blur-2xl"></div>
           <img
-            src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&q=80&w=800&h=600"
-            alt="Content Marketing"
-            referrerPolicy="no-referrer"
-            onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/content/800/600"; }}
-            className="rounded-2xl border border-border"
+            src="/images/content-marketing.jpg"
+            alt="Arventa Content Marketing and Storytelling"
+            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[400px]"
           />
         </div>
         <div className="order-1 lg:order-2">
@@ -278,8 +274,6 @@ export function PortfolioHighlights() {
               <img
                 src={item.image}
                 alt={item.client}
-                referrerPolicy="no-referrer"
-                onError={(e) => { (e.currentTarget as HTMLImageElement).src = `https://picsum.photos/seed/port-${item.id}/800/600`; }}
                 className="w-full h-[300px] object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>

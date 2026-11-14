@@ -510,10 +510,8 @@ export function VideoMarketingHighlight() {
       </div>
       <div className="relative rounded-3xl overflow-hidden aspect-video border border-border group cursor-pointer">
         <img
-          src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&q=80&w=1600&h=900"
-          alt="Video Marketing Production Studio"
-          referrerPolicy="no-referrer"
-          onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/video1/1600/900"; }}
+          src="/images/video-marketing.jpg"
+          alt="Arventa Video Marketing Production Studio"
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-slate-950/40 flex items-center justify-center">

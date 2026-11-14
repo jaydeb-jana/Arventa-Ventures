@@ -333,17 +333,17 @@ export function BlogPreview() {
           {
             title: "The Ultimate Guide to Meta Ads in 2026",
             cat: "Advertising",
-            img: "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?auto=format&fit=crop&q=80&w=400&h=300",
+            img: "/images/blog-meta-ads.jpg",
           },
           {
             title: "How to Build a High-Converting Marketing Funnel",
             cat: "Strategy",
-            img: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=400&h=300",
+            img: "/images/blog-marketing-funnel.jpg",
           },
           {
             title: "SEO Best Practices for E-commerce Brands",
             cat: "SEO",
-            img: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=400&h=300",
+            img: "/images/blog-ecommerce-seo.jpg",
           },
         ].map((post, i) => (
           <Link key={i} to="/blog" className="group block">
@@ -351,8 +351,6 @@ export function BlogPreview() {
               <img
                 src={post.img}
                 alt={post.title}
-                referrerPolicy="no-referrer"
-                onError={(e) => { (e.currentTarget as HTMLImageElement).src = `https://picsum.photos/seed/homeblog-${i}/400/300`; }}
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>

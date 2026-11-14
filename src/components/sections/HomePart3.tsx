@@ -109,11 +109,9 @@ export function CaseStudyOne() {
         <div className="relative">
           <div className="absolute -inset-4 bg-orange-500/10 rounded-[2rem] transform -rotate-2"></div>
           <img
-            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800&h=600"
-            alt="Case Study 1"
-            referrerPolicy="no-referrer"
-            onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/cs1/800/600"; }}
-            className="relative rounded-2xl border border-border object-cover"
+            src="/images/casestudy-apparel.jpg"
+            alt="Nova Fashion E-commerce Growth Case Study"
+            className="relative rounded-2xl border border-border object-cover w-full h-[400px]"
           />
         </div>
         <div>
@@ -183,11 +181,9 @@ export function CaseStudyTwo() {
         <div className="order-1 lg:order-2 relative">
           <div className="absolute -inset-4 bg-blue-500/5 rounded-[2rem] transform rotate-2"></div>
           <img
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800&h=600"
-            alt="Case Study 2"
-            referrerPolicy="no-referrer"
-            onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/cs2/800/600"; }}
-            className="relative rounded-2xl border border-border object-cover"
+            src="/images/casestudy-clinic.jpg"
+            alt="Elite Dental Care Local Search Case Study"
+            className="relative rounded-2xl border border-border object-cover w-full h-[400px]"
           />
         </div>
       </div>
@@ -241,20 +237,18 @@ export function CreativeShowcase() {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {[
-          "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=400&h=400",
-          "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=400&h=400",
-          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=400&h=400",
-          "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=400&h=400"
-        ].map((imgUrl, i) => (
+          { img: "/images/creative-brand-identity.jpg", title: "Arventa 3D Brand Identity" },
+          { img: "/images/creative-motion-graphics.jpg", title: "Arventa Motion Graphics" },
+          { img: "/images/creative-studio-production.jpg", title: "Commercial Studio Production" },
+          { img: "/images/creative-strategy-studio.jpg", title: "Creative Digital Strategy" },
+        ].map((item, i) => (
           <div
             key={i}
-            className="aspect-square bg-slate-900 rounded-3xl border border-border overflow-hidden group"
+            className="aspect-square bg-slate-900 rounded-3xl border border-border overflow-hidden group relative"
           >
             <img
-              src={imgUrl}
-              alt="Creative Design"
-              referrerPolicy="no-referrer"
-              onError={(e) => { (e.currentTarget as HTMLImageElement).src = `https://picsum.photos/seed/creative-${i}/400/400`; }}
+              src={item.img}
+              alt={item.title}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
           </div>

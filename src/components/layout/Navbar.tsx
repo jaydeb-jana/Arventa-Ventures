@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { useLanguage } from "@/src/contexts/LanguageContext";
+import { useTheme } from "@/src/contexts/ThemeContext";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { Button } from "@/src/components/ui/Button";
 
 const navLinks = [
@@ -20,6 +21,7 @@ export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
   const { lang, setLang } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -102,7 +104,22 @@ export const Navbar = () => {
               ))}
             </nav>
 
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-2.5 sm:gap-3">
+              {/* Theme Toggle Button */}
+              <button
+                type="button"
+                onClick={toggleTheme}
+                aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+                className="w-9 h-9 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-orange-400 hover:border-orange-500/50 transition-all shadow-sm focus:outline-none cursor-pointer"
+                title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+              >
+                {theme === "dark" ? (
+                  <Sun className="w-4 h-4 text-amber-400 transition-transform hover:rotate-45" />
+                ) : (
+                  <Moon className="w-4 h-4 text-orange-500 transition-transform hover:-rotate-12" />
+                )}
+              </button>
+
               {shouldShowLangSwitcher && (
               <>
                 {/* Language Selector */}
