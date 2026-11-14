@@ -271,23 +271,26 @@ export function TechStack() {
         <div className="md:w-1/3">
           <Cpu className="w-12 h-12 text-orange-500 mb-6" />
           <h2 className="text-3xl font-bold text-white mb-4">
-            Powered by Elite Marketing Tech
+            Modern Tech & Engineering Stack
           </h2>
           <p className="text-slate-400">
-            We leverage industry-leading software to track every click, optimize
-            every bid, and automate your lead nurturing.
+            We engineer high-performance software with battle-tested frameworks, cloud infrastructure, and enterprise analytics to fuel your exponential growth.
           </p>
         </div>
         <div className="md:w-2/3 w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
           {[
-            "HubSpot",
-            "Salesforce",
-            "Semrush",
-            "Ahrefs",
-            "Google Analytics 4",
+            "React & Next.js",
+            "TypeScript",
+            "Node.js",
+            "Python",
+            "Flutter & Mobile",
+            "Tailwind CSS",
+            "PostgreSQL",
+            "AWS & Cloud",
+            "Shopify & E-Com",
             "Meta Business",
-            "Klaviyo",
-            "Shopify",
+            "Google Analytics 4",
+            "Docker & CI/CD",
           ].map((tech, i) => (
             <div
               key={i}

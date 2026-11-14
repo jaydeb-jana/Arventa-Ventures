@@ -89,12 +89,12 @@ export const Footer = () => {
             <h4 className="text-white font-semibold mb-6">Core Services</h4>
             <ul className="space-y-4">
               {[
-                { name: "Video Marketing", path: "/services/video-marketing" },
-                { name: "Influencer Marketing", path: "/services/influencer-marketing" },
-                { name: "Meta Ads", path: "/services/meta-ads" },
-                { name: "SEO Services", path: "/services/seo-services" },
-                { name: "Content Marketing", path: "/services/content-marketing" },
-                { name: "Branding", path: "/services/branding" },
+                { name: "Website Development", path: "/services" },
+                { name: "App & Software Development", path: "/services" },
+                { name: "Meta Ads & Performance", path: "/services/meta-ads" },
+                { name: "SEO & Organic Growth", path: "/services/seo-services" },
+                { name: "Video & Creator Marketing", path: "/services/video-marketing" },
+                { name: "Brand Identity Design", path: "/services/branding" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link

@@ -6,6 +6,7 @@ import {
   ProblemStatement,
   SolutionSection,
   CoreServicesPreview,
+  TechSolutionsHighlight,
   VideoMarketingHighlight,
 } from "@/src/components/sections/HomePart1";
 import {
@@ -56,19 +57,20 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <SEO
-        title="Best Digital Marketing Agency | Meta Ads & Video Editing Service"
-        description="Arventa Ventures is the best digital marketing agency offering Meta Ads service, low budget packages, video making services near me, and top SEO in Kolkata and worldwide."
-        keywords="best digital marketing agency, best digital marketing agency in kolkata, video making services near me, meta ads service, meta ads services near me, low budget digital marketing agency, affordable digital marketing agency, SEO agency Kolkata, performance marketing, Arventa Ventures"
+        title="Arventa Ventures | Digital Marketing, Web & App Development Agency"
+        description="Arventa Ventures is a premier full-service digital agency providing high-ROI digital marketing, Meta Ads, SEO, custom website development, mobile application development, and enterprise tech solutions."
+        keywords="web development agency, app development company, software development, custom tech services, digital marketing agency, best digital marketing agency in kolkata, meta ads service, SEO agency Kolkata, performance marketing, Arventa Ventures"
         canonicalUrl="/"
         structuredData={homeSchema}
       />
-      {/* Part 1 (7 Sections) */}
+      {/* Part 1 (8 Sections) */}
       <HeroSection />
       <TrustIndicators />
       <IntroSection />
       <ProblemStatement />
       <SolutionSection />
       <CoreServicesPreview />
+      <TechSolutionsHighlight />
       <VideoMarketingHighlight />
 
       {/* Part 2 (7 Sections) */}

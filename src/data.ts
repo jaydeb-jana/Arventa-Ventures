@@ -129,6 +129,45 @@ export const services = [
       "Performance & ROI Tracking",
     ],
   },
+  {
+    id: "web-development",
+    title: "Website Design & Development",
+    description:
+      "Modern, ultra-fast, and conversion-engineered websites built with React, Next.js, and TypeScript. Optimized for sub-second page loads, seamless mobile responsiveness, and high organic search rankings.",
+    icon: "Code2",
+    features: [
+      "Custom React & Next.js Websites",
+      "High-Converting Landing Pages",
+      "E-Commerce Stores (Shopify / Custom)",
+      "Core Web Vitals & Speed Optimization",
+    ],
+  },
+  {
+    id: "app-development",
+    title: "Mobile & Web Application Development",
+    description:
+      "Scalable native and cross-platform mobile apps for iOS and Android, plus progressive web applications (PWAs) engineered for smooth 60fps performance and intuitive user experiences.",
+    icon: "Smartphone",
+    features: [
+      "iOS & Android Mobile Apps",
+      "React Native & Flutter Engineering",
+      "Modern Product UI/UX Architecture",
+      "Cloud Database & Secure API Sync",
+    ],
+  },
+  {
+    id: "custom-software",
+    title: "Custom Software & Tech Solutions",
+    description:
+      "Bespoke enterprise software, custom internal tools, CRM/ERP workflows, automated API pipelines, and AI integrations designed to scale your operations and drive efficiency.",
+    icon: "Cpu",
+    features: [
+      "Bespoke Enterprise Software",
+      "API Integrations & Cloud Webhooks",
+      "AI Workflows & Business Automation",
+      "Scalable Cloud Backend Architecture",
+    ],
+  },
 ];
 
 export const portfolio = [
