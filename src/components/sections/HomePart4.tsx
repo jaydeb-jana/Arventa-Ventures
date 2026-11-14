@@ -189,7 +189,7 @@ export function PricingPreview() {
       </div>
       <div className="max-w-5xl mx-auto mt-8 text-center space-y-1">
         <p className="text-slate-400 text-xs italic">
-          * প্যাকেজের অন্তর্ভুক্ত ভিডিওগুলো ক্লায়েন্টের আগে থেকে শুট করা ফুটেজ বা AI দ্বারা তৈরি হবে। আলাদা ক্যামেরা শুট বা ইনফ্লুয়েন্সার মার্কেটিংয়ের জন্য অতিরিক্ত ফি প্রযোজ্য।
+          * Package videos are produced using client pre-recorded raw footage or cutting-edge AI generation. On-site camera shoots or influencer collaborations incur separate production fees.
         </p>
         <p className="text-slate-500 text-xs italic">
           * Ad spend budget will be provided directly by the client to Meta/Google ad accounts.

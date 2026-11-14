@@ -211,18 +211,18 @@ export default function Pricing() {
         </div>
       </Section>
 
-      {/* Explicit Video Shoot & Influencer Guidelines (Requested by user) */}
-      <section className="py-12 bg-slate-900/60 border-y border-slate-800/80">
+      {/* Explicit Video Shoot & Influencer Guidelines */}
+      <section className="py-14 bg-slate-900/60 border-y border-slate-800/80">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
-            <span className="text-xs font-bold text-orange-400 uppercase tracking-widest bg-orange-500/10 px-3 py-1 rounded-full border border-orange-500/20">
+            <span className="text-xs font-bold text-orange-400 uppercase tracking-widest bg-orange-500/10 px-3.5 py-1 rounded-full border border-orange-500/20">
               Important Policies & Guidelines
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-white mt-3">
-              ভিডিও তৈরি ও প্রোডাকশন সংক্রান্ত গুরুত্বপূর্ণ তথ্য
+              Content Production & Video Shoot Guidelines
             </h2>
             <p className="text-slate-400 text-sm mt-1">
-              Please review our content production and shoot delivery terms below.
+              Please review our production parameters and delivery guidelines below.
             </p>
           </div>
 
@@ -233,10 +233,10 @@ export default function Pricing() {
                 <Video className="w-5 h-5" />
               </div>
               <h3 className="text-base font-bold text-white mb-2">
-                ১. প্যাকেজের ভিডিও তৈরি
+                1. Included Video Production
               </h3>
               <p className="text-slate-400 text-xs sm:text-sm leading-relaxed flex-1">
-                প্যাকেজের অন্তর্ভুক্ত সমস্ত ভিডিও <strong>ক্লায়েন্টের আগে থেকে শুট করা ভিডিও ফুটেজ (Pre-shot raw videos)</strong> এডিট করে আপলোড করা হবে অথবা <strong>উন্নত AI প্রযুক্তির মাধ্যমে স্ক্রিপ্ট ও ভয়েস দিয়ে জেনারেট</strong> করা হবে।
+                All package videos are edited from <strong>pre-recorded raw footage provided by the client</strong> or created using <strong>advanced AI video generation</strong> with custom high-converting scripts and voiceovers.
               </p>
             </div>
 
@@ -246,10 +246,10 @@ export default function Pricing() {
                 <Camera className="w-5 h-5" />
               </div>
               <h3 className="text-base font-bold text-amber-300 mb-2">
-                ২. অন-সাইট শুট ও ইনফ্লুয়েন্সার
+                2. On-Site Shoots & Influencers
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm leading-relaxed flex-1">
-                আপনার ব্যবসায়ের জন্য যদি <strong>ক্যামেরা টিম নিয়ে সরাসরি অন-সাইট ভিডিও শুট</strong> করতে হয় অথবা <strong>ভালো মানের জনপ্রিয় ইনফ্লুয়েন্সার (Influencers / Content Creators)</strong> দিয়ে শুট করাতে হয়, তবে তার জন্য <strong>আলাদা চার্জ (Extra Cost)</strong> প্রদান করতে হবে।
+                If your business requires a <strong>dedicated camera crew for on-location physical shooting</strong> or <strong>verified top-tier influencers/creators</strong>, custom shoot packages are available at an <strong>additional cost</strong>.
               </p>
             </div>
 
@@ -259,17 +259,17 @@ export default function Pricing() {
                 <InfinityIcon className="w-5 h-5" />
               </div>
               <h3 className="text-base font-bold text-white mb-2">
-                ৩. অ্যাড স্পেন্ড বাজেট
+                3. Ad Spend Management
               </h3>
               <p className="text-slate-400 text-xs sm:text-sm leading-relaxed flex-1">
-                Meta (Facebook, Instagram) বা অন্যান্য বিজ্ঞাপনের মূল অ্যাড বাজেট ক্লায়েন্ট তার অ্যাড অ্যাকাউন্টে সরাসরি প্রদান করবেন। আমাদের প্যাকেজে <strong>আনলিমিটেড ক্যাম্পেইন সেটআপ, টার্গেটিং ও সম্পূর্ণ ম্যানেজমেন্ট</strong> অন্তর্ভুক্ত।
+                Paid advertising budgets for Meta (Facebook & Instagram) or Google are funded directly by the client. Our packages cover <strong>unlimited campaign architecture, audience targeting, creative testing, and full management</strong>.
               </p>
             </div>
           </div>
 
           <div className="mt-8 text-center bg-slate-950/50 border border-slate-800/80 rounded-2xl p-4">
-            <p className="text-slate-400 text-xs">
-              💡 কোনো কাস্টম রিকোয়ারমেন্ট, বিশেষ ইনফ্লুয়েন্সার ক্যাম্পেইন বা অফার সম্পর্কে বিস্তারিত জানতে আমাদের সাথে সরাসরি হোয়াটসঅ্যাপে কথা বলুন।
+            <p className="text-slate-400 text-xs sm:text-sm">
+              💡 Need custom influencer marketing, studio production, or enterprise branding? Reach out directly via WhatsApp for a tailored proposal.
             </p>
           </div>
         </div>
