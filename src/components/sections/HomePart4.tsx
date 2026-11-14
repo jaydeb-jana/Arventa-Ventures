@@ -108,66 +108,91 @@ export function PricingPreview() {
   return (
     <Section className="bg-slate-950 border-y border-border">
       <SectionHeader
-        title="Transparent Investment"
-        subtitle="Premium services designed for businesses serious about scaling."
+        title="Digital Marketing Packages"
+        subtitle="Transparent investments designed for serious brand growth."
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto items-stretch">
         <Card className="bg-background border-border flex flex-col">
-          <CardHeader className="flex-1">
-            <CardTitle className="text-2xl mb-2">{pricing[0].name}</CardTitle>
-            <div className="text-4xl font-bold text-white mb-4">
+          <CardHeader className="flex-1 flex flex-col">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-xs font-semibold text-slate-500 line-through">{pricing[0].originalPrice}</span>
+              <span className="text-[10px] font-bold text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded-full border border-amber-400/20">{pricing[0].badge}</span>
+            </div>
+            <CardTitle className="text-2xl mb-1 uppercase tracking-tight">{pricing[0].name}</CardTitle>
+            <div className="text-4xl font-bold text-white mb-3">
               {pricing[0].price}
-              <span className="text-lg text-slate-500 font-normal">
+              <span className="text-sm text-slate-500 font-normal ml-1">
                 {pricing[0].period}
               </span>
             </div>
-            <CardDescription className="mb-6 flex-1">
+            <div className="text-xs text-orange-400 font-medium mb-3">
+              {pricing[0].videosCount} • {pricing[0].postersCount} • {pricing[0].platforms}
+            </div>
+            <CardDescription className="mb-6 flex-1 text-xs">
               {pricing[0].description}
             </CardDescription>
             <Button asChild variant="outline" className="w-full mt-auto">
-              <Link to="/pricing">View Details</Link>
+              <Link to="/pricing">View Package Details</Link>
             </Button>
           </CardHeader>
         </Card>
         <Card className="bg-gradient-to-b from-slate-900 to-slate-950 border-orange-500 shadow-xl shadow-orange-500/10 transform md:-translate-y-4 flex flex-col">
-          <CardHeader className="flex-1">
-            <div className="text-orange-500 text-xs font-bold uppercase tracking-wider mb-2">
-              Most Popular
+          <CardHeader className="flex-1 flex flex-col">
+            <div className="flex items-center justify-between mb-2">
+              <div className="text-orange-500 text-xs font-bold uppercase tracking-wider">
+                Most Popular
+              </div>
+              <span className="text-xs font-semibold text-slate-500 line-through">{pricing[1].originalPrice}</span>
             </div>
-            <CardTitle className="text-2xl mb-2">{pricing[1].name}</CardTitle>
-            <div className="text-4xl font-bold text-white mb-4">
+            <CardTitle className="text-2xl mb-1 uppercase tracking-tight">{pricing[1].name}</CardTitle>
+            <div className="text-4xl font-bold text-white mb-3">
               {pricing[1].price}
-              <span className="text-lg text-slate-500 font-normal">
+              <span className="text-sm text-slate-500 font-normal ml-1">
                 {pricing[1].period}
               </span>
             </div>
-            <CardDescription className="mb-6 flex-1">
+            <div className="text-xs text-orange-400 font-medium mb-3">
+              {pricing[1].videosCount} • {pricing[1].postersCount} • {pricing[1].platforms}
+            </div>
+            <CardDescription className="mb-6 flex-1 text-xs">
               {pricing[1].description}
             </CardDescription>
-            <Button asChild className="w-full mt-auto">
-              <Link to="/contact">Start Growing</Link>
+            <Button asChild className="w-full mt-auto bg-orange-500 hover:bg-orange-600 text-white font-bold">
+              <Link to="/pricing">View Package Details</Link>
             </Button>
           </CardHeader>
         </Card>
         <Card className="bg-background border-border flex flex-col">
-          <CardHeader className="flex-1">
-            <CardTitle className="text-2xl mb-2">{pricing[2].name}</CardTitle>
-            <div className="text-4xl font-bold text-white mb-4">
-              {pricing[2].price}
+          <CardHeader className="flex-1 flex flex-col">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-xs font-semibold text-slate-500 line-through">{pricing[2].originalPrice}</span>
+              <span className="text-[10px] font-bold text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded-full border border-amber-400/20">{pricing[2].badge}</span>
             </div>
-            <CardDescription className="mb-6 flex-1">
+            <CardTitle className="text-2xl mb-1 uppercase tracking-tight">{pricing[2].name}</CardTitle>
+            <div className="text-4xl font-bold text-white mb-3">
+              {pricing[2].price}
+              <span className="text-sm text-slate-500 font-normal ml-1">
+                {pricing[2].period}
+              </span>
+            </div>
+            <div className="text-xs text-orange-400 font-medium mb-3">
+              {pricing[2].videosCount} • {pricing[2].postersCount} • {pricing[2].platforms}
+            </div>
+            <CardDescription className="mb-6 flex-1 text-xs">
               {pricing[2].description}
             </CardDescription>
             <Button asChild variant="outline" className="w-full mt-auto">
-              <Link to="/pricing">View Details</Link>
+              <Link to="/pricing">View Package Details</Link>
             </Button>
           </CardHeader>
         </Card>
       </div>
-      <div className="max-w-5xl mx-auto mt-8 text-center">
-        <p className="text-slate-400 text-sm italic">
-          * Ad spend cost will be provided by the user for unlimited
-          sending/management.
+      <div className="max-w-5xl mx-auto mt-8 text-center space-y-1">
+        <p className="text-slate-400 text-xs italic">
+          * প্যাকেজের অন্তর্ভুক্ত ভিডিওগুলো ক্লায়েন্টের আগে থেকে শুট করা ফুটেজ বা AI দ্বারা তৈরি হবে। আলাদা ক্যামেরা শুট বা ইনফ্লুয়েন্সার মার্কেটিংয়ের জন্য অতিরিক্ত ফি প্রযোজ্য।
+        </p>
+        <p className="text-slate-500 text-xs italic">
+          * Ad spend budget will be provided directly by the client to Meta/Google ad accounts.
         </p>
       </div>
     </Section>
