@@ -24,7 +24,7 @@ export default function Pricing() {
     <div className="flex flex-col min-h-screen pt-24 bg-slate-950 text-white">
       <SEO
         title="Digital Marketing Packages & Pricing | Arventa Ventures"
-        description="Explore affordable digital marketing packages by Arventa Ventures. Starter Boost ₹5,999, Growth Pro ₹10,999, Business Dominance ₹12,999 with videos, posters & unlimited Meta ads."
+        description="Explore affordable digital marketing packages by Arventa Ventures. Starter Boost ₹7,999, Growth Pro ₹12,999, Business Dominance ₹14,999 with videos, posters & unlimited Meta ads."
         keywords="digital marketing packages, meta ads pricing, video marketing packages, low budget marketing agency, Arventa Ventures pricing, best marketing agency kolkata"
         canonicalUrl="/pricing"
       />
