@@ -141,6 +141,27 @@ html:not(.dark) {
     background-color: #f8fafc !important;
   }
 
+  /* Reset dark gradient cards to clean white cards in light mode */
+  .from-slate-900,
+  .from-slate-950,
+  .from-amber-950\/30 {
+    --tw-gradient-from: #ffffff !important;
+  }
+  .via-slate-900,
+  .via-slate-900\/90 {
+    --tw-gradient-via: #ffffff !important;
+  }
+  .to-slate-950,
+  .to-slate-900 {
+    --tw-gradient-to: #ffffff !important;
+  }
+  div[class*="bg-gradient-to-b from-slate-900"],
+  div[class*="bg-gradient-to-b from-amber-950"] {
+    background-image: none !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.05) !important;
+  }
+
   /* Borders */
   .border-slate-800,
   .border-slate-800\/80,
