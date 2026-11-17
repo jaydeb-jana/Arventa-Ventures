@@ -75,7 +75,7 @@ export default function Locations() {
       
       {/* CTA Section */}
       <section className="py-24 bg-orange-600 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-orange-500/10 via-slate-900 to-slate-950 opacity-60"></div>
         <div className="max-w-4xl mx-auto px-4 md:px-6 relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Don't see your city?</h2>
           <p className="text-xl text-orange-100 mb-10 max-w-2xl mx-auto">

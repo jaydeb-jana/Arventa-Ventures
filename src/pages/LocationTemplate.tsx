@@ -755,7 +755,7 @@ const translations = {
       />
             {/* Hero Section */}
       <section className="relative pt-2 pb-20 md:pt-4 md:pb-32 overflow-hidden border-b border-slate-800">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-orange-500/10 via-slate-900 to-slate-950 opacity-50"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950 to-slate-950 pointer-events-none z-0"></div>
         
         
@@ -1072,7 +1072,7 @@ const translations = {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-4">
                     <div className="relative group rounded-2xl overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1611601322175-ef8ec8c85f01?auto=format&fit=crop&q=80&w=400&h=500" alt="Fashion Creator" referrerPolicy="no-referrer" onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/inf1/400/500"; }} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+                      <img src="/images/portfolio-novafashion.webp" alt="Fashion Creator" referrerPolicy="no-referrer"  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
                       <div className="absolute bottom-4 left-4">
                         <h4 className="text-white font-bold text-sm">{tInfluencer.c1}</h4>
@@ -1080,15 +1080,15 @@ const translations = {
                       </div>
                     </div>
                     <div className="relative group rounded-2xl overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&q=80&w=400&h=500" alt="Lifestyle Influencer" referrerPolicy="no-referrer" onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/inf2/400/500"; }} className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" />
+                      <img src="/images/social-media.webp" alt="Lifestyle Influencer" referrerPolicy="no-referrer"  className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" />
                     </div>
                   </div>
                   <div className="space-y-4 mt-8">
                     <div className="relative group rounded-2xl overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400&h=500" alt="Beauty Creator" referrerPolicy="no-referrer" onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/inf3/400/500"; }} className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" />
+                      <img src="/images/portfolio-bloombeauty.webp" alt="Beauty Creator" referrerPolicy="no-referrer"  className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" />
                     </div>
                     <div className="relative group rounded-2xl overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=400&h=500" alt="Travel Influencer" referrerPolicy="no-referrer" onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/inf4/400/500"; }} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+                      <img src="/images/creative-studio-production.webp" alt="Travel Influencer" referrerPolicy="no-referrer"  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
                       <div className="absolute bottom-4 left-4">
                         <h4 className="text-white font-bold text-sm">{tInfluencer.c2}</h4>
@@ -1106,7 +1106,7 @@ const translations = {
       
       {/* Stats Section */}
       <Section className="py-24 bg-orange-600 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-orange-500/10 via-slate-900 to-slate-950 opacity-50"></div>
         <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-16">
             {tStats.title.replace('{city}', formattedCity)}
@@ -1200,7 +1200,7 @@ const translations = {
               transition={{ duration: 0.5 }}
               className="relative"
             >
-              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800&h=900" alt="Data Analytics" referrerPolicy="no-referrer" onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/analytics/800/900"; }} className="rounded-3xl border border-slate-800 w-full object-cover h-[600px] shadow-2xl" />
+              <img src="/images/about-team-hq.webp" alt="Data Analytics" referrerPolicy="no-referrer"  className="rounded-3xl border border-slate-800 w-full object-cover h-[600px] shadow-2xl" />
               <div className="absolute -bottom-8 -left-8 bg-slate-900 border border-slate-800 text-white p-8 rounded-3xl shadow-xl max-w-xs backdrop-blur-sm">
                 <div className="text-5xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">300%</div>
                 <div className="font-medium text-slate-300">Average ROI increase for our local clients in the first 90 days.</div>
@@ -1239,7 +1239,7 @@ const translations = {
       </Section>
       {/* CTA Section */}
       <section className="py-24 bg-orange-600 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-orange-500/10 via-slate-900 to-slate-950 opacity-50"></div>
         <div className="max-w-4xl mx-auto px-4 md:px-6 relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">{t3.ctaTitle.replace('{city}', formattedCity)}</h2>
           <p className="text-xl text-orange-100 mb-10 max-w-2xl mx-auto">

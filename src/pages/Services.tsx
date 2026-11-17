@@ -9,19 +9,19 @@ import { SEO } from "@/src/components/common/SEO";
 
 export default function Services() {
   const serviceImages = [
-    "https://images.unsplash.com/photo-1611926653458-09294b3142bf?auto=format&fit=crop&q=80&w=1200", // 1. Social Media
-    "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200", // 2. Facebook Ads
-    "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1200", // 3. Google Ads
-    "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=1200", // 4. SEO
-    "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200", // 5. Content
-    "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1200", // 6. Branding
-    "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=1200", // 7. Creative
-    "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80&w=1200", // 8. Video
-    "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=1200", // 9. Email Marketing
-    "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1200", // 10. Influencer
-    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200", // 11. Web Development
-    "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1200", // 12. App Development
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1200"  // 13. Custom Tech
+    "/images/social-media.webp",              // 1. Social Media
+    "/images/blog-meta-ads.webp",             // 2. Facebook Ads
+    "/images/paid-ads.webp",                  // 3. Google Ads
+    "/images/seo-strategy.webp",               // 4. SEO
+    "/images/content-marketing.webp",         // 5. Content
+    "/images/creative-brand-identity.webp",   // 6. Branding
+    "/images/creative-motion-graphics.webp",  // 7. Creative
+    "/images/video-marketing.webp",           // 8. Video
+    "/images/solution-funnel.webp",           // 9. Email Marketing & Funnels
+    "/images/creative-studio-production.webp",// 10. Influencer & Studio
+    "/images/casestudy-apparel.webp",         // 11. Web Development
+    "/images/portfolio-zenithtech.webp",      // 12. App Development
+    "/images/creative-strategy-studio.webp"   // 13. Custom Tech & Software
   ];
 
   const servicesSchema = {
@@ -128,12 +128,8 @@ export default function Services() {
                   <div className="relative aspect-square md:aspect-[4/3] lg:aspect-[4/5] rounded-[2rem] overflow-hidden border border-slate-800 group shadow-2xl">
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent z-10"></div>
                     <img
-                      src={serviceImages[index] || "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=1200"}
+                      src={serviceImages[index] || "/images/creative-strategy-studio.webp"}
                       alt={service.title}
-                      referrerPolicy="no-referrer"
-                      onError={(e) => {
-                        (e.currentTarget as HTMLImageElement).src = `https://picsum.photos/seed/${service.id || index}/800/600`;
-                      }}
                       className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                     />
                     

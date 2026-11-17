@@ -36,7 +36,7 @@ export default function InfoDetail() {
     "@type": "Article",
     "headline": data.title,
     "description": data.desc || data.subtitle,
-    "image": data.image || "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1200",
+    "image": data.image || "https://arventaventures.online/images/arventa-og-banner.webp",
     "author": {
       "@type": "Organization",
       "name": "Arventa Ventures"
@@ -94,10 +94,8 @@ export default function InfoDetail() {
             className="mb-16"
           >
             <img 
-              src={data.image || "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1200"} 
+              src={data.image || "/images/arventa-og-banner.webp"} 
               alt={data.title}
-              referrerPolicy="no-referrer"
-              onError={(e) => { (e.currentTarget as HTMLImageElement).src = `https://picsum.photos/seed/info-${data.id || 'detail'}/1200/500`; }}
               className="w-full h-auto rounded-3xl object-cover aspect-[21/9] shadow-2xl border border-slate-800 mb-12"
             />
             

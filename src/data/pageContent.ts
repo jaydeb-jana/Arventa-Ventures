@@ -1,6 +1,6 @@
 export const servicesData: Record<string, any> = {
   "video-marketing": {
-    "image": "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&q=80&w=1200",
+    "image": "/images/casestudy-apparel.webp",
     "en": {
       "title": "Video Marketing",
       "subtitle": "Capture Attention in 3 Seconds",
@@ -276,7 +276,7 @@ export const servicesData: Record<string, any> = {
     }
   },
   "search-engine-optimization": {
-    "image": "https://images.unsplash.com/photo-1432888117355-7440ea257a3e?auto=format&fit=crop&q=80&w=1200",
+    "image": "/images/seo-strategy.webp",
     "en": {
       "title": "Search Engine Optimization",
       "subtitle": "Dominate Google",
@@ -552,7 +552,7 @@ export const servicesData: Record<string, any> = {
     }
   },
   "paid-advertising": {
-    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
+    "image": "/images/blog-meta-ads.webp",
     "en": {
       "title": "Paid Advertising (PPC)",
       "subtitle": "Scalable Customer Acquisition",
@@ -828,7 +828,7 @@ export const servicesData: Record<string, any> = {
     }
   },
   "brand-identity": {
-    "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=1200",
+    "image": "/images/creative-brand-identity.webp",
     "en": {
       "title": "Brand Identity Design",
       "subtitle": "Become the Premium Choice",
@@ -1106,7 +1106,7 @@ export const servicesData: Record<string, any> = {
 };
 export const infoData: Record<string, any> = {
   "what-is-arventa-ventures": {
-    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
+    "image": "/images/paid-ads.webp",
     "en": {
       "title": "What is Arventa Ventures?",
       "subtitle": "Your Premier Performance-Driven Digital Marketing Growth Partner",
@@ -1144,7 +1144,7 @@ export const infoData: Record<string, any> = {
     }
   },
   "benefit-of-arventa-ventures": {
-    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200",
+    "image": "/images/intro-strategy.webp",
     "en": {
       "title": "The Benefit of Partnering with Arventa Ventures",
       "subtitle": "Why We Are the Right Growth Partner for Your Brand",
@@ -1182,7 +1182,7 @@ export const infoData: Record<string, any> = {
     }
   },
   "digital-marketing-roi": {
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
+    "image": "/images/blog-marketing-funnel.webp",
     "en": {
       "title": "Understanding Digital Marketing ROI",
       "subtitle": "How We Measure and Maximize Your Returns",
@@ -1220,7 +1220,7 @@ export const infoData: Record<string, any> = {
     }
   },
   "brand-positioning": {
-    "image": "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?auto=format&fit=crop&q=80&w=1200",
+    "image": "/images/solution-funnel.webp",
     "en": {
       "title": "The Power of Brand Positioning",
       "subtitle": "How to Stop Competing on Price",

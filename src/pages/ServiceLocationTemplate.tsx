@@ -505,10 +505,10 @@ const translations = {
               <div className="absolute inset-0 bg-gradient-to-tr from-orange-500 to-amber-500 rounded-[2.5rem] transform rotate-3 scale-[1.02] opacity-20 blur-xl"></div>
               <div className="relative rounded-[2.5rem] overflow-hidden border border-slate-700/50 bg-slate-900 aspect-[4/3] w-full shadow-2xl">
                 <img 
-                  src={data.image || "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1200"} 
+                  src={data.image || "/images/creative-strategy-studio.webp"} 
                   alt={`${data.title} in ${formattedCity}`}
                   referrerPolicy="no-referrer"
-                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/hero-slt/800/600"; }}
+                  
                   className="w-full h-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-slate-950/20"></div>
@@ -653,7 +653,7 @@ const translations = {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-4">
                     <div className="relative group rounded-2xl overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1611601322175-ef8ec8c85f01?auto=format&fit=crop&q=80&w=400&h=500" alt="Fashion Creator" referrerPolicy="no-referrer" onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/inf1/400/500"; }} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+                      <img src="/images/portfolio-novafashion.webp" alt="Fashion Creator" referrerPolicy="no-referrer"  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
                       <div className="absolute bottom-4 left-4">
                         <h4 className="text-white font-bold text-sm">{tInfluencer.c1}</h4>
@@ -661,15 +661,15 @@ const translations = {
                       </div>
                     </div>
                     <div className="relative group rounded-2xl overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&q=80&w=400&h=500" alt="Lifestyle Influencer" referrerPolicy="no-referrer" onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/inf2/400/500"; }} className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" />
+                      <img src="/images/social-media.webp" alt="Lifestyle Influencer" referrerPolicy="no-referrer"  className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" />
                     </div>
                   </div>
                   <div className="space-y-4 mt-8">
                     <div className="relative group rounded-2xl overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400&h=500" alt="Beauty Creator" referrerPolicy="no-referrer" onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/inf3/400/500"; }} className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" />
+                      <img src="/images/portfolio-bloombeauty.webp" alt="Beauty Creator" referrerPolicy="no-referrer"  className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" />
                     </div>
                     <div className="relative group rounded-2xl overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=400&h=500" alt="Travel Influencer" referrerPolicy="no-referrer" onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/inf4/400/500"; }} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
+                      <img src="/images/creative-studio-production.webp" alt="Travel Influencer" referrerPolicy="no-referrer"  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" />
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
                       <div className="absolute bottom-4 left-4">
                         <h4 className="text-white font-bold text-sm">{tInfluencer.c2}</h4>
@@ -687,7 +687,7 @@ const translations = {
       
       {/* Stats Section */}
       <Section className="py-24 bg-orange-600 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-orange-500/10 via-slate-900 to-slate-950 opacity-50"></div>
         <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-16">
             {tStats.title.replace('{city}', formattedCity).replace('{service}', data.title)}
@@ -759,7 +759,7 @@ const translations = {
               transition={{ duration: 0.5 }}
               className="order-2 lg:order-1 relative"
             >
-              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=800&h=900" alt="Team Collaboration" referrerPolicy="no-referrer" onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/teamcollab/800/900"; }} className="rounded-3xl border border-slate-800 w-full object-cover h-[600px] shadow-2xl" />
+              <img src="/images/about-team-hq.webp" alt="Team Collaboration" referrerPolicy="no-referrer"  className="rounded-3xl border border-slate-800 w-full object-cover h-[600px] shadow-2xl" />
               <div className="absolute -bottom-8 right-0 md:-right-8 bg-slate-900 border border-slate-800 text-white p-8 rounded-3xl shadow-xl max-w-xs">
                 <div className="flex items-center space-x-2 text-orange-500 mb-2">
                   {[1,2,3,4,5].map(i => <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>)}
@@ -828,7 +828,7 @@ const translations = {
       </Section>
       {/* CTA Section */}
       <section className="py-24 bg-orange-600 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-orange-500/10 via-slate-900 to-slate-950 opacity-50"></div>
         <div className="max-w-4xl mx-auto px-4 md:px-6 relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">{tCall.title.replace('{city}', formattedCity).replace('{service}', data.title)}</h2>
           <p className="text-xl text-orange-100 mb-10 max-w-2xl mx-auto">

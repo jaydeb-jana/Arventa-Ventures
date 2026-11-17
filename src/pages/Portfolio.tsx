@@ -71,10 +71,6 @@ export default function Portfolio() {
                 <img
                   src={item.image}
                   alt={item.client}
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    (e.currentTarget as HTMLImageElement).src = `https://picsum.photos/seed/portfolio-${item.id}/800/600`;
-                  }}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-transparent transition-colors"></div>

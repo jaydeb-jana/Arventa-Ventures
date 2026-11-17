@@ -23,61 +23,61 @@ const industries = [
     name: "Local Businesses",
     icon: Building2,
     desc: "Dominate your local market and drive foot traffic.",
-    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800",
+    image: "/images/casestudy-clinic.webp",
   },
   {
     name: "Restaurants",
     icon: UtensilsCrossed,
     desc: "Fill tables and grow online delivery orders.",
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800",
+    image: "/images/portfolio-urbanbrew.webp",
   },
   {
     name: "Healthcare",
     icon: HeartPulse,
     desc: "Patient acquisition and trust-building campaigns.",
-    image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800",
+    image: "/images/casestudy-clinic.webp",
   },
   {
     name: "Education",
     icon: GraduationCap,
     desc: "Increase enrollment and brand authority.",
-    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800",
+    image: "/images/intro-strategy.webp",
   },
   {
     name: "Real Estate",
     icon: Home,
     desc: "High-ticket lead generation for agents and brokers.",
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800",
+    image: "/images/portfolio-skylinerealty.webp",
   },
   {
     name: "eCommerce",
     icon: ShoppingBag,
     desc: "Scale online sales with high-ROAS ad funnels.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800",
+    image: "/images/casestudy-apparel.webp",
   },
   {
     name: "Fashion",
     icon: Shirt,
     desc: "Aesthetic branding and visual social commerce.",
-    image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=800",
+    image: "/images/portfolio-novafashion.webp",
   },
   {
     name: "Beauty",
     icon: Scissors,
     desc: "Book out schedules for salons and spas.",
-    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=800",
+    image: "/images/portfolio-bloombeauty.webp",
   },
   {
     name: "Startups",
     icon: Rocket,
     desc: "Rapid growth strategies for disruptive tech.",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800",
+    image: "/images/portfolio-zenithtech.webp",
   },
   {
     name: "Corporate Brands",
     icon: Landmark,
     desc: "Enterprise-level SEO and market positioning.",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+    image: "/images/about-team-hq.webp",
   },
 ];
 
@@ -126,10 +126,6 @@ export default function Industries() {
                 <img
                   src={ind.image}
                   alt={ind.name}
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    (e.currentTarget as HTMLImageElement).src = `https://picsum.photos/seed/ind-${i}/800/600`;
-                  }}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500"></div>
@@ -160,7 +156,7 @@ export default function Industries() {
       {/* CTA Section */}
       <section className="relative py-24 overflow-hidden border-t border-slate-800">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-950"></div>
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=2000')] opacity-5 mix-blend-overlay object-cover"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-orange-500/10 via-slate-900 to-slate-950 opacity-60"></div>
         
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
           <motion.div

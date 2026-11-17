@@ -26,24 +26,24 @@ export function TeamSection() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {[
           {
-            name: "David Chen",
-            role: "Head of Growth",
-            img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=400",
+            name: "Jaydeb Jana",
+            role: "Founder & CEO",
+            img: "https://i.ibb.co/ymz2pCf6/1780219901430.png",
           },
           {
-            name: "Sarah Jenkins",
-            role: "Creative Director",
-            img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400",
+            name: "Ashraful Islam",
+            role: "Head of Performance Marketing",
+            img: "/images/paid-ads.webp",
           },
           {
-            name: "Marcus Reed",
-            role: "Lead SEO Strategist",
-            img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=400",
+            name: "Priya Mukherjee",
+            role: "Creative & Content Director",
+            img: "/images/content-marketing.webp",
           },
           {
-            name: "Elena Rostova",
-            role: "Paid Media Director",
-            img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400",
+            name: "Suman Roy",
+            role: "Lead SEO & Tech Strategist",
+            img: "/images/seo-strategy.webp",
           },
         ].map((member, i) => (
           <div key={i} className="group">
@@ -51,9 +51,7 @@ export function TeamSection() {
               <img
                 src={member.img}
                 alt={member.name}
-                referrerPolicy="no-referrer"
-                onError={(e) => { (e.currentTarget as HTMLImageElement).src = `https://picsum.photos/seed/team-${i}/400/400`; }}
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
               />
             </div>
             <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
@@ -331,22 +329,25 @@ export function BlogPreview() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {[
           {
+            id: "ultimate-guide-meta-ads-2026",
             title: "The Ultimate Guide to Meta Ads in 2026",
             cat: "Advertising",
-            img: "/images/blog-meta-ads.jpg",
+            img: "/images/blog-meta-ads.webp",
           },
           {
+            id: "high-converting-marketing-funnel",
             title: "How to Build a High-Converting Marketing Funnel",
             cat: "Strategy",
-            img: "/images/blog-marketing-funnel.jpg",
+            img: "/images/blog-marketing-funnel.webp",
           },
           {
+            id: "seo-best-practices-ecommerce",
             title: "SEO Best Practices for E-commerce Brands",
             cat: "SEO",
-            img: "/images/blog-ecommerce-seo.jpg",
+            img: "/images/blog-ecommerce-seo.webp",
           },
         ].map((post, i) => (
-          <Link key={i} to="/blog" className="group block">
+          <Link key={i} to={`/blog/${post.id}`} className="group block">
             <div className="rounded-2xl overflow-hidden mb-4 border border-border">
               <img
                 src={post.img}

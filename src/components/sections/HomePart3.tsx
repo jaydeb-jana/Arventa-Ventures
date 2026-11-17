@@ -109,7 +109,7 @@ export function CaseStudyOne() {
         <div className="relative">
           <div className="absolute -inset-4 bg-orange-500/10 rounded-[2rem] transform -rotate-2"></div>
           <img
-            src="/images/casestudy-apparel.jpg"
+            src="/images/casestudy-apparel.webp"
             alt="Nova Fashion E-commerce Growth Case Study"
             className="relative rounded-2xl border border-border object-cover w-full h-[400px]"
           />
@@ -179,11 +179,11 @@ export function CaseStudyTwo() {
           </div>
         </div>
         <div className="order-1 lg:order-2 relative">
-          <div className="absolute -inset-4 bg-blue-500/5 rounded-[2rem] transform rotate-2"></div>
+          <div className="absolute -inset-4 bg-orange-500/10 rounded-[2rem] transform rotate-2 blur-xl"></div>
           <img
-            src="/images/casestudy-clinic.jpg"
+            src="/images/casestudy-clinic.webp"
             alt="Elite Dental Care Local Search Case Study"
-            className="relative rounded-2xl border border-border object-cover w-full h-[400px]"
+            className="relative rounded-2xl border border-border object-cover w-full h-[400px] shadow-2xl"
           />
         </div>
       </div>
@@ -237,10 +237,10 @@ export function CreativeShowcase() {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {[
-          { img: "/images/creative-brand-identity.jpg", title: "Arventa 3D Brand Identity" },
-          { img: "/images/creative-motion-graphics.jpg", title: "Arventa Motion Graphics" },
-          { img: "/images/creative-studio-production.jpg", title: "Commercial Studio Production" },
-          { img: "/images/creative-strategy-studio.jpg", title: "Creative Digital Strategy" },
+          { img: "/images/creative-brand-identity.webp", title: "Arventa 3D Brand Identity" },
+          { img: "/images/creative-motion-graphics.webp", title: "Arventa Motion Graphics" },
+          { img: "/images/creative-studio-production.webp", title: "Commercial Studio Production" },
+          { img: "/images/creative-strategy-studio.webp", title: "Creative Digital Strategy" },
         ].map((item, i) => (
           <div
             key={i}

@@ -45,7 +45,7 @@ export default function About() {
     {
       name: "Jaydeb Jana",
       role: "Founder & CEO",
-      image: "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      image: "/images/jaydeb-jana-ceo.webp",
       bio: "I am a 17-year-old Software Engineer passionate about building scalable solutions and driving digital innovation."
     }
   ];
@@ -58,10 +58,10 @@ export default function About() {
   ];
 
   const offices = [
-    { city: "West Bengal (HQ)", address: "Purba Gopinathpur, Chapatala, More, Contai, West Bengal 721442", image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800" },
-    { city: "London", address: "One Canada Square, Canary Wharf, E14 5AB", image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=800" },
-    { city: "Singapore", address: "Marina Bay Financial Centre, Tower 1", image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&q=80&w=800" },
-    { city: "New York", address: "100 Wall Street, Suite 500, NY 10005", image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&q=80&w=800" },
+    { city: "West Bengal (HQ)", address: "Purba Gopinathpur, Chapatala, More, Contai, West Bengal 721442", image: "/images/about-team-hq.webp" },
+    { city: "London", address: "One Canada Square, Canary Wharf, E14 5AB", image: "/images/portfolio-skylinerealty.webp" },
+    { city: "Singapore", address: "Marina Bay Financial Centre, Tower 1", image: "/images/portfolio-zenithtech.webp" },
+    { city: "New York", address: "100 Wall Street, Suite 500, NY 10005", image: "/images/creative-strategy-studio.webp" },
   ];
 
   const aboutSchema = {
@@ -125,10 +125,8 @@ export default function About() {
             >
               <div className="aspect-[4/5] rounded-[2rem] overflow-hidden border border-slate-800 relative z-10">
                 <img 
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200" 
+                  src="/images/about-team-hq.webp" 
                   alt="Arventa Ventures Team Collaboration" 
-                  referrerPolicy="no-referrer"
-                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/team/800/1000"; }}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
@@ -252,8 +250,8 @@ export default function About() {
               className="relative rounded-[2.5rem] overflow-hidden border border-slate-800/60 h-[600px] shadow-2xl group"
             >
               <img 
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200" 
-                alt="Data Analysis" 
+                src="/images/paid-ads.webp" 
+                alt="Arventa Ventures Data Analysis" 
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90"></div>
@@ -316,8 +314,6 @@ export default function About() {
                   <img 
                     src={leader.image} 
                     alt={leader.name} 
-                    referrerPolicy="no-referrer"
-                    onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/leader/800/800"; }}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
@@ -345,12 +341,12 @@ export default function About() {
             >
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4 pt-12">
-                  <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=600" className="rounded-3xl w-full h-64 object-cover border border-slate-800" alt="Office Life" />
-                  <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=600" className="rounded-3xl w-full h-48 object-cover border border-slate-800" alt="Strategy Session" />
+                  <img src="/images/intro-strategy.webp" className="rounded-3xl w-full h-64 object-cover border border-slate-800" alt="Arventa Office Life" />
+                  <img src="/images/content-marketing.webp" className="rounded-3xl w-full h-48 object-cover border border-slate-800" alt="Arventa Strategy Session" />
                 </div>
                 <div className="space-y-4">
-                  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600" className="rounded-3xl w-full h-48 object-cover border border-slate-800" alt="Team Meeting" />
-                  <img src="https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&q=80&w=600" className="rounded-3xl w-full h-64 object-cover border border-slate-800" alt="Creative Workshop" />
+                  <img src="/images/creative-studio-production.webp" className="rounded-3xl w-full h-48 object-cover border border-slate-800" alt="Arventa Creative Production" />
+                  <img src="/images/creative-strategy-studio.webp" className="rounded-3xl w-full h-64 object-cover border border-slate-800" alt="Arventa Tech Workshop" />
                 </div>
               </div>
             </motion.div>
@@ -426,7 +422,7 @@ export default function About() {
       {/* 10. Final CTA */}
       <section className="relative py-32 overflow-hidden border-t border-slate-800">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-950"></div>
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=2000')] opacity-5 mix-blend-overlay object-cover"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-orange-500/10 via-slate-900 to-slate-950 opacity-50"></div>
         
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
           <motion.div

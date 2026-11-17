@@ -97,12 +97,8 @@ export default function ServiceDetail() {
               <div className="absolute inset-0 bg-gradient-to-tr from-orange-500 to-amber-500 rounded-[2.5rem] transform rotate-3 scale-[1.02] opacity-20 blur-xl"></div>
               <div className="relative rounded-[2.5rem] overflow-hidden border border-slate-700/50 bg-slate-900 aspect-[4/3] w-full shadow-2xl">
                 <img 
-                  src={data.image || "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1200"} 
+                  src={data.image || "/images/creative-strategy-studio.webp"} 
                   alt={data.title}
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    (e.currentTarget as HTMLImageElement).src = `https://picsum.photos/seed/${slug}/800/600`;
-                  }}
                   className="w-full h-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-slate-950/20"></div>
@@ -251,7 +247,7 @@ export default function ServiceDetail() {
       
       {/* CTA Section */}
       <section className="py-24 bg-orange-600 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-orange-500/10 via-slate-900 to-slate-950 opacity-60"></div>
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Ready to dominate your market?</h2>
           <p className="text-xl text-orange-100 mb-10 max-w-2xl mx-auto">

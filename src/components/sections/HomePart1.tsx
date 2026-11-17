@@ -133,7 +133,7 @@ export function IntroSection() {
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-transparent rounded-2xl blur-2xl"></div>
           <img
-            src="/images/intro-strategy.jpg"
+            src="/images/intro-strategy.webp"
             alt="Arventa Ventures Strategy Session"
             className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[500px]"
           />
@@ -197,7 +197,7 @@ export function SolutionSection() {
         <div className="order-2 lg:order-1 relative">
           <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-transparent rounded-2xl blur-2xl"></div>
           <img
-            src="/images/solution-funnel.jpg"
+            src="/images/solution-funnel.webp"
             alt="Arventa Ventures Funnel and Marketing Analytics"
             className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[500px]"
           />
@@ -510,7 +510,7 @@ export function VideoMarketingHighlight() {
       </div>
       <div className="relative rounded-3xl overflow-hidden aspect-video border border-border group cursor-pointer">
         <img
-          src="/images/video-marketing.jpg"
+          src="/images/video-marketing.webp"
           alt="Arventa Video Marketing Production Studio"
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />

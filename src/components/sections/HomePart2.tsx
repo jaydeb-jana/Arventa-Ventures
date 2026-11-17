@@ -125,7 +125,7 @@ export function SEOSpecialization() {
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-transparent rounded-2xl blur-2xl"></div>
           <img
-            src="/images/seo-strategy.jpg"
+            src="/images/seo-strategy.webp"
             alt="Arventa SEO Strategy and Keyword Rankings"
             className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[400px]"
           />
@@ -142,7 +142,7 @@ export function PaidAdsSpecialization() {
         <div className="order-2 lg:order-1 relative">
           <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-transparent rounded-2xl blur-2xl"></div>
           <img
-            src="/images/paid-ads.jpg"
+            src="/images/paid-ads.webp"
             alt="Arventa High-ROAS Paid Acquisition Strategy"
             className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[400px]"
           />
@@ -209,7 +209,7 @@ export function SocialMediaSpecialization() {
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-transparent rounded-2xl blur-2xl"></div>
           <img
-            src="/images/social-media.jpg"
+            src="/images/social-media.webp"
             alt="Arventa Social Media Community Management"
             className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[400px]"
           />
@@ -226,7 +226,7 @@ export function ContentMarketingFocus() {
         <div className="order-2 lg:order-1 relative">
           <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-transparent rounded-2xl blur-2xl"></div>
           <img
-            src="/images/content-marketing.jpg"
+            src="/images/content-marketing.webp"
             alt="Arventa Content Marketing and Storytelling"
             className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[400px]"
           />

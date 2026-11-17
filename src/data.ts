@@ -180,7 +180,7 @@ export const portfolio = [
       "Revamped their Instagram presence and optimized local search, resulting in a 40% increase in foot traffic within 3 months.",
     metrics: ["+40% Foot Traffic", "15k New Followers", "2.5x Engagement Rate"],
     socialLink: "https://instagram.com/urbanbrewcafe_sample",
-    image: "/images/portfolio-urbanbrew.jpg",
+    image: "/images/portfolio-urbanbrew.webp",
   },
   {
     id: 2,
@@ -191,7 +191,7 @@ export const portfolio = [
       "Scaled their online sales through targeted ad funnels, achieving a 4.5x Return on Ad Spend during the holiday season.",
     metrics: ["4.5x ROAS", "+120% Online Sales", "Reduced CPA by 30%"],
     socialLink: "https://facebook.com/novafashion_sample",
-    image: "/images/portfolio-novafashion.jpg",
+    image: "/images/portfolio-novafashion.webp",
   },
   {
     id: 3,
@@ -202,7 +202,7 @@ export const portfolio = [
       "Implemented a robust lead generation campaign using Meta ads, resulting in a record-breaking month for new gym memberships.",
     metrics: ["300+ New Leads", "15% Conversion Rate", "Sold out classes"],
     socialLink: "https://instagram.com/apexfitness_sample",
-    image: "/images/portfolio-apexfitness.jpg",
+    image: "/images/portfolio-apexfitness.webp",
   },
   {
     id: 4,
@@ -217,8 +217,7 @@ export const portfolio = [
       "Brand Recognition",
     ],
     socialLink: "https://instagram.com/bloombeauty_sample",
-    image:
-      "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800&h=600",
+    image: "/images/portfolio-bloombeauty.webp",
   },
   {
     id: 5,
@@ -229,8 +228,7 @@ export const portfolio = [
       "Dominated search results for luxury real estate queries, driving high-net-worth leads directly to their agents.",
     metrics: ["#1 Search Ranking", "50+ Qualified Leads/mo", "Lowered CPL"],
     socialLink: "https://facebook.com/zenithprops_sample",
-    image:
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800&h=600",
+    image: "/images/portfolio-skylinerealty.webp",
   },
   {
     id: 6,
@@ -241,8 +239,7 @@ export const portfolio = [
       "Strategic YouTube and Shorts planning that helped a lifestyle creator break through the algorithm and reach 1M subscribers.",
     metrics: ["1M+ Subscribers", "50M+ Monthly Views", "High Brand Deals"],
     socialLink: "https://youtube.com/@creatorrahul_sample",
-    image:
-      "https://images.unsplash.com/photo-1616469829581-73993eb86b02?auto=format&fit=crop&q=80&w=800&h=600",
+    image: "/images/video-marketing.webp",
   },
   {
     id: 7,
@@ -253,8 +250,7 @@ export const portfolio = [
       "Drove local grocery app installations through hyper-targeted Meta ads, significantly increasing daily active users.",
     metrics: ["50k+ App Installs", "Top 10 in Category", "High Retention"],
     socialLink: "https://facebook.com/freshbasket_sample",
-    image:
-      "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800&h=600",
+    image: "/images/portfolio-freshharvest.webp",
   },
   {
     id: 8,
@@ -269,8 +265,7 @@ export const portfolio = [
       "Industry Authority",
     ],
     socialLink: "https://linkedin.com/company/technest_sample",
-    image:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800&h=600",
+    image: "/images/portfolio-zenithtech.webp",
   },
 ];
 
@@ -380,4 +375,4 @@ export const faqData = [
   },
 ];
 
-export { blogPosts } from "./data/blogs";
+export { blogPosts, type BlogPost, type BlogAuthor, type BlogFAQ } from "./data/blogs";

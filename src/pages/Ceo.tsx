@@ -101,11 +101,9 @@ export default function Ceo() {
               
               <div className="relative rounded-[2.5rem] overflow-hidden border border-slate-700/50 bg-slate-900 aspect-[4/5] w-full max-w-md mx-auto group">
                 <img 
-                  src="https://i.ibb.co/ymz2pCf6/1780219901430.png" 
-                  alt="Jaydeb Jana - CEO"
-                  referrerPolicy="no-referrer"
-                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800"; }}
-                  className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                  src="/images/jaydeb-jana-ceo.webp" 
+                  alt="Jaydeb Jana - Founder & CEO"
+                  className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
                 
@@ -205,20 +203,18 @@ export default function Ceo() {
 
       {/* Quote Section */}
       <section className="py-32 bg-slate-900 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center opacity-5 mix-blend-luminosity"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-orange-500/10 via-slate-900 to-slate-950 opacity-60"></div>
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
           <Quote className="w-16 h-16 text-orange-500/40 mx-auto mb-10" />
           <h2 className="text-3xl md:text-5xl font-light text-white leading-tight mb-12">
             "Innovation isn't just about using new tools; it's about fundamentally reshaping the way a brand interacts with its audience."
           </h2>
           <div className="flex flex-col items-center">
-            <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-orange-500 mb-4">
+            <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-orange-500 mb-4 shadow-lg shadow-orange-500/20">
               <img 
-                src="https://i.ibb.co/ymz2pCf6/1780219901430.png" 
-                alt="Jaydeb Jana" 
-                referrerPolicy="no-referrer"
-                onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200"; }}
-                className="w-full h-full object-cover" 
+                src="/images/jaydeb-jana-ceo.webp" 
+                alt="Jaydeb Jana - CEO" 
+                className="w-full h-full object-cover object-top" 
               />
             </div>
             <h4 className="text-white font-bold text-lg">Jaydeb Jana</h4>

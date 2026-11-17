@@ -18,7 +18,7 @@ const DEFAULT_TITLE = "Arventa Ventures - Best Digital Marketing Agency | Low Bu
 const DEFAULT_DESCRIPTION = "Arventa Ventures is the best digital marketing agency offering low budget packages, Meta Ads service, video making services near me, Google Ads & high-ROI SEO in Kolkata and worldwide.";
 const DEFAULT_KEYWORDS = "best digital marketing agency, best digital marketing agency in kolkata, video making services near me, meta ads service, meta ads services near me, low budget digital marketing agency, affordable digital marketing agency, local SEO services, performance marketing agency, Arventa Ventures";
 const DEFAULT_DOMAIN = "https://arventaventures.online";
-const DEFAULT_OG_IMAGE = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80";
+const DEFAULT_OG_IMAGE = "https://arventaventures.online/images/arventa-og-banner.webp";
 
 export const SEO: React.FC<SEOProps> = ({
   title,
