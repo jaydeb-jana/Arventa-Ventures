@@ -172,6 +172,19 @@ html:not(.dark) {
     border-color: #e2e8f0 !important;
   }
 
+  /* Badges, Chips & Tech Pills in Light Mode */
+  .bg-slate-800,
+  .bg-slate-800\/90,
+  .bg-slate-800\/80,
+  .bg-slate-800\/70,
+  .bg-slate-800\/60,
+  .bg-slate-800\/50,
+  .bg-slate-800\/40 {
+    background-color: #f1f5f9 !important;
+    color: #1e293b !important;
+    border-color: #e2e8f0 !important;
+  }
+
   /* Headings & Text Color Overrides for High Contrast in Light Mode */
   h1.text-white,
   h2.text-white,

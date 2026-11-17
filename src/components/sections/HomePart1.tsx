@@ -323,20 +323,20 @@ export function TechSolutionsHighlight() {
         {/* 3 Tech Pillars */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {/* Pillar 1: Full-Stack Web Development */}
-          <div className="bg-gradient-to-b from-slate-900 via-slate-900/80 to-slate-950 border border-slate-800 hover:border-orange-500/50 rounded-3xl p-8 flex flex-col transition-all duration-300 group shadow-xl hover:shadow-orange-500/10">
+          <div className="bg-white dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-900/80 dark:to-slate-950 border border-slate-200 dark:border-slate-800 hover:border-orange-500/50 rounded-3xl p-8 flex flex-col transition-all duration-300 group shadow-sm dark:shadow-xl hover:shadow-orange-500/10">
             <div className="flex items-center justify-between mb-6">
               <div className="w-14 h-14 rounded-2xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 group-hover:scale-110 transition-transform">
                 <Globe className="w-7 h-7" />
               </div>
-              <span className="text-xs font-bold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">
+              <span className="text-xs font-bold text-amber-500 dark:text-amber-400 bg-amber-500/10 dark:bg-amber-400/10 px-3 py-1 rounded-full border border-amber-500/20 dark:border-amber-400/20">
                 High-Speed & Responsive
               </span>
             </div>
 
-            <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-orange-500 transition-colors">
               Full-Stack Web Development
             </h3>
-            <p className="text-slate-400 text-sm leading-relaxed mb-6">
+            <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
               Bespoke websites and dynamic web applications built with modern frameworks. Engineered for sub-second page loads, conversion optimization, and flawless search engine visibility.
             </p>
 
@@ -348,18 +348,18 @@ export function TechSolutionsHighlight() {
                 "Custom Headless CMS & Dynamic Dashboards",
                 "Conversion-Engineered Landing Pages",
               ].map((feat, i) => (
-                <div key={i} className="flex items-start text-xs sm:text-sm text-slate-300">
+                <div key={i} className="flex items-start text-xs sm:text-sm text-slate-700 dark:text-slate-300">
                   <CheckCircle2 className="w-4 h-4 text-orange-500 mr-2.5 mt-0.5 shrink-0" />
                   <span>{feat}</span>
                 </div>
               ))}
             </div>
 
-            <div className="pt-4 border-t border-slate-800">
-              <div className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider mb-2">Technologies</div>
+            <div className="pt-4 border-t border-slate-200 dark:border-slate-800">
+              <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Technologies</div>
               <div className="flex flex-wrap gap-1.5">
                 {["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js"].map((tech, i) => (
-                  <span key={i} className="px-2 py-0.5 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">
+                  <span key={i} className="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 dark:bg-slate-800/80 dark:text-slate-300 text-xs font-mono font-medium border border-slate-200 dark:border-slate-700/60 shadow-xs">
                     {tech}
                   </span>
                 ))}
@@ -368,20 +368,20 @@ export function TechSolutionsHighlight() {
           </div>
 
           {/* Pillar 2: Mobile & Web App Development */}
-          <div className="bg-gradient-to-b from-slate-900 via-slate-900/80 to-slate-950 border-2 border-orange-500/60 shadow-2xl shadow-orange-500/15 rounded-3xl p-8 flex flex-col transition-all duration-300 group lg:-translate-y-2">
+          <div className="bg-white dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-900/80 dark:to-slate-950 border-2 border-orange-500 shadow-xl shadow-orange-500/10 rounded-3xl p-8 flex flex-col transition-all duration-300 group lg:-translate-y-2">
             <div className="flex items-center justify-between mb-6">
-              <div className="w-14 h-14 rounded-2xl bg-orange-500/20 border border-orange-500/40 flex items-center justify-center text-orange-400 group-hover:scale-110 transition-transform">
+              <div className="w-14 h-14 rounded-2xl bg-orange-500/15 border border-orange-500/30 flex items-center justify-center text-orange-500 group-hover:scale-110 transition-transform">
                 <Smartphone className="w-7 h-7" />
               </div>
-              <span className="text-xs font-bold text-orange-400 bg-orange-500/15 px-3 py-1 rounded-full border border-orange-500/30">
+              <span className="text-xs font-bold text-orange-500 dark:text-orange-400 bg-orange-500/15 px-3 py-1 rounded-full border border-orange-500/30">
                 iOS & Android Apps
               </span>
             </div>
 
-            <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-orange-500 transition-colors">
               Mobile App Development
             </h3>
-            <p className="text-slate-400 text-sm leading-relaxed mb-6">
+            <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
               Native and cross-platform mobile apps engineered for buttery-smooth 60fps performance, intuitive product UX, offline capabilities, and high customer retention.
             </p>
 
@@ -393,18 +393,18 @@ export function TechSolutionsHighlight() {
                 "Real-Time Data Sync, WebSockets & Push Notifications",
                 "App Store (Apple & Google Play) Deployment & Support",
               ].map((feat, i) => (
-                <div key={i} className="flex items-start text-xs sm:text-sm text-slate-300">
+                <div key={i} className="flex items-start text-xs sm:text-sm text-slate-700 dark:text-slate-300">
                   <CheckCircle2 className="w-4 h-4 text-orange-500 mr-2.5 mt-0.5 shrink-0" />
                   <span>{feat}</span>
                 </div>
               ))}
             </div>
 
-            <div className="pt-4 border-t border-slate-800">
-              <div className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider mb-2">Technologies</div>
+            <div className="pt-4 border-t border-slate-200 dark:border-slate-800">
+              <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Technologies</div>
               <div className="flex flex-wrap gap-1.5">
                 {["Flutter", "React Native", "Swift", "Kotlin", "Firebase"].map((tech, i) => (
-                  <span key={i} className="px-2 py-0.5 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">
+                  <span key={i} className="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 dark:bg-slate-800/80 dark:text-slate-300 text-xs font-mono font-medium border border-slate-200 dark:border-slate-700/60 shadow-xs">
                     {tech}
                   </span>
                 ))}
@@ -413,20 +413,20 @@ export function TechSolutionsHighlight() {
           </div>
 
           {/* Pillar 3: Custom Software & Cloud Systems */}
-          <div className="bg-gradient-to-b from-slate-900 via-slate-900/80 to-slate-950 border border-slate-800 hover:border-orange-500/50 rounded-3xl p-8 flex flex-col transition-all duration-300 group shadow-xl hover:shadow-orange-500/10">
+          <div className="bg-white dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-900/80 dark:to-slate-950 border border-slate-200 dark:border-slate-800 hover:border-orange-500/50 rounded-3xl p-8 flex flex-col transition-all duration-300 group shadow-sm dark:shadow-xl hover:shadow-orange-500/10">
             <div className="flex items-center justify-between mb-6">
               <div className="w-14 h-14 rounded-2xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 group-hover:scale-110 transition-transform">
                 <Terminal className="w-7 h-7" />
               </div>
-              <span className="text-xs font-bold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">
+              <span className="text-xs font-bold text-amber-500 dark:text-amber-400 bg-amber-500/10 dark:bg-amber-400/10 px-3 py-1 rounded-full border border-amber-500/20 dark:border-amber-400/20">
                 Enterprise & Automation
               </span>
             </div>
 
-            <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-orange-500 transition-colors">
               Custom Software & Tech Systems
             </h3>
-            <p className="text-slate-400 text-sm leading-relaxed mb-6">
+            <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
               Tailored software architectures, internal admin dashboards, automated CRM/ERP pipelines, and AI tool integrations built to eliminate operational bottlenecks.
             </p>
 
@@ -438,18 +438,18 @@ export function TechSolutionsHighlight() {
                 "Robust REST & GraphQL API Engineering",
                 "Secure Cloud Scaling on AWS & Google Cloud",
               ].map((feat, i) => (
-                <div key={i} className="flex items-start text-xs sm:text-sm text-slate-300">
+                <div key={i} className="flex items-start text-xs sm:text-sm text-slate-700 dark:text-slate-300">
                   <CheckCircle2 className="w-4 h-4 text-orange-500 mr-2.5 mt-0.5 shrink-0" />
                   <span>{feat}</span>
                 </div>
               ))}
             </div>
 
-            <div className="pt-4 border-t border-slate-800">
-              <div className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider mb-2">Technologies</div>
+            <div className="pt-4 border-t border-slate-200 dark:border-slate-800">
+              <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Technologies</div>
               <div className="flex flex-wrap gap-1.5">
                 {["Python", "PostgreSQL", "Docker", "AWS", "REST APIs"].map((tech, i) => (
-                  <span key={i} className="px-2 py-0.5 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">
+                  <span key={i} className="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 dark:bg-slate-800/80 dark:text-slate-300 text-xs font-mono font-medium border border-slate-200 dark:border-slate-700/60 shadow-xs">
                     {tech}
                   </span>
                 ))}
@@ -459,33 +459,33 @@ export function TechSolutionsHighlight() {
         </div>
 
         {/* Feature Banner / Tech Highlights */}
-        <div className="bg-slate-900/70 border border-slate-800 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xs dark:shadow-none">
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-8">
             <div className="flex items-center gap-3">
-              <Zap className="w-6 h-6 text-orange-400 shrink-0" />
+              <Zap className="w-6 h-6 text-orange-500 shrink-0" />
               <div>
-                <div className="text-white font-bold text-sm">Ultra-Fast Performance</div>
-                <div className="text-slate-400 text-xs">&lt; 1s Page Load Speeds</div>
+                <div className="text-slate-900 dark:text-white font-bold text-sm">Ultra-Fast Performance</div>
+                <div className="text-slate-500 dark:text-slate-400 text-xs">&lt; 1s Page Load Speeds</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <ShieldCheck className="w-6 h-6 text-orange-400 shrink-0" />
+              <ShieldCheck className="w-6 h-6 text-orange-500 shrink-0" />
               <div>
-                <div className="text-white font-bold text-sm">Enterprise Security</div>
-                <div className="text-slate-400 text-xs">99.9% Uptime & Encryption</div>
+                <div className="text-slate-900 dark:text-white font-bold text-sm">Enterprise Security</div>
+                <div className="text-slate-500 dark:text-slate-400 text-xs">99.9% Uptime & Encryption</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <Code2 className="w-6 h-6 text-orange-400 shrink-0" />
+              <Code2 className="w-6 h-6 text-orange-500 shrink-0" />
               <div>
-                <div className="text-white font-bold text-sm">100% Code Ownership</div>
-                <div className="text-slate-400 text-xs">Clean, Scalable Architecture</div>
+                <div className="text-slate-900 dark:text-white font-bold text-sm">100% Code Ownership</div>
+                <div className="text-slate-500 dark:text-slate-400 text-xs">Clean, Scalable Architecture</div>
               </div>
             </div>
           </div>
 
           <div className="flex items-center gap-3 w-full md:w-auto">
-            <Button asChild className="w-full md:w-auto bg-orange-500 hover:bg-orange-600 font-bold px-6">
+            <Button asChild className="w-full md:w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 shadow-md shadow-orange-500/20">
               <Link to="/contact">Discuss Tech Project <ArrowRight className="w-4 h-4 ml-2" /></Link>
             </Button>
           </div>

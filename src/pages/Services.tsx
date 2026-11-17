@@ -186,7 +186,7 @@ export default function Services() {
             },
           ].map((item, i) => (
             <div key={i} className="relative group">
-              <div className="text-7xl font-bold text-slate-800/50 mb-4 transition-colors group-hover:text-orange-500/20">
+              <div className="text-7xl font-bold text-slate-300 dark:text-slate-800/60 mb-4 transition-colors group-hover:text-orange-500/30 select-none">
                 {item.step}
               </div>
               <h3 className="text-xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors">

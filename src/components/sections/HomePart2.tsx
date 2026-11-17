@@ -43,7 +43,7 @@ export function ProcessSection() {
         title="Our Growth Methodology"
         subtitle="A proven, 4-step framework we use to scale businesses predictably."
       />
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {[
           {
             num: "01",
@@ -68,15 +68,24 @@ export function ProcessSection() {
         ].map((step, i) => (
           <div
             key={i}
-            className="relative p-6 border border-border rounded-2xl bg-card"
+            className="p-6 sm:p-7 border border-slate-200 dark:border-slate-800/80 rounded-2xl bg-white dark:bg-slate-900/60 flex flex-col justify-between shadow-xs hover:border-orange-500/40 hover:shadow-md transition-all duration-300 group"
           >
-            <span className="text-6xl font-bold text-slate-800/50 absolute top-4 right-4">
-              {step.num}
-            </span>
-            <h3 className="text-xl font-bold text-white mb-4 relative z-10">
-              {step.title}
-            </h3>
-            <p className="text-slate-400 relative z-10">{step.desc}</p>
+            <div>
+              <div className="flex items-center justify-between mb-5">
+                <span className="text-xs font-bold font-mono px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400 border border-orange-500/20">
+                  Step {step.num}
+                </span>
+                <span className="text-2xl font-black text-slate-300 dark:text-slate-700 font-mono select-none group-hover:text-orange-500/40 transition-colors">
+                  {step.num}
+                </span>
+              </div>
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-3">
+                {step.title}
+              </h3>
+              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                {step.desc}
+              </p>
+            </div>
           </div>
         ))}
       </div>
