@@ -206,18 +206,7 @@ export default function BlogPost() {
         style={{ width: `${scrollProgress}%` }}
       />
 
-      {/* Breadcrumb Navigation */}
-      <nav className="max-w-6xl mx-auto px-6 pt-6 pb-2 w-full text-xs text-muted-foreground flex items-center space-x-2 flex-wrap" aria-label="Breadcrumb">
-        <Link to="/" className="hover:text-orange-500 transition-colors">Home</Link>
-        <ChevronRight className="w-3 h-3 text-muted-foreground/60" />
-        <Link to="/blog" className="hover:text-orange-500 transition-colors">Blog</Link>
-        <ChevronRight className="w-3 h-3 text-muted-foreground/60" />
-        <Link to={`/blog?category=${encodeURIComponent(post.category)}`} className="text-orange-500 font-medium hover:underline">
-          {post.category}
-        </Link>
-        <ChevronRight className="w-3 h-3 text-muted-foreground/60 hidden sm:inline" />
-        <span className="truncate max-w-[200px] sm:max-w-xs hidden sm:inline text-foreground/80">{post.title}</span>
-      </nav>
+
 
       {/* Hero Header */}
       <header className="max-w-4xl mx-auto px-6 py-8 md:py-12 w-full">
@@ -260,11 +249,11 @@ export default function BlogPost() {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 py-6 border-y border-border/60">
           <div className="flex items-center space-x-3.5">
             <img
-              src={post.author?.avatar || "https://i.ibb.co/ymz2pCf6/1780219901430.png"}
+              src={post.author?.avatar || "/images/author-jaydeb.webp"}
               alt={post.author?.name || "Author"}
               className="w-12 h-12 rounded-full object-cover ring-2 ring-orange-500/30"
               onError={(e) => {
-                (e.currentTarget as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(post.author?.name || "Arventa")}&background=f97316&color=fff`;
+                (e.currentTarget as HTMLImageElement).src = "/images/author-jaydeb.webp";
               }}
             />
             <div>

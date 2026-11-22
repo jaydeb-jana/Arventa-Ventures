@@ -10,8 +10,9 @@ export default function Contact() {
     firstName: "",
     lastName: "",
     email: "",
+    phone: "",
     company: "",
-    service: "Select a service...",
+    service: "Paid Acquisition (Google/Meta Ads)",
     message: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -35,18 +36,29 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `*New Inquiry from ${formData.firstName} ${formData.lastName}*
-*Company:* ${formData.company || 'Not provided'}
-*Email:* ${formData.email}
+    const text = `*New Business Inquiry - Arventa Ventures*
+*Name:* ${formData.firstName} ${formData.lastName}
+*Company / Brand:* ${formData.company || 'Not provided'}
+*Phone / WhatsApp:* ${formData.phone || 'Not provided'}
+*Work Email:* ${formData.email}
 *Service Interested In:* ${formData.service}
 
-*Project Details:*
+*Project Details & Goals:*
 ${formData.message}`;
 
     const encodedText = encodeURIComponent(text);
     const whatsappUrl = `https://wa.me/917872490719?text=${encodedText}`;
-    window.open(whatsappUrl, "_blank");
     setIsSubmitted(true);
+
+    const isMobile = typeof navigator !== "undefined" && /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    if (isMobile) {
+      window.location.href = whatsappUrl;
+    } else {
+      const win = window.open(whatsappUrl, "_blank");
+      if (!win || win.closed || typeof win.closed === "undefined") {
+        window.location.href = whatsappUrl;
+      }
+    }
   };
 
   return (
@@ -120,12 +132,44 @@ ${formData.message}`;
                       Purba Gopinathpur, Chapatala, More, Contai, West Bengal 721442
                     </p>
                     <a
-                      href="https://maps.app.goo.gl/Uz4GYtFuQ692XVQG8"
+                      href="https://share.google/9g673CLWFHS9j6tb9"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-sm text-orange-500 hover:text-orange-400 font-semibold transition-colors"
                     >
-                      <MapPin size={16} /> Open in Google Maps <ArrowRight size={14} />
+                      <MapPin size={16} /> Google Business Profile & Maps <ArrowRight size={14} />
+                    </a>
+                  </div>
+                </div>
+
+                {/* Official Social & GMB Channels */}
+                <div className="pt-6 border-t border-slate-800/80">
+                  <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Official Agency Channels</p>
+                  <div className="flex flex-wrap items-center gap-3 text-xs">
+                    <a
+                      href="https://www.facebook.com/p/Arventa-Ventures-61573258438828/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-orange-500/50 hover:text-orange-400 text-slate-300 transition-colors flex items-center gap-2 font-medium"
+                    >
+                      <span>Facebook</span>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/arventaventures/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-orange-500/50 hover:text-orange-400 text-slate-300 transition-colors flex items-center gap-2 font-medium"
+                    >
+                      <span>Instagram</span>
+                    </a>
+                    <a
+                      href="https://share.google/9g673CLWFHS9j6tb9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3.5 py-2 rounded-xl bg-orange-500/10 border border-orange-500/30 text-orange-400 hover:bg-orange-500 hover:text-white transition-all flex items-center gap-2 font-semibold"
+                    >
+                      <MapPin className="w-3.5 h-3.5" />
+                      <span>Google Business Profile (GMB)</span>
                     </a>
                   </div>
                 </div>
@@ -162,22 +206,32 @@ ${formData.message}`;
               
               {isSubmitted ? (
                 <div className="py-20 text-center">
-                  <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <CheckCircle2 className="h-10 w-10 text-green-500" />
+                  <div className="w-20 h-20 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <CheckCircle2 className="h-10 w-10 text-emerald-500" />
                   </div>
-                  <h3 className="text-3xl font-bold text-white mb-4">Request Sent Successfully</h3>
-                  <p className="text-slate-400 text-lg mb-8 max-w-md mx-auto">
-                    Thank you for reaching out. We will review your details and contact you shortly.
+                  <h3 className="text-3xl font-bold text-white mb-4">Request Forwarded to WhatsApp</h3>
+                  <p className="text-slate-400 text-base mb-8 max-w-md mx-auto">
+                    Your inquiry details have been forwarded to our direct WhatsApp line. If your chat didn't open automatically, click the button below to send:
                   </p>
-                  <Button onClick={() => setIsSubmitted(false)} variant="outline" className="border-slate-700 text-white hover:bg-slate-800 h-12 px-8 rounded-full">
-                    Send another message
-                  </Button>
+                  <div className="flex flex-wrap items-center justify-center gap-4">
+                    <a
+                      href={`https://wa.me/917872490719?text=${encodeURIComponent(`*New Business Inquiry - Arventa Ventures*\n*Name:* ${formData.firstName} ${formData.lastName}\n*Company:* ${formData.company || 'Not provided'}\n*Phone:* ${formData.phone || 'Not provided'}\n*Email:* ${formData.email}\n*Service:* ${formData.service}\n*Details:* ${formData.message}`)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 h-12 px-8 rounded-full bg-emerald-500 text-white font-bold text-sm hover:bg-emerald-600 transition-colors shadow-lg shadow-emerald-500/20"
+                    >
+                      Open WhatsApp Direct <ArrowRight className="w-4 h-4" />
+                    </a>
+                    <Button onClick={() => setIsSubmitted(false)} variant="outline" className="border-slate-700 text-white hover:bg-slate-800 h-12 px-8 rounded-full">
+                      Send another message
+                    </Button>
+                  </div>
                 </div>
               ) : (
                 <>
                   <div className="mb-10">
                     <h3 className="text-3xl font-bold text-white mb-3">Send an Inquiry</h3>
-                    <p className="text-slate-400">Please provide as much detail as possible so we can properly evaluate your request.</p>
+                    <p className="text-slate-400">Please provide your details. Clicking submit will directly launch WhatsApp with your pre-filled message.</p>
                   </div>
                   
                   <form className="space-y-6" onSubmit={handleSubmit}>
@@ -228,18 +282,33 @@ ${formData.message}`;
                         />
                       </div>
                       <div className="space-y-2.5">
-                        <label htmlFor="company" className="text-sm font-semibold text-slate-300">
-                          Company / Website
+                        <label htmlFor="phone" className="text-sm font-semibold text-slate-300">
+                          Phone / WhatsApp <span className="text-orange-500">*</span>
                         </label>
                         <input
-                          type="text"
-                          id="company"
-                          value={formData.company}
+                          type="tel"
+                          id="phone"
+                          value={formData.phone}
                           onChange={handleChange}
+                          required
                           className="w-full bg-slate-950/50 border border-slate-800 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50 transition-all placeholder:text-slate-600"
-                          placeholder="yourbrand.com"
+                          placeholder="+91 98765 43210"
                         />
                       </div>
+                    </div>
+
+                    <div className="space-y-2.5">
+                      <label htmlFor="company" className="text-sm font-semibold text-slate-300">
+                        Company / Website
+                      </label>
+                      <input
+                        type="text"
+                        id="company"
+                        value={formData.company}
+                        onChange={handleChange}
+                        className="w-full bg-slate-950/50 border border-slate-800 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50 transition-all placeholder:text-slate-600"
+                        placeholder="yourbrand.com"
+                      />
                     </div>
 
                     <div className="space-y-2.5">

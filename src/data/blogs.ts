@@ -47,7 +47,7 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Ashraful Islam",
       "role": "Head of Performance Marketing",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-ashraful.webp",
       "bio": "Ashraful specializes in Meta Advantage+ AI bidding, multi-million dollar ad spend management, and high-converting paid acquisition funnels."
     },
     "image": "/images/blog-meta-ads.webp",
@@ -92,7 +92,7 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Jaydeb Jana",
       "role": "Founder & Chief Growth Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/jaydeb-jana-avatar.webp",
       "bio": "Jaydeb has helped scale 120+ SMBs, e-commerce stores, and local enterprises through data-driven performance marketing and high-ROI growth systems."
     },
     "image": "/images/blog-marketing-funnel.webp",
@@ -133,7 +133,7 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Suman Roy",
       "role": "Senior SEO & Search Architect",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "Suman is an SEO engineer focused on technical site health, Core Web Vitals, Google SGE / AI Overviews optimization, and local map domination."
     },
     "image": "/images/blog-ecommerce-seo.webp",
@@ -174,10 +174,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Jaydeb Jana",
       "role": "Founder & Chief Growth Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/jaydeb-jana-avatar.webp",
       "bio": "Jaydeb has helped scale 120+ SMBs, e-commerce stores, and local enterprises through data-driven performance marketing and high-ROI growth systems."
     },
-    "image": "/images/casestudy-clinic.webp",
+    "image": "/images/blog-local-maps-seo.webp",
     "keyTakeaways": [
       "Over 46% of all Google searches have local intent, and 76% of people who search locally visit a business within 24 hours.",
       "Google Business Profile (GBP) completeness, primary category selection, and verified physical proximity are the top 3 ranking factors.",
@@ -215,10 +215,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Priya Mukherjee",
       "role": "Creative Director & Short-Form Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "Priya specializes in UGC ad scripting, viral Reels and TikTok frameworks, and consumer psychology that drives emotional brand affinity."
     },
-    "image": "/images/creative-brand-identity.webp",
+    "image": "/images/blog-brand-storytelling.webp",
     "keyTakeaways": [
       "Brand inconsistency across digital touchpoints reduces perceived trust and forces businesses into price wars.",
       "A complete audit examines three critical pillars: visual identity, verbal voice, and audience perception.",
@@ -252,10 +252,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Priya Mukherjee",
       "role": "Creative Director & Short-Form Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "Priya specializes in UGC ad scripting, viral Reels and TikTok frameworks, and consumer psychology that drives emotional brand affinity."
     },
-    "image": "/images/content-marketing.webp",
+    "image": "/images/blog-tiktok-short-form.webp",
     "keyTakeaways": [
       "Short-form vertical video is the most algorithmically amplified content format across Meta, TikTok, and Google.",
       "The first 2.5 seconds dictate 80% of video success: master visual pattern interrupts.",
@@ -289,10 +289,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Ashraful Islam",
       "role": "Head of Performance Marketing",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-ashraful.webp",
       "bio": "Ashraful specializes in Meta Advantage+ AI bidding, multi-million dollar ad spend management, and high-converting paid acquisition funnels."
     },
-    "image": "/images/paid-ads.webp",
+    "image": "/images/blog-google-pmax.webp",
     "keyTakeaways": [
       "Google Performance Max combines all Google ad inventory into a unified, machine-learning powered campaign.",
       "Asset group segmentation based on product lines or buyer personas prevents cannibalization.",
@@ -326,10 +326,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Ashraful Islam",
       "role": "Head of Performance Marketing",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-ashraful.webp",
       "bio": "Ashraful specializes in Meta Advantage+ AI bidding, multi-million dollar ad spend management, and high-converting paid acquisition funnels."
     },
-    "image": "/images/blog-meta-ads.webp",
+    "image": "/images/creative-motion-graphics.webp",
     "keyTakeaways": [
       "TikTok users immediately swipe past polished commercial ads; native creator-style video is required.",
       "Spark Ads allow you to boost organic creator posts with verified engagement metrics.",
@@ -362,10 +362,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Jaydeb Jana",
       "role": "Founder & Chief Growth Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/jaydeb-jana-avatar.webp",
       "bio": "Jaydeb has helped scale 120+ SMBs, e-commerce stores, and local enterprises through data-driven performance marketing and high-ROI growth systems."
     },
-    "image": "/images/blog-marketing-funnel.webp",
+    "image": "/images/blog-cro-landing-pages.webp",
     "keyTakeaways": [
       "Doubling your conversion rate cuts your customer acquisition cost in half instantly.",
       "Sticky mobile Call-to-Action (CTA) buttons eliminate thumb fatigue and improve conversions by up to 18%.",
@@ -399,10 +399,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Arventa Growth Desk",
       "role": "Editorial & Market Intelligence Desk",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "The Arventa Ventures Research Desk tracks real-time shifts in ad algorithms, search engine updates, and digital consumer trends across 50+ sectors."
     },
-    "image": "/images/casestudy-apparel.webp",
+    "image": "/images/blog-email-automation.webp",
     "keyTakeaways": [
       "Email marketing delivers an average ROI of $36 for every $1 spent.",
       "Automated triggers generate over 50% of total email revenue despite accounting for only 10% of send volume.",
@@ -435,10 +435,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Priya Mukherjee",
       "role": "Creative Director & Short-Form Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "Priya specializes in UGC ad scripting, viral Reels and TikTok frameworks, and consumer psychology that drives emotional brand affinity."
     },
-    "image": "/images/creative-studio-production.webp",
+    "image": "/images/social-media.webp",
     "keyTakeaways": [
       "Likes and comments don't pay bills; track direct sales via personalized discount codes and first-party UTM parameters.",
       "Micro-influencers (10k - 50k followers) frequently deliver 3x higher engagement and lower cost-per-acquisition than macro celebrities.",
@@ -472,10 +472,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Priya Mukherjee",
       "role": "Creative Director & Short-Form Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "Priya specializes in UGC ad scripting, viral Reels and TikTok frameworks, and consumer psychology that drives emotional brand affinity."
     },
-    "image": "/images/social-media.webp",
+    "image": "/images/content-marketing.webp",
     "keyTakeaways": [
       "Creating new content from scratch every day leads to burnout and diluted messaging; atomize pillar assets instead.",
       "One 1,500-word blog post yields: 3 LinkedIn carousels, 5 tweet/Threads insights, 2 vertical Reels scripts, and 1 newsletter breakdown.",
@@ -508,10 +508,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Jaydeb Jana",
       "role": "Founder & Chief Growth Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/jaydeb-jana-avatar.webp",
       "bio": "Jaydeb has helped scale 120+ SMBs, e-commerce stores, and local enterprises through data-driven performance marketing and high-ROI growth systems."
     },
-    "image": "/images/solution-funnel.webp",
+    "image": "/images/blog-b2b-lead-generation.webp",
     "keyTakeaways": [
       "Buyers do business with people, not corporate logos: founder and executive profiles generate 5x more engagement than company pages.",
       "Stop cold-pitching in the first InMail; focus on providing relevant industry data or helpful diagnostic tools.",
@@ -546,7 +546,7 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Suman Roy",
       "role": "Senior SEO & Search Architect",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "Suman is an SEO engineer focused on technical site health, Core Web Vitals, Google SGE / AI Overviews optimization, and local map domination."
     },
     "image": "/images/seo-strategy.webp",
@@ -587,10 +587,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Ashraful Islam",
       "role": "Head of Performance Marketing",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-ashraful.webp",
       "bio": "Ashraful specializes in Meta Advantage+ AI bidding, multi-million dollar ad spend management, and high-converting paid acquisition funnels."
     },
-    "image": "/images/paid-ads.webp",
+    "image": "/images/blog-analytics-ga4.webp",
     "keyTakeaways": [
       "GA4 uses an event-based data model instead of session-based hits, requiring custom event naming conventions.",
       "Explorations (Path exploration & Funnel exploration) reveal the exact points where users drop off before purchasing.",
@@ -623,10 +623,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Jaydeb Jana",
       "role": "Founder & Chief Growth Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/jaydeb-jana-avatar.webp",
       "bio": "Jaydeb has helped scale 120+ SMBs, e-commerce stores, and local enterprises through data-driven performance marketing and high-ROI growth systems."
     },
-    "image": "/images/creative-motion-graphics.webp",
+    "image": "/images/about-team-hq.webp",
     "keyTakeaways": [
       "Community is the ultimate protective moat against rising ad costs and commoditization.",
       "Give your members an identity and shared mission rather than merely pushing promotional discount links.",
@@ -659,10 +659,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Ashraful Islam",
       "role": "Head of Performance Marketing",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-ashraful.webp",
       "bio": "Ashraful specializes in Meta Advantage+ AI bidding, multi-million dollar ad spend management, and high-converting paid acquisition funnels."
     },
-    "image": "/images/creative-strategy-studio.webp",
+    "image": "/images/blog-whatsapp-commerce.webp",
     "keyTakeaways": [
       "WhatsApp boasts an unmatched 98% open rate and 45%+ click-through rate compared to traditional email and SMS.",
       "Click-to-WhatsApp (CTWA) ads on Meta connect prospects directly with sales teams, cutting lead response time to seconds.",
@@ -696,7 +696,7 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Ashraful Islam",
       "role": "Head of Performance Marketing",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-ashraful.webp",
       "bio": "Ashraful specializes in Meta Advantage+ AI bidding, multi-million dollar ad spend management, and high-converting paid acquisition funnels."
     },
     "image": "/images/paid-ads.webp",
@@ -732,7 +732,7 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Priya Mukherjee",
       "role": "Creative Director & Short-Form Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "Priya specializes in UGC ad scripting, viral Reels and TikTok frameworks, and consumer psychology that drives emotional brand affinity."
     },
     "image": "/images/content-marketing.webp",
@@ -768,10 +768,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Jaydeb Jana",
       "role": "Founder & Chief Growth Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/jaydeb-jana-avatar.webp",
       "bio": "Jaydeb has helped scale 120+ SMBs, e-commerce stores, and local enterprises through data-driven performance marketing and high-ROI growth systems."
     },
-    "image": "/images/blog-marketing-funnel.webp",
+    "image": "/images/solution-funnel.webp",
     "keyTakeaways": [
       "Increasing customer retention by just 5% increases overall profits by 25% to 95%.",
       "One-click post-purchase upsells before the thank-you page convert at 12% to 20% with zero additional acquisition cost.",
@@ -804,10 +804,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Suman Roy",
       "role": "Senior SEO & Search Architect",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "Suman is an SEO engineer focused on technical site health, Core Web Vitals, Google SGE / AI Overviews optimization, and local map domination."
     },
-    "image": "/images/blog-ecommerce-seo.webp",
+    "image": "/images/video-marketing.webp",
     "keyTakeaways": [
       "YouTube is the world's 2nd largest search engine: Click-Through Rate (CTR) and Average Percentage Viewed (APV) dictate 85% of ranking success.",
       "Custom thumbnails with high-contrast color grading and under 4 words of punchy text drive 10%+ CTRs.",
@@ -840,10 +840,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Jaydeb Jana",
       "role": "Founder & Chief Growth Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/jaydeb-jana-avatar.webp",
       "bio": "Jaydeb has helped scale 120+ SMBs, e-commerce stores, and local enterprises through data-driven performance marketing and high-ROI growth systems."
     },
-    "image": "/images/portfolio-urbanbrew.webp",
+    "image": "/images/blog-food-beverage.webp",
     "keyTakeaways": [
       "80% of dining decisions start on Google Maps and Instagram Reels within a 5-mile radius.",
       "Geotagged food videos showcasing signature dish preparations trigger instant sensory cravings and shares.",
@@ -876,10 +876,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Priya Mukherjee",
       "role": "Creative Director & Short-Form Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "Priya specializes in UGC ad scripting, viral Reels and TikTok frameworks, and consumer psychology that drives emotional brand affinity."
     },
-    "image": "/images/casestudy-apparel.webp",
+    "image": "/images/blog-fashion-ecommerce.webp",
     "keyTakeaways": [
       "Fit and sizing uncertainty causes over 60% of fashion cart abandonments and high return rates.",
       "Interactive 'Try-On' style videos and model height/weight transparency double conversion rates on PDPs.",
@@ -912,10 +912,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Jaydeb Jana",
       "role": "Founder & Chief Growth Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/jaydeb-jana-avatar.webp",
       "bio": "Jaydeb has helped scale 120+ SMBs, e-commerce stores, and local enterprises through data-driven performance marketing and high-ROI growth systems."
     },
-    "image": "/images/solution-funnel.webp",
+    "image": "/images/blog-healthcare-marketing.webp",
     "keyTakeaways": [
       "Healthcare decisions are built on immense trust: physician credentials and patient video testimonials are essential.",
       "Google's YMYL (Your Money or Your Life) standards mandate medical author verification and authoritative citations.",
@@ -948,10 +948,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Ashraful Islam",
       "role": "Head of Performance Marketing",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-ashraful.webp",
       "bio": "Ashraful specializes in Meta Advantage+ AI bidding, multi-million dollar ad spend management, and high-converting paid acquisition funnels."
     },
-    "image": "/images/blog-meta-ads.webp",
+    "image": "/images/blog-real-estate-ads.webp",
     "keyTakeaways": [
       "Generic 'Buy a home now' ads generate low-intent leads; highlight specific floor plans, pricing brackets, and project milestones.",
       "Meta Instant Forms with custom qualifying questions (e.g., 'What is your budget?' and 'Buying timeframe?') weed out tire-kickers.",
@@ -984,10 +984,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Jaydeb Jana",
       "role": "Founder & Chief Growth Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/jaydeb-jana-avatar.webp",
       "bio": "Jaydeb has helped scale 120+ SMBs, e-commerce stores, and local enterprises through data-driven performance marketing and high-ROI growth systems."
     },
-    "image": "/images/creative-strategy-studio.webp",
+    "image": "/images/portfolio-zenithtech.webp",
     "keyTakeaways": [
       "In PLG, the product itself drives acquisition, retention, and expansion rather than heavy outbound sales teams.",
       "Time-to-Value (TTV) is the holy grail: users must experience their 'Aha!' moment within the first 5 minutes of sign-up.",
@@ -1020,7 +1020,7 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Suman Roy",
       "role": "Senior SEO & Search Architect",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "Suman is an SEO engineer focused on technical site health, Core Web Vitals, Google SGE / AI Overviews optimization, and local map domination."
     },
     "image": "/images/seo-strategy.webp",
@@ -1056,10 +1056,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Jaydeb Jana",
       "role": "Founder & Chief Growth Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/jaydeb-jana-avatar.webp",
       "bio": "Jaydeb has helped scale 120+ SMBs, e-commerce stores, and local enterprises through data-driven performance marketing and high-ROI growth systems."
     },
-    "image": "/images/solution-funnel.webp",
+    "image": "/images/blog-cro-landing-pages.webp",
     "keyTakeaways": [
       "Great copy does not sound clever; it sounds clear, direct, and empathetic to customer pain.",
       "PAS (Problem-Agitation-Solution) is the most reliable framework for direct-response lead generation.",
@@ -1092,10 +1092,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Priya Mukherjee",
       "role": "Creative Director & Short-Form Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "Priya specializes in UGC ad scripting, viral Reels and TikTok frameworks, and consumer psychology that drives emotional brand affinity."
     },
-    "image": "/images/portfolio-freshharvest.webp",
+    "image": "/images/blog-beauty-cosmetics.webp",
     "keyTakeaways": [
       "Social commerce allows users to discover, evaluate, and purchase products without ever leaving their social app.",
       "TikTok Shop has revolutionized impulse purchases through affiliate creator networks and flash live-streams.",
@@ -1128,10 +1128,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Ashraful Islam",
       "role": "Head of Performance Marketing",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-ashraful.webp",
       "bio": "Ashraful specializes in Meta Advantage+ AI bidding, multi-million dollar ad spend management, and high-converting paid acquisition funnels."
     },
-    "image": "/images/seo-strategy.webp",
+    "image": "/images/blog-analytics-ga4.webp",
     "keyTakeaways": [
       "Last-click attribution wrongly gives 100% of purchase credit to the final search ad or retargeting link, starving top-of-funnel channels.",
       "Data-driven attribution in GA4 uses algorithmic models to evaluate the true incremental value of each touchpoint.",
@@ -1164,10 +1164,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Ashraful Islam",
       "role": "Head of Performance Marketing",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-ashraful.webp",
       "bio": "Ashraful specializes in Meta Advantage+ AI bidding, multi-million dollar ad spend management, and high-converting paid acquisition funnels."
     },
-    "image": "/images/paid-ads.webp",
+    "image": "/images/blog-meta-ads.webp",
     "keyTakeaways": [
       "Bombarding prospects with the identical product ad for 30 consecutive days destroys brand sentiment and increases CPA.",
       "Segment retargeting by engagement recency: Days 1-3 (high intent), Days 4-7 (objection handling), Days 8-14 (social proof & special offer).",
@@ -1200,10 +1200,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Priya Mukherjee",
       "role": "Creative Director & Short-Form Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "Priya specializes in UGC ad scripting, viral Reels and TikTok frameworks, and consumer psychology that drives emotional brand affinity."
     },
-    "image": "/images/blog-meta-ads.webp",
+    "image": "/images/creative-studio-production.webp",
     "keyTakeaways": [
       "Podcast listeners form deep parasocial relationships with hosts, making host-read endorsements feel like advice from a trusted friend.",
       "Over 70% of podcast listeners say they have purchased a product after hearing it advertised on their favorite podcast.",
@@ -1236,10 +1236,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Suman Roy",
       "role": "Senior SEO & Search Architect",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "Suman is an SEO engineer focused on technical site health, Core Web Vitals, Google SGE / AI Overviews optimization, and local map domination."
     },
-    "image": "/images/social-media.webp",
+    "image": "/images/content-marketing.webp",
     "keyTakeaways": [
       "Over 60% of Google searches and 90% of social feeds now end without a click to an external URL.",
       "Social platforms penalize outbound links; deliver standalone, self-contained value directly inside the post.",
@@ -1272,10 +1272,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Jaydeb Jana",
       "role": "Founder & Chief Growth Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/jaydeb-jana-avatar.webp",
       "bio": "Jaydeb has helped scale 120+ SMBs, e-commerce stores, and local enterprises through data-driven performance marketing and high-ROI growth systems."
     },
-    "image": "/images/casestudy-clinic.webp",
+    "image": "/images/blog-local-maps-seo.webp",
     "keyTakeaways": [
       "The top 3 Google Maps listings capture over 65% of all local phone calls, directions, and clicks.",
       "Review keywords and owner reply keywords expand the geographic radius where your profile appears.",
@@ -1308,10 +1308,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Priya Mukherjee",
       "role": "Creative Director & Short-Form Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "Priya specializes in UGC ad scripting, viral Reels and TikTok frameworks, and consumer psychology that drives emotional brand affinity."
     },
-    "image": "/images/content-marketing.webp",
+    "image": "/images/blog-ugc-video-ads.webp",
     "keyTakeaways": [
       "Polished corporate commercials scream 'Ad!' triggering immediate consumer skepticism and feed scrolling.",
       "UGC feels like a genuine video recommendation from a trusted peer, resulting in higher watch times and lower CPAs.",
@@ -1344,10 +1344,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Priya Mukherjee",
       "role": "Creative Director & Short-Form Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "Priya specializes in UGC ad scripting, viral Reels and TikTok frameworks, and consumer psychology that drives emotional brand affinity."
     },
-    "image": "/images/creative-brand-identity.webp",
+    "image": "/images/blog-brand-storytelling.webp",
     "keyTakeaways": [
       "Customers do not care about your company's awards; they care about how you solve their personal struggles.",
       "Never position your brand as the hero of the story—your customer is Luke Skywalker; your brand is Yoda.",
@@ -1380,10 +1380,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Arventa Growth Desk",
       "role": "Editorial & Market Intelligence Desk",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-arventa.webp",
       "bio": "The Arventa Ventures Research Desk tracks real-time shifts in ad algorithms, search engine updates, and digital consumer trends across 50+ sectors."
     },
-    "image": "/images/blog-marketing-funnel.webp",
+    "image": "/images/blog-whatsapp-commerce.webp",
     "keyTakeaways": [
       "SMS messages boast a 90%+ read rate within 3 minutes of delivery, making it the most immediate communication channel.",
       "Strict legal compliance (TCPA/CTIA consent) is mandatory; never purchase phone lists or send unsolicited messages.",
@@ -1416,10 +1416,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Jaydeb Jana",
       "role": "Founder & Chief Growth Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/jaydeb-jana-avatar.webp",
       "bio": "Jaydeb has helped scale 120+ SMBs, e-commerce stores, and local enterprises through data-driven performance marketing and high-ROI growth systems."
     },
-    "image": "/images/blog-marketing-funnel.webp",
+    "image": "/images/intro-strategy.webp",
     "keyTakeaways": [
       "Tiered ticket pricing (Super Early Bird, Early Bird, General Admission) drives psychological urgency from day one.",
       "Speaker co-marketing swipe files empower your presenters to promote the event to their own audiences with zero friction.",
@@ -1452,10 +1452,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Jaydeb Jana",
       "role": "Founder & Chief Growth Strategist",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/jaydeb-jana-avatar.webp",
       "bio": "Jaydeb has helped scale 120+ SMBs, e-commerce stores, and local enterprises through data-driven performance marketing and high-ROI growth systems."
     },
-    "image": "/images/solution-funnel.webp",
+    "image": "/images/about-team-hq.webp",
     "keyTakeaways": [
       "Affiliate marketing is pure performance marketing: you only pay out commissions when verified sales or leads are closed.",
       "The top 10% of active affiliates typically generate 90% of total partner revenue.",
@@ -1488,10 +1488,10 @@ export const blogPosts: BlogPost[] = [
     "author": {
       "name": "Ashraful Islam",
       "role": "Head of Performance Marketing",
-      "avatar": "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+      "avatar": "/images/author-ashraful.webp",
       "bio": "Ashraful specializes in Meta Advantage+ AI bidding, multi-million dollar ad spend management, and high-converting paid acquisition funnels."
     },
-    "image": "/images/creative-strategy-studio.webp",
+    "image": "/images/paid-ads.webp",
     "keyTakeaways": [
       "Allocate 70% of budget to proven core revenue channels, 20% to high-potential scaling channels, and 10% to experimental moonshots.",
       "Companies spending 100% on short-term direct response experience diminishing returns; invest at least 25% into brand equity.",

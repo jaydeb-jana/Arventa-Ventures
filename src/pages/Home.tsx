@@ -54,6 +54,31 @@ export default function Home() {
     }
   };
 
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Arventa Ventures",
+    "url": "https://arventaventures.online",
+    "logo": "https://arventaventures.online/images/arventa-og-banner.webp",
+    "image": "https://arventaventures.online/images/about-team-hq.webp",
+    "telephone": "+917872490719",
+    "email": "info@arventaventures.online",
+    "hasMap": "https://share.google/9g673CLWFHS9j6tb9",
+    "sameAs": [
+      "https://www.facebook.com/p/Arventa-Ventures-61573258438828/",
+      "https://www.instagram.com/arventaventures/",
+      "https://share.google/9g673CLWFHS9j6tb9"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Purba Gopinathpur, Chapatala More",
+      "addressLocality": "Contai",
+      "addressRegion": "West Bengal",
+      "postalCode": "721442",
+      "addressCountry": "IN"
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <SEO
@@ -61,7 +86,7 @@ export default function Home() {
         description="Arventa Ventures is a premier full-service digital agency providing high-ROI digital marketing, Meta Ads, SEO, custom website development, mobile application development, and enterprise tech solutions."
         keywords="web development agency, app development company, software development, custom tech services, digital marketing agency, best digital marketing agency in kolkata, meta ads service, SEO agency Kolkata, performance marketing, Arventa Ventures"
         canonicalUrl="/"
-        structuredData={homeSchema}
+        structuredData={[homeSchema, localBusinessSchema]}
       />
       {/* Part 1 (8 Sections) */}
       <HeroSection />

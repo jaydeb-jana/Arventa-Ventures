@@ -16,36 +16,35 @@
     <meta property="og:url" content="https://arventaventures.online/" />
     <meta property="og:title" content="Arventa Ventures - Premier Digital Marketing Agency" />
     <meta property="og:description" content="Arventa Ventures is a top-rated digital marketing agency delivering high-ROI SEO, Meta Ads, Google Ads, and Performance Marketing." />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" />
+    <meta property="og:image" content="https://arventaventures.online/images/arventa-og-banner.webp" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://arventaventures.online/" />
     <meta property="twitter:title" content="Arventa Ventures - Premier Digital Marketing Agency" />
     <meta property="twitter:description" content="Arventa Ventures is a top-rated digital marketing agency delivering high-ROI SEO, Meta Ads, Google Ads, and Performance Marketing." />
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" />
+    <meta property="twitter:image" content="https://arventaventures.online/images/arventa-og-banner.webp" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="https://i.ibb.co/0pgK7VwT/FB-IMG-1786329349374.jpg" />
-    <link rel="shortcut icon" href="https://i.ibb.co/0pgK7VwT/FB-IMG-1786329349374.jpg" />
+    <link rel="icon" type="image/webp" href="/images/arventa-logo.webp" />
+    <link rel="shortcut icon" href="/images/arventa-logo.webp" />
     <link rel="apple-touch-icon" href="https://i.ibb.co/0pgK7VwT/FB-IMG-1786329349374.jpg" />
 
     <!-- Preconnects for fast rendering -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Theme Detection Script (Prevents flash of incorrect theme on initial load) -->
+    <!-- Theme Detection Script (Defaults to dark theme for Arventa Ventures brand aesthetic) -->
     <script>
       (function() {
         try {
           var saved = localStorage.getItem('theme');
-          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-          if (saved === 'dark' || (!saved && prefersDark)) {
-            document.documentElement.classList.add('dark');
-            document.documentElement.classList.remove('light');
-          } else {
+          if (saved === 'light') {
             document.documentElement.classList.remove('dark');
             document.documentElement.classList.add('light');
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
           }
         } catch (e) {}
       })();

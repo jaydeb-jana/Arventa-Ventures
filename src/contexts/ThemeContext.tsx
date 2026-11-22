@@ -18,14 +18,8 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       if (saved === 'light' || saved === 'dark') {
         return saved;
       }
-      // 2. Otherwise default to whatever the user's device system preference is
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        return 'dark';
-      }
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-        return 'light';
-      }
     }
+    // Default brand aesthetic is dark slate
     return 'dark';
   });
 
@@ -48,8 +42,8 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     
     const handleSystemChange = (e: MediaQueryListEvent) => {
       const saved = localStorage.getItem('theme');
-      if (!saved) {
-        setThemeState(e.matches ? 'dark' : 'light');
+      if (saved === 'dark' || saved === 'light') {
+        setThemeState(saved);
       }
     };
 

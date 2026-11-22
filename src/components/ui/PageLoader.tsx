@@ -45,9 +45,8 @@ export const PageLoader: React.FC<PageLoaderProps> = ({ isLoading }) => {
             className="absolute inset-0 flex items-center justify-center"
           >
             <img
-              src="https://i.ibb.co/0pgK7VwT/FB-IMG-1786329349374.jpg"
+              src="/images/arventa-logo.webp"
               alt="Arventa Ventures"
-              referrerPolicy="no-referrer"
               className="w-12 h-12 rounded-xl object-contain"
             />
           </motion.div>

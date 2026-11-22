@@ -76,9 +76,8 @@ export const Navbar = () => {
               className="flex items-center gap-2 z-50 relative"
             >
               <img
-                src="https://i.ibb.co/0pgK7VwT/FB-IMG-1786329349374.jpg"
+                src="/images/arventa-logo.webp"
                 alt="Arventa Ventures Logo"
-                referrerPolicy="no-referrer"
                 className="h-10 w-auto rounded-xl object-contain"
               />
               <span className="text-xl font-bold tracking-tight text-white hidden sm:block">

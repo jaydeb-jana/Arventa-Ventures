@@ -19,9 +19,8 @@ export const Footer = () => {
           <div className="space-y-6 lg:col-span-1">
             <Link to="/" className="inline-block">
               <img
-                src="https://i.ibb.co/0pgK7VwT/FB-IMG-1786329349374.jpg"
+                src="/images/arventa-logo.webp"
                 alt="Arventa Ventures Logo"
-                referrerPolicy="no-referrer"
                 className="h-12 w-auto rounded-xl object-contain mb-4"
               />
             </Link>
@@ -31,7 +30,7 @@ export const Footer = () => {
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="https://www.facebook.com/share/19J9Nm6Gg6/"
+                href="https://www.facebook.com/p/Arventa-Ventures-61573258438828/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-card rounded-full text-slate-400 hover:text-primary transition-colors border border-border"
@@ -40,7 +39,7 @@ export const Footer = () => {
                 <Facebook size={20} />
               </a>
               <a
-                href="https://www.instagram.com/iamjaydebjana"
+                href="https://www.instagram.com/arventaventures/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-card rounded-full text-slate-400 hover:text-primary transition-colors border border-border"
@@ -56,6 +55,17 @@ export const Footer = () => {
                 title="Twitter"
               >
                 <Twitter size={20} />
+              </a>
+              <a
+                href="https://share.google/9g673CLWFHS9j6tb9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-card rounded-full text-slate-400 hover:text-primary transition-colors border border-border"
+                title="Google Business Profile (GMB)"
+              >
+                <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" />
+                </svg>
               </a>
             </div>
           </div>
@@ -89,8 +99,8 @@ export const Footer = () => {
             <h4 className="text-white font-semibold mb-6">Core Services</h4>
             <ul className="space-y-4">
               {[
-                { name: "Website Development", path: "/services" },
-                { name: "App & Software Development", path: "/services" },
+                { name: "Website Development", path: "/services/web-development" },
+                { name: "App & Software Development", path: "/services/app-development" },
                 { name: "Meta Ads & Performance", path: "/services/meta-ads" },
                 { name: "SEO & Organic Growth", path: "/services/seo-services" },
                 { name: "Video & Creator Marketing", path: "/services/video-marketing" },
@@ -136,10 +146,11 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-primary shrink-0 mt-0.5" />
                 <a
-                  href="https://maps.app.goo.gl/Uz4GYtFuQ692XVQG8"
+                  href="https://share.google/9g673CLWFHS9j6tb9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
+                  title="View Arventa Ventures on Google"
                 >
                   Purba Gopinathpur, Chapatala,
                   <br />
@@ -169,12 +180,13 @@ export const Footer = () => {
             </ul>
             <div className="mt-6 flex flex-col gap-2">
               <a
-                href="https://maps.app.goo.gl/Uz4GYtFuQ692XVQG8"
+                href="https://share.google/9g673CLWFHS9j6tb9"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-orange-500/10 hover:bg-orange-500/20 text-orange-500 rounded-lg text-xs font-semibold border border-orange-500/20 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-orange-500/10 hover:bg-orange-500/20 text-orange-400 rounded-lg text-xs font-semibold border border-orange-500/30 transition-all hover:scale-[1.02]"
               >
-                <MapPin size={14} /> View on Google Maps
+                <MapPin size={14} className="text-orange-500" />
+                <span>Google Business Profile (GMB)</span>
               </a>
               <Button
                 asChild

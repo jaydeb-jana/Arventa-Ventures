@@ -8,7 +8,7 @@ export const authors = {
   jaydeb: {
     name: "Jaydeb Jana",
     role: "Founder & Chief Growth Strategist",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200",
+    avatar: "/images/jaydeb-jana-avatar.jpg",
     bio: "Jaydeb has helped scale 120+ SMBs, e-commerce stores, and local enterprises through data-driven performance marketing and high-ROI growth systems."
   },
   suman: {

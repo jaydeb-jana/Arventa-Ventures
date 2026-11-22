@@ -497,14 +497,13 @@ export function TechSolutionsHighlight() {
 
 export function VideoMarketingHighlight() {
   return (
-    <Section className="bg-background">
-      <div className="max-w-5xl mx-auto text-center mb-12">
-        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-          Dominate With Video Marketing
+    <Section className="py-20">
+      <div className="max-w-4xl mx-auto text-center mb-12">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-4">
+          High-Impact Video Marketing & Commercials
         </h2>
-        <p className="text-lg text-slate-400">
-          Video is no longer optional. We produce high-retention short-form and
-          long-form video content that captures attention and drives massive
+        <p className="text-slate-600 dark:text-slate-400 text-lg">
+          We script, shoot, and edit cinematic commercials designed to stop the scroll and drive massive
           engagement on TikTok, Reels, and YouTube.
         </p>
       </div>

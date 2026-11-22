@@ -28,7 +28,7 @@ export function TeamSection() {
           {
             name: "Jaydeb Jana",
             role: "Founder & CEO",
-            img: "https://i.ibb.co/ymz2pCf6/1780219901430.png",
+            img: "/images/jaydeb-jana-portrait.webp",
           },
           {
             name: "Ashraful Islam",
