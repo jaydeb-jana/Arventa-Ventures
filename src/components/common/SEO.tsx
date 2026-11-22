@@ -54,8 +54,9 @@ export const SEO: React.FC<SEOProps> = ({
       "addressCountry": "IN"
     },
     "sameAs": [
-      "https://www.facebook.com/share/19J9Nm6Gg6/",
-      "https://www.instagram.com/iamjaydebjana"
+      "https://www.facebook.com/p/Arventa-Ventures-61573258438828/",
+      "https://www.instagram.com/arventaventures/",
+      "https://share.google/9g673CLWFHS9j6tb9"
     ],
     "priceRange": "$$"
   };
@@ -71,9 +72,9 @@ export const SEO: React.FC<SEOProps> = ({
       <link rel="canonical" href={currentCanonical} />
 
       {/* Favicon */}
-      <link rel="icon" type="image/jpeg" href="https://i.ibb.co/0pgK7VwT/FB-IMG-1786329349374.jpg" />
-      <link rel="shortcut icon" href="https://i.ibb.co/0pgK7VwT/FB-IMG-1786329349374.jpg" />
-      <link rel="apple-touch-icon" href="https://i.ibb.co/0pgK7VwT/FB-IMG-1786329349374.jpg" />
+      <link rel="icon" type="image/webp" href="/images/arventa-logo.webp" />
+      <link rel="shortcut icon" href="/images/arventa-logo.webp" />
+      <link rel="apple-touch-icon" href="/images/arventa-logo.webp" />
 
       {/* Multilingual / Hreflang Tags */}
       {hreflangs && hreflangs.map((item) => (
