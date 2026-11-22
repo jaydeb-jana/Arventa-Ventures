@@ -63,7 +63,7 @@ export function FinalCTA() {
   return (
     <section className="py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-primary"></div>
-      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
+      <div className="absolute inset-0 bg-[url('/images/cubes-pattern.webp')] opacity-10 mix-blend-overlay"></div>
       <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
         <h2 className="text-4xl md:text-7xl font-bold text-white mb-8 leading-tight">
           Ready to dominate <br />
