@@ -183,21 +183,38 @@ ${buildHreflangTags(srvLocPath)}
 
   fs.writeFileSync(path.join(publicDir, 'sitemap-service-locations.xml'), wrapUrlset(serviceLocationUrls), 'utf-8');
 
-  // 7. Complete Flat Sitemap (For legacy consumers)
-  const allUrls = [
-    ...pageUrls,
-    ...serviceUrls,
-    ...infoUrls,
-    ...blogUrls,
-    ...locationUrls,
-    ...serviceLocationUrls
+  // Separate Contai & Kanthi URLs to prioritize at the very top of sitemap.xml
+  const contaiUrls = [
+    ...locationUrls.filter(u => u.includes('/location/contai') || u.includes('/location/kanthi')),
+    ...serviceLocationUrls.filter(u => u.includes('/in/contai') || u.includes('/in/kanthi'))
   ];
-  fs.writeFileSync(path.join(publicDir, 'sitemap-all.xml'), wrapUrlset(allUrls), 'utf-8');
 
-  // 8. MASTER SITEMAP INDEX (https://arventaventures.online/sitemap.xml)
+  const otherLocationUrls = locationUrls.filter(u => !u.includes('/location/contai') && !u.includes('/location/kanthi'));
+  const otherServiceLocationUrls = serviceLocationUrls.filter(u => !u.includes('/in/contai') && !u.includes('/in/kanthi'));
+
+  // 7. Master Comprehensive Unified Sitemap (Ordered for Contai & Core Dominance)
+  const masterUrls = [
+    ...pageUrls,
+    ...contaiUrls,
+    ...serviceUrls,
+    ...blogUrls,
+    ...otherLocationUrls,
+    ...otherServiceLocationUrls,
+    ...infoUrls
+  ];
+
+  // Write master sitemap.xml (Comprehensive URLset)
+  fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), wrapUrlset(masterUrls), 'utf-8');
+  fs.writeFileSync(path.join(publicDir, 'sitemap-all.xml'), wrapUrlset(masterUrls), 'utf-8');
+
+  // 8. MASTER SITEMAP INDEX (https://arventaventures.online/sitemap-index.xml)
   const sitemapIndexContent = `<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>${DOMAIN}/sitemap.xml</loc>
+    <lastmod>${TODAY}</lastmod>
+  </sitemap>
   <sitemap>
     <loc>${DOMAIN}/sitemap-pages.xml</loc>
     <lastmod>${TODAY}</lastmod>
@@ -225,17 +242,17 @@ ${buildHreflangTags(srvLocPath)}
 </sitemapindex>
 `;
 
-  fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapIndexContent, 'utf-8');
+  fs.writeFileSync(path.join(publicDir, 'sitemap-index.xml'), sitemapIndexContent, 'utf-8');
 
-  console.log(`✅ Enterprise Sitemap Index & Sub-Sitemaps generated successfully!`);
-  console.log(`- Master Index: ${DOMAIN}/sitemap.xml (links 6 specialized sub-sitemaps)`);
+  console.log(`✅ Enterprise Unified & Indexed XML Sitemaps generated successfully!`);
+  console.log(`- Master Comprehensive Sitemap: ${DOMAIN}/sitemap.xml (${masterUrls.length} URLs with Contai prioritized)`);
+  console.log(`- Sitemap Index: ${DOMAIN}/sitemap-index.xml`);
   console.log(`- Core Pages: ${pageUrls.length} URLs`);
   console.log(`- Services: ${serviceUrls.length} URLs`);
   console.log(`- City Locations: ${locationUrls.length} URLs`);
   console.log(`- Service Locations: ${serviceLocationUrls.length} URLs`);
   console.log(`- Blogs: ${blogUrls.length} URLs`);
-  console.log(`- Total Indexed URLs: ${allUrls.length}`);
-  console.log(`- Interactive XSLT Styling: ${DOMAIN}/sitemap.xsl`);
+  console.log(`- Interactive XSLT 1.0 Styling: ${DOMAIN}/sitemap.xsl`);
 }
 
 generateSitemap().catch((err) => {
