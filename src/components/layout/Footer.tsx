@@ -13,9 +13,9 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-950 border-t border-border pt-20 pb-10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
+    <footer className="bg-slate-950 border-t border-border pt-14 sm:pt-20 pb-8 sm:pb-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 lg:gap-8 mb-12 sm:mb-16">
           <div className="space-y-6 lg:col-span-1">
             <Link to="/" className="inline-block">
               <img
@@ -81,7 +81,7 @@ export const Footer = () => {
                 { name: "Pricing", path: "/pricing" },
                 { name: "Blog", path: "/blog" },
                 { name: "FAQ", path: "/faq" },
-                { name: "Locations We Serve", path: "/locations" },
+                { name: "Contai Global HQ", path: "/location/contai" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -199,26 +199,26 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-slate-500 text-sm">
+        <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+          <p className="text-slate-500 text-xs sm:text-sm">
             © {currentYear} Arventa Ventures. All Rights Reserved.
           </p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             <Link
               to="/privacy"
-              className="text-slate-500 hover:text-white text-sm transition-colors"
+              className="text-slate-500 hover:text-white text-xs sm:text-sm transition-colors"
             >
               Privacy Policy
             </Link>
             <Link
               to="/terms"
-              className="text-slate-500 hover:text-white text-sm transition-colors"
+              className="text-slate-500 hover:text-white text-xs sm:text-sm transition-colors"
             >
               Terms & Conditions
             </Link>
             <Link
               to="/faq"
-              className="text-slate-500 hover:text-white text-sm transition-colors"
+              className="text-slate-500 hover:text-white text-xs sm:text-sm transition-colors"
             >
               FAQ
             </Link>

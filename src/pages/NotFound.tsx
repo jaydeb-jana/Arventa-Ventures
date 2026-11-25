@@ -97,24 +97,24 @@ export default function NotFound() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-wrap items-center justify-center gap-4 mb-14"
+            className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mb-14"
           >
-            <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-6 rounded-full shadow-lg shadow-orange-500/20">
-              <Link to="/" className="flex items-center text-base">
+            <Button asChild size="lg" className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-6 rounded-full shadow-lg shadow-orange-500/20">
+              <Link to="/" className="flex items-center justify-center text-base">
                 <Home className="w-5 h-5 mr-2" />
                 Back to Homepage
               </Link>
             </Button>
 
-            <Button asChild variant="outline" size="lg" className="border-slate-800 bg-slate-900/80 text-slate-200 hover:text-white hover:bg-slate-800 px-8 py-6 rounded-full">
-              <Link to="/services" className="flex items-center text-base">
+            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto border-slate-800 bg-slate-900/80 text-slate-200 hover:text-white hover:bg-slate-800 px-8 py-6 rounded-full">
+              <Link to="/services" className="flex items-center justify-center text-base">
                 <Grid className="w-5 h-5 mr-2 text-orange-400" />
                 Explore Services
               </Link>
             </Button>
 
-            <Button asChild variant="outline" size="lg" className="border-slate-800 bg-slate-900/80 text-slate-200 hover:text-white hover:bg-slate-800 px-8 py-6 rounded-full">
-              <Link to="/contact" className="flex items-center text-base">
+            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto border-slate-800 bg-slate-900/80 text-slate-200 hover:text-white hover:bg-slate-800 px-8 py-6 rounded-full">
+              <Link to="/contact" className="flex items-center justify-center text-base">
                 <PhoneCall className="w-5 h-5 mr-2 text-orange-400" />
                 Get Free Audit
               </Link>
@@ -143,17 +143,17 @@ export default function NotFound() {
             </Link>
 
             <Link
-              to="/locations"
+              to="/location/contai"
               className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 hover:border-orange-500/50 transition-all group"
             >
               <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-400 mb-3 group-hover:scale-110 transition-transform">
                 <MapPin className="w-5 h-5" />
               </div>
               <h3 className="text-white font-semibold text-base group-hover:text-orange-400 transition-colors flex items-center justify-between">
-                Our Locations
+                Contai Global HQ
                 <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
               </h3>
-              <p className="text-slate-400 text-xs mt-1">Services in Kolkata, Delhi, Mumbai & 580+ cities</p>
+              <p className="text-slate-400 text-xs mt-1">Purba Gopinathpur, Chapatala More</p>
             </Link>
 
             <Link

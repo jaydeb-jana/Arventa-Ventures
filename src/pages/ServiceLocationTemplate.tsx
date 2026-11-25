@@ -481,16 +481,16 @@ const translations = {
                 <MapPin className="w-4 h-4 text-orange-500 mr-2" />
                 {t.badge} {formattedCity}
               </div>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-[1.1]">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-[1.15]">
                 {t.title1} {data.title} {t.title2} <span className="text-orange-500">{formattedCity}</span>
               </h1>
-              <p className="text-xl md:text-2xl text-slate-400 leading-relaxed mb-10 font-light">
+              <p className="text-base sm:text-xl md:text-2xl text-slate-300 leading-relaxed mb-8 sm:mb-10 font-light">
                 {t.desc.replace('{service}', data.title.toLowerCase()).replace('{city}', formattedCity)}
               </p>
-              <div className="flex flex-col sm:flex-row items-center gap-6">
-                <Button size="lg" className="rounded-full bg-orange-500 hover:bg-orange-600 text-white w-full sm:w-auto text-lg h-14 px-8" asChild>
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6">
+                <Button size="lg" className="rounded-full bg-orange-500 hover:bg-orange-600 text-white w-full sm:w-auto text-base sm:text-lg h-12 sm:h-14 px-6 sm:px-8 justify-center shadow-lg shadow-orange-500/20" asChild>
                   <Link to="/contact">
-                    {t.cta} {formattedCity} <ArrowRight className="ml-2 h-5 w-5" />
+                    {t.cta} {formattedCity} <ArrowRight className="ml-2 h-4 sm:h-5 w-4 sm:w-5" />
                   </Link>
                 </Button>
               </div>
@@ -503,7 +503,7 @@ const translations = {
               className="relative"
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-orange-500 to-amber-500 rounded-[2.5rem] transform rotate-3 scale-[1.02] opacity-20 blur-xl"></div>
-              <div className="relative rounded-[2.5rem] overflow-hidden border border-slate-700/50 bg-slate-900 aspect-[4/3] w-full shadow-2xl">
+              <div className="relative rounded-[2.5rem] overflow-hidden border border-slate-700/50 bg-slate-900 aspect-video sm:aspect-[4/3] w-full shadow-2xl">
                 <img 
                   src={data.image || "/images/creative-strategy-studio.webp"} 
                   alt={`${data.title} in ${formattedCity}`}
@@ -759,8 +759,8 @@ const translations = {
               transition={{ duration: 0.5 }}
               className="order-2 lg:order-1 relative"
             >
-              <img src="/images/about-team-hq.webp" alt="Team Collaboration" referrerPolicy="no-referrer"  className="rounded-3xl border border-slate-800 w-full object-cover h-[600px] shadow-2xl" />
-              <div className="absolute -bottom-8 right-0 md:-right-8 bg-slate-900 border border-slate-800 text-white p-8 rounded-3xl shadow-xl max-w-xs">
+              <img src="/images/about-team-hq.webp" alt="Team Collaboration" referrerPolicy="no-referrer" className="rounded-3xl border border-slate-800 w-full object-cover aspect-video sm:aspect-[16/10] lg:aspect-auto lg:h-[550px] shadow-2xl" />
+              <div className="absolute bottom-4 right-4 md:-bottom-8 md:-right-8 bg-slate-900 border border-slate-800 text-white p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl shadow-xl max-w-[260px] sm:max-w-xs">
                 <div className="flex items-center space-x-2 text-orange-500 mb-2">
                   {[1,2,3,4,5].map(i => <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>)}
                 </div>

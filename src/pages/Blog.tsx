@@ -365,7 +365,7 @@ export default function Blog() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
                 
                 {/* Image (7 cols) */}
-                <div className="lg:col-span-7 relative h-72 sm:h-96 lg:h-full min-h-[340px] overflow-hidden">
+                <div className="lg:col-span-7 relative h-56 sm:h-80 md:h-96 lg:h-full min-h-[220px] sm:min-h-[340px] overflow-hidden">
                   <img
                     src={featuredPost.image}
                     alt={featuredPost.title}
@@ -606,7 +606,7 @@ export default function Blog() {
               <Link key={post.id} to={`/blog/${post.id}`} className="group h-full flex flex-col">
                 <Card className="bg-card border-border overflow-hidden hover:border-orange-500/50 transition-all duration-300 group h-full cursor-pointer flex flex-col hover:shadow-xl hover:shadow-orange-500/5 rounded-3xl">
                   {/* Thumbnail Image */}
-                  <div className="relative h-56 overflow-hidden shrink-0">
+                  <div className="relative aspect-video sm:h-56 overflow-hidden shrink-0">
                     <img
                       src={post.image}
                       alt={post.title}

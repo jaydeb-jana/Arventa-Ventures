@@ -42,11 +42,11 @@ export function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-4xl mx-auto"
         >
-          <span className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs sm:text-sm font-semibold bg-orange-500/10 text-orange-400 ring-1 ring-inset ring-orange-500/30 mb-8 shadow-sm">
-            <Sparkles className="w-4 h-4 text-amber-400 shrink-0" />
-            <span>Digital Marketing • Web Development • Custom Tech Solutions</span>
+          <span className="inline-flex items-center gap-2 rounded-full px-3.5 sm:px-4 py-1.5 text-[11px] sm:text-sm font-semibold bg-orange-500/10 text-orange-400 ring-1 ring-inset ring-orange-500/30 mb-6 sm:mb-8 shadow-sm text-center">
+            <Sparkles className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-amber-400 shrink-0" />
+            <span>Digital Marketing • Web & App Development</span>
           </span>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-[1.1]">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-black tracking-tight text-white mb-6 sm:mb-8 leading-[1.15]">
             We Don't Just Market Brands. <br className="hidden md:block" />
             <span className="text-gradient">We Build Them.</span>
           </h1>
@@ -135,7 +135,7 @@ export function IntroSection() {
           <img
             src="/images/intro-strategy.webp"
             alt="Arventa Ventures Strategy Session"
-            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[500px]"
+            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full aspect-video sm:aspect-[16/10] lg:aspect-auto lg:h-[480px]"
           />
         </div>
       </div>
@@ -199,7 +199,7 @@ export function SolutionSection() {
           <img
             src="/images/solution-funnel.webp"
             alt="Arventa Ventures Funnel and Marketing Analytics"
-            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[500px]"
+            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full aspect-video sm:aspect-[16/10] lg:aspect-auto lg:h-[480px]"
           />
         </div>
         <div className="order-1 lg:order-2">

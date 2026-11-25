@@ -304,7 +304,7 @@ ${formData.message || "Looking to discuss scalable growth strategies and free au
           {/* Spotlight Hero Box */}
           <div className="bg-card border border-border rounded-3xl overflow-hidden shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-0">
             {/* Visual Column */}
-            <div className="lg:col-span-5 relative min-h-[350px] lg:min-h-full overflow-hidden bg-slate-950 flex flex-col justify-end p-8">
+            <div className="lg:col-span-5 relative min-h-[240px] sm:min-h-[320px] lg:min-h-full aspect-video sm:aspect-auto overflow-hidden bg-slate-950 flex flex-col justify-end p-6 sm:p-8">
               <img
                 src={currentSpotlight.image}
                 alt={currentSpotlight.client}
@@ -566,7 +566,7 @@ ${formData.message || "Looking to discuss scalable growth strategies and free au
                   className="group bg-card text-card-foreground border border-border hover:border-orange-500/50 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all flex flex-col justify-between"
                 >
                   {/* Card Image Banner */}
-                  <div className="relative h-[280px] sm:h-[320px] overflow-hidden bg-slate-950">
+                  <div className="relative aspect-video sm:h-[300px] overflow-hidden bg-slate-950">
                     <img
                       src={item.image}
                       alt={item.client}
@@ -699,7 +699,7 @@ ${formData.message || "Looking to discuss scalable growth strategies and free au
               {/* Modal Scrollable Body */}
               <div className="p-6 sm:p-8 overflow-y-auto space-y-8 bg-card text-card-foreground">
                 {/* Hero Banner */}
-                <div className="relative h-64 sm:h-72 rounded-2xl overflow-hidden border border-border bg-slate-950">
+                <div className="relative aspect-video sm:h-72 rounded-2xl overflow-hidden border border-border bg-slate-950">
                   <img
                     src={activeModalItem.image}
                     alt={activeModalItem.client}
@@ -1189,7 +1189,7 @@ ${formData.message || "Looking to discuss scalable growth strategies and free au
             </div>
 
             {/* Right Column: In-Page Consultation & Strategy Booking Form */}
-            <div className="lg:col-span-7 bg-card border border-border rounded-3xl p-8 md:p-10 shadow-xl relative text-card-foreground">
+            <div className="lg:col-span-7 bg-card border border-border rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-xl relative text-card-foreground">
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
                 Request a Free 15-Minute Funnel Teardown
               </h3>

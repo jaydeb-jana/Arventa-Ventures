@@ -200,7 +200,7 @@ ${formData.message}`;
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:col-span-7"
           >
-            <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-800/80 rounded-[2.5rem] p-8 md:p-12 shadow-2xl relative overflow-hidden">
+            <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-800/80 rounded-3xl sm:rounded-[2.5rem] p-5 sm:p-8 md:p-12 shadow-2xl relative overflow-hidden">
               {/* Form Decorative Elements */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 rounded-full blur-[80px] -z-10 translate-x-1/2 -translate-y-1/2"></div>
               
@@ -320,18 +320,20 @@ ${formData.message}`;
                           id="service"
                           value={formData.service}
                           onChange={handleChange}
-                          className="w-full appearance-none bg-slate-950/50 border border-slate-800 rounded-2xl px-5 py-4 text-slate-300 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50 transition-all"
+                          className="w-full bg-slate-950/50 border border-slate-800 rounded-xl sm:rounded-2xl px-4 sm:px-5 py-3.5 sm:py-4 pr-12 text-slate-200 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50 transition-all appearance-none [&::-ms-expand]:hidden [-webkit-appearance:none] [-moz-appearance:none] cursor-pointer"
                         >
-                          <option disabled>Select a service...</option>
-                          <option>Paid Acquisition (Google/Meta Ads)</option>
-                          <option>SEO & Organic Growth</option>
-                          <option>Social Media & Content</option>
-                          <option>Conversion Rate Optimization (CRO)</option>
-                          <option>Full-Scale Agency Partnership</option>
+                          <option disabled value="">Select a service...</option>
+                          <option value="Paid Acquisition (Meta & Google Ads)">Paid Acquisition (Meta & Google Ads)</option>
+                          <option value="SEO & Organic Growth">SEO & Google Maps 3-Pack</option>
+                          <option value="Full-Stack Web & App Development">Full-Stack Web & App Development</option>
+                          <option value="High-Hook Video & Creative Production">High-Hook Video & Creative</option>
+                          <option value="Full-Scale Agency Partnership">Full-Scale Agency Partnership</option>
                         </select>
                         {/* Custom Select Arrow */}
-                        <div className="absolute inset-y-0 right-5 flex items-center pointer-events-none">
-                          <svg className="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <div className="absolute inset-y-0 right-4 flex items-center pointer-events-none text-orange-500">
+                          <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7"></path>
+                          </svg>
                         </div>
                       </div>
                     </div>
@@ -352,11 +354,11 @@ ${formData.message}`;
                     </div>
                     
                     <div className="pt-4">
-                      <Button type="submit" size="lg" className="w-full h-16 rounded-2xl bg-orange-500 hover:bg-orange-600 text-white text-lg font-bold shadow-xl shadow-orange-500/20 group">
+                      <Button type="submit" size="lg" className="w-full h-13 sm:h-16 rounded-xl sm:rounded-2xl bg-orange-500 hover:bg-orange-600 text-white text-base sm:text-lg font-bold shadow-xl shadow-orange-500/20 group justify-center">
                         Submit Inquiry 
-                        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                        <ArrowRight className="ml-2 h-4 sm:h-5 w-4 sm:w-5 group-hover:translate-x-1 transition-transform" />
                       </Button>
-                      <p className="text-center text-slate-500 text-sm mt-4">
+                      <p className="text-center text-slate-500 text-xs sm:text-sm mt-4">
                         By submitting this form, you agree to our privacy policy.
                       </p>
                     </div>

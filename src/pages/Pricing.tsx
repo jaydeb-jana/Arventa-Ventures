@@ -396,7 +396,7 @@ export default function Pricing() {
                 key={idx}
                 className="rounded-3xl overflow-hidden bg-card border border-border hover:border-orange-500/40 transition-all duration-300 flex flex-col group shadow-lg"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative aspect-video sm:h-48 overflow-hidden">
                   <img
                     src={pillar.image}
                     alt={pillar.title}
@@ -442,7 +442,7 @@ export default function Pricing() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Rule 1: Video Production Mode */}
             <div className="rounded-3xl overflow-hidden bg-card border border-border flex flex-col shadow-lg">
-              <div className="relative h-40 overflow-hidden">
+              <div className="relative aspect-video sm:h-40 overflow-hidden">
                 <img
                   src="/images/creative-motion-graphics.webp"
                   alt="AI Video & Remote Editing Studio"
@@ -468,7 +468,7 @@ export default function Pricing() {
 
             {/* Rule 2: Physical Shoot & Influencer Extra Cost */}
             <div className="rounded-3xl overflow-hidden bg-card border border-amber-500/40 flex flex-col shadow-xl shadow-amber-500/5">
-              <div className="relative h-40 overflow-hidden">
+              <div className="relative aspect-video sm:h-40 overflow-hidden">
                 <img
                   src="/images/creative-strategy-studio.webp"
                   alt="On-Site Shoot Production"
@@ -494,7 +494,7 @@ export default function Pricing() {
 
             {/* Rule 3: Ad Spend Budget */}
             <div className="rounded-3xl overflow-hidden bg-card border border-border flex flex-col shadow-lg">
-              <div className="relative h-40 overflow-hidden">
+              <div className="relative aspect-video sm:h-40 overflow-hidden">
                 <img
                   src="/images/paid-ads.webp"
                   alt="Transparent Media Ad Spend"
@@ -590,6 +590,9 @@ export default function Pricing() {
           </p>
         </div>
 
+        <div className="block sm:hidden text-xs text-orange-400 font-medium mb-2 text-right">
+          ← Swipe horizontally to compare all packages →
+        </div>
         <div className="rounded-3xl border border-border overflow-hidden bg-card shadow-xl overflow-x-auto">
           <table className="w-full text-left text-xs md:text-sm border-collapse min-w-[640px]">
             <thead>

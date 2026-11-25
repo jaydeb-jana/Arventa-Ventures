@@ -16,10 +16,10 @@ export const Section = React.forwardRef<HTMLElement, SectionProps>(
 
     const animationProps = animate
       ? {
-          initial: { opacity: 0, y: 20 },
+          initial: { opacity: 0, y: 15 },
           whileInView: { opacity: 1, y: 0 },
-          viewport: { once: true, margin: "-100px" },
-          transition: { duration: 0.7, ease: "easeOut" },
+          viewport: { once: true, margin: "50px" },
+          transition: { duration: 0.5, ease: "easeOut" },
         }
       : {};
 

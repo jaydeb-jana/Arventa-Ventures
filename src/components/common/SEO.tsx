@@ -71,10 +71,14 @@ export const SEO: React.FC<SEOProps> = ({
       <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
       <link rel="canonical" href={currentCanonical} />
 
-      {/* Favicon */}
-      <link rel="icon" type="image/webp" href="/images/arventa-logo.webp" />
-      <link rel="shortcut icon" href="/images/arventa-logo.webp" />
-      <link rel="apple-touch-icon" href="/images/arventa-logo.webp" />
+      {/* Favicons (Google Search Compliant) */}
+      <link rel="icon" href="/favicon.ico" sizes="48x48" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+      <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+      <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="shortcut icon" href="/favicon-48.png" />
 
       {/* Multilingual / Hreflang Tags */}
       {hreflangs && hreflangs.map((item) => (

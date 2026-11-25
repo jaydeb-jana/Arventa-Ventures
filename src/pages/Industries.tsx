@@ -538,7 +538,7 @@ export default function Industries() {
                   className="group flex flex-col h-full rounded-3xl overflow-hidden bg-card border border-border hover:border-orange-500/50 transition-all duration-300 shadow-xl hover:shadow-orange-500/10"
                 >
                   {/* Top Image Banner */}
-                  <div className="relative h-56 overflow-hidden shrink-0">
+                  <div className="relative aspect-video sm:h-56 overflow-hidden shrink-0">
                     <img
                       src={ind.image}
                       alt={ind.name}

@@ -611,7 +611,7 @@ export default function BlogPost() {
               {relatedPosts.map((relPost) => (
                 <Link key={relPost.id} to={`/blog/${relPost.id}`} className="group h-full">
                   <Card className="bg-card border-border overflow-hidden group-hover:border-orange-500/50 transition-all duration-300 h-full flex flex-col hover:shadow-xl hover:shadow-orange-500/5">
-                    <div className="relative h-48 overflow-hidden shrink-0">
+                    <div className="relative aspect-video sm:h-48 overflow-hidden shrink-0">
                       <img
                         src={relPost.image}
                         alt={relPost.title}

@@ -567,7 +567,7 @@ export default function Services() {
 
                 {/* Visual Image Column */}
                 <div className="w-full lg:w-1/2">
-                  <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-slate-800 group shadow-[0_0_40px_rgba(0,0,0,0.6)] bg-slate-900">
+                  <div className="relative aspect-video sm:aspect-[4/3] rounded-3xl overflow-hidden border border-slate-800 group shadow-[0_0_40px_rgba(0,0,0,0.6)] bg-slate-900">
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10" />
                     <img
                       src={service.image}
@@ -992,7 +992,10 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto overflow-x-auto">
+        <div className="max-w-6xl mx-auto overflow-x-auto pb-4">
+          <div className="block sm:hidden text-[11px] text-orange-400 font-medium mb-2 text-right">
+            ← Swipe horizontally to compare all features →
+          </div>
           <table className="w-full text-left text-xs sm:text-sm border-collapse min-w-[650px]">
             <thead>
               <tr className="border-b border-slate-800 text-slate-400">

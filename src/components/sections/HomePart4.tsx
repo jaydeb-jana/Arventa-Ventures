@@ -33,17 +33,17 @@ export function TeamSection() {
           {
             name: "Ashraful Islam",
             role: "Head of Performance Marketing",
-            img: "/images/paid-ads.webp",
+            img: "/images/author-ashraful.webp",
           },
           {
             name: "Priya Mukherjee",
             role: "Creative & Content Director",
-            img: "/images/content-marketing.webp",
+            img: "/images/author-priya.webp",
           },
           {
             name: "Suman Roy",
             role: "Lead SEO & Tech Strategist",
-            img: "/images/seo-strategy.webp",
+            img: "/images/author-suman.webp",
           },
         ].map((member, i) => (
           <div key={i} className="group">
@@ -352,7 +352,7 @@ export function BlogPreview() {
               <img
                 src={post.img}
                 alt={post.title}
-                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full aspect-video sm:h-48 object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <span className="text-orange-500 text-xs font-bold uppercase tracking-wider mb-2 block">
@@ -363,6 +363,11 @@ export function BlogPreview() {
             </h3>
           </Link>
         ))}
+      </div>
+      <div className="mt-8 text-center md:hidden">
+        <Button asChild variant="outline" className="w-full sm:w-auto">
+          <Link to="/blog">Read All Articles on Our Blog</Link>
+        </Button>
       </div>
     </Section>
   );

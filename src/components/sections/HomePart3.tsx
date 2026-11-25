@@ -111,7 +111,7 @@ export function CaseStudyOne() {
           <img
             src="/images/casestudy-apparel.webp"
             alt="Nova Fashion E-commerce Growth Case Study"
-            className="relative rounded-2xl border border-border object-cover w-full h-[400px]"
+            className="relative rounded-2xl border border-border object-cover w-full aspect-video sm:aspect-[16/10] lg:aspect-auto lg:h-[400px]"
           />
         </div>
         <div>
@@ -183,7 +183,7 @@ export function CaseStudyTwo() {
           <img
             src="/images/casestudy-clinic.webp"
             alt="Elite Dental Care Local Search Case Study"
-            className="relative rounded-2xl border border-border object-cover w-full h-[400px] shadow-2xl"
+            className="relative rounded-2xl border border-border object-cover w-full aspect-video sm:aspect-[16/10] lg:aspect-auto lg:h-[400px] shadow-2xl"
           />
         </div>
       </div>
@@ -244,7 +244,7 @@ export function CreativeShowcase() {
         ].map((item, i) => (
           <div
             key={i}
-            className="aspect-square bg-slate-900 rounded-3xl border border-border overflow-hidden group relative"
+            className="aspect-[4/3] sm:aspect-video md:aspect-square bg-slate-900 rounded-2xl sm:rounded-3xl border border-border overflow-hidden group relative"
           >
             <img
               src={item.img}

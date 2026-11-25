@@ -4,7 +4,7 @@
  */
 import { LanguageProvider } from "@/src/contexts/LanguageContext";
 import { ThemeProvider } from "@/src/contexts/ThemeContext";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Layout } from "@/src/components/layout/Layout";
 
 import Home from "@/src/pages/Home";
@@ -24,7 +24,6 @@ import ServiceDetail from "@/src/pages/ServiceDetail";
 import InfoDetail from "@/src/pages/InfoDetail";
 import LocationTemplate from "@/src/pages/LocationTemplate";
 import ServiceLocationTemplate from "@/src/pages/ServiceLocationTemplate";
-import Locations from "@/src/pages/Locations";
 import NotFound from "@/src/pages/NotFound";
 
 export default function App() {
@@ -40,7 +39,7 @@ export default function App() {
               <Route path="services" element={<Services />} />
               <Route path="services/:slug" element={<ServiceDetail />} />
               <Route path="services/:slug/in/:city" element={<ServiceLocationTemplate />} />
-              <Route path="locations" element={<Locations />} />
+              <Route path="locations" element={<Navigate to="/location/contai" replace />} />
               <Route path="location/:city" element={<LocationTemplate />} />
               <Route path="info/:slug" element={<InfoDetail />} />
               <Route path="portfolio" element={<Portfolio />} />

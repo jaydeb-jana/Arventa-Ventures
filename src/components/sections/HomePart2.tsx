@@ -127,7 +127,7 @@ export function SEOSpecialization() {
           <img
             src="/images/seo-strategy.webp"
             alt="Arventa SEO Strategy and Keyword Rankings"
-            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[400px]"
+            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full aspect-video sm:aspect-[16/10] lg:aspect-auto lg:h-[400px]"
           />
         </div>
       </div>
@@ -144,7 +144,7 @@ export function PaidAdsSpecialization() {
           <img
             src="/images/paid-ads.webp"
             alt="Arventa High-ROAS Paid Acquisition Strategy"
-            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[400px]"
+            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full aspect-video sm:aspect-[16/10] lg:aspect-auto lg:h-[400px]"
           />
         </div>
         <div className="order-1 lg:order-2">
@@ -211,7 +211,7 @@ export function SocialMediaSpecialization() {
           <img
             src="/images/social-media.webp"
             alt="Arventa Social Media Community Management"
-            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[400px]"
+            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full aspect-video sm:aspect-[16/10] lg:aspect-auto lg:h-[400px]"
           />
         </div>
       </div>
@@ -228,7 +228,7 @@ export function ContentMarketingFocus() {
           <img
             src="/images/content-marketing.webp"
             alt="Arventa Content Marketing and Storytelling"
-            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full h-[400px]"
+            className="relative rounded-2xl border border-border shadow-2xl object-cover w-full aspect-video sm:aspect-[16/10] lg:aspect-auto lg:h-[400px]"
           />
         </div>
         <div className="order-1 lg:order-2">
@@ -283,7 +283,7 @@ export function PortfolioHighlights() {
               <img
                 src={item.image}
                 alt={item.client}
-                className="w-full h-[300px] object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full aspect-[4/3] sm:aspect-video sm:h-[300px] object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
               <div className="absolute top-4 right-4 p-2 bg-slate-900/80 border border-slate-700 rounded-full text-slate-300 group-hover:text-orange-500 group-hover:border-orange-500/50 transition-colors">

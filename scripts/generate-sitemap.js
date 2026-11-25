@@ -58,7 +58,6 @@ async function generateSitemap() {
     { path: '/about', priority: '0.8', changefreq: 'weekly' },
     { path: '/ceo', priority: '0.7', changefreq: 'monthly' },
     { path: '/services', priority: '0.9', changefreq: 'weekly' },
-    { path: '/locations', priority: '0.9', changefreq: 'daily' },
     { path: '/portfolio', priority: '0.85', changefreq: 'weekly' },
     { path: '/industries', priority: '0.8', changefreq: 'monthly' },
     { path: '/pricing', priority: '0.85', changefreq: 'weekly' },

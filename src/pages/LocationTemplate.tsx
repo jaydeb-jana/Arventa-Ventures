@@ -77,9 +77,9 @@ export default function LocationTemplate() {
     setCheckedAuditItems(prev => ({ ...prev, [idx]: !prev[idx] }));
   };
 
-  // If not one of the top locations, redirect cleanly to /locations
+  // If not one of the top locations, redirect cleanly to /location/contai
   if (!loc) {
-    return <Navigate to="/locations" replace />;
+    return <Navigate to="/location/contai" replace />;
   }
 
   const activeSector = sectorMultipliers[selectedSector] || sectorMultipliers.retail;
@@ -183,15 +183,15 @@ export default function LocationTemplate() {
               </p>
 
               {/* Conversion Buttons */}
-              <div className="flex flex-wrap items-center gap-4 pt-2">
-                <Button size="lg" className="rounded-full bg-orange-500 hover:bg-orange-600 text-white font-bold h-14 px-8 text-base shadow-xl shadow-orange-500/25 transition-transform active:scale-95" asChild>
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2">
+                <Button size="lg" className="w-full sm:w-auto rounded-full bg-orange-500 hover:bg-orange-600 text-white font-bold h-12 sm:h-14 px-5 sm:px-8 text-sm sm:text-base shadow-xl shadow-orange-500/25 transition-transform active:scale-95 justify-center" asChild>
                   <Link to="/contact">
-                    Claim Free {loc.name} Growth Audit <ArrowRight className="ml-2 w-5 h-5" />
+                    Claim Free {loc.name} Growth Audit <ArrowRight className="ml-2 w-4 sm:w-5 h-4 sm:h-5 shrink-0" />
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="rounded-full border-slate-700 hover:bg-slate-900 text-slate-200 h-14 px-8 text-base font-semibold" asChild>
+                <Button size="lg" variant="outline" className="w-full sm:w-auto rounded-full bg-slate-900/80 border-slate-700 hover:bg-slate-800 text-white h-12 sm:h-14 px-5 sm:px-8 text-sm sm:text-base font-semibold justify-center" asChild>
                   <a href={`https://wa.me/917872490719?text=Hello%20Jaydeb,%20I%20am%20interested%20in%20scaling%20my%20business%20in%20${encodeURIComponent(loc.name)}.`} target="_blank" rel="noopener noreferrer">
-                    <MessageCircle className="mr-2 w-5 h-5 text-emerald-400" /> WhatsApp Direct (+91 7872490719)
+                    <MessageCircle className="mr-2 w-4 sm:w-5 h-4 sm:h-5 text-emerald-400 shrink-0" /> WhatsApp Direct (+91 7872490719)
                   </a>
                 </Button>
               </div>
@@ -218,7 +218,7 @@ export default function LocationTemplate() {
               className="lg:col-span-5 relative"
             >
               <div className="relative rounded-3xl overflow-hidden border border-slate-800 shadow-[0_0_50px_rgba(0,0,0,0.8)] bg-slate-900 group">
-                <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="aspect-video sm:aspect-[4/3] overflow-hidden relative">
                   <img
                     src={loc.heroImage}
                     alt={`${loc.name} Digital Marketing Headquarters`}
@@ -572,15 +572,15 @@ export default function LocationTemplate() {
 
         {/* Dynamic Calculator Box */}
         <div className="max-w-4xl mx-auto p-8 sm:p-12 rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl relative">
-          <div className="mb-10">
-            <div className="flex justify-between items-center mb-4">
+          <div className="mb-8 sm:mb-10">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-4">
               <div>
-                <label htmlFor="budget-slider" className="text-sm font-bold text-slate-300 uppercase tracking-wider block">
+                <label htmlFor="budget-slider" className="text-xs sm:text-sm font-bold text-slate-300 uppercase tracking-wider block">
                   Monthly Growth Budget ({loc.name}):
                 </label>
                 <span className="text-xs text-orange-400 font-medium">Selected: {activeSector.name}</span>
               </div>
-              <span className="text-2xl sm:text-3xl font-black text-orange-400">
+              <span className="text-2xl sm:text-3xl font-black text-orange-400 font-mono tracking-tight whitespace-nowrap">
                 ₹{monthlyBudget.toLocaleString("en-IN")}
               </span>
             </div>
@@ -594,41 +594,41 @@ export default function LocationTemplate() {
               onChange={(e) => setMonthlyBudget(Number(e.target.value))}
               className="w-full h-3 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-orange-500"
             />
-            <div className="flex justify-between text-[11px] text-slate-500 mt-2 font-medium">
-              <span>₹25,000 (Local Clinic / Retail)</span>
-              <span>₹2,50,000 (Regional Scaling)</span>
-              <span>₹10,00,000+ (Enterprise Leader)</span>
+            <div className="flex justify-between text-[10px] sm:text-[11px] text-slate-400 mt-2 font-medium">
+              <span>₹25,000 <span className="hidden xs:inline sm:inline text-slate-500">(Clinic / Retail)</span></span>
+              <span>₹2,50,000 <span className="hidden xs:inline sm:inline text-slate-500">(Regional)</span></span>
+              <span>₹10,00,000+ <span className="hidden xs:inline sm:inline text-slate-500">(Enterprise)</span></span>
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            <div className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800">
-              <div className="text-2xl sm:text-3xl font-black text-emerald-400 mb-1">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 text-center">
+            <div className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-950/90 border border-slate-800 shadow-md">
+              <div className="text-xl sm:text-2xl md:text-3xl font-black text-emerald-400 mb-1 tracking-tight truncate">
                 ₹{calculatedMetrics.estimatedRev.toLocaleString("en-IN")}
               </div>
-              <div className="text-xs font-bold text-white">Projected Revenue</div>
-              <div className="text-[10px] text-slate-400 mt-0.5">~{activeSector.roas}x Sector ROAS</div>
+              <div className="text-[11px] sm:text-xs font-bold text-slate-200">Projected Revenue</div>
+              <div className="text-[9px] sm:text-[10px] text-slate-400 mt-0.5">~{activeSector.roas}x Sector ROAS</div>
             </div>
-            <div className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800">
-              <div className="text-2xl sm:text-3xl font-black text-orange-400 mb-1">
+            <div className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-950/90 border border-slate-800 shadow-md">
+              <div className="text-xl sm:text-2xl md:text-3xl font-black text-orange-400 mb-1 tracking-tight truncate">
                 ₹{calculatedMetrics.estimatedProfit.toLocaleString("en-IN")}
               </div>
-              <div className="text-xs font-bold text-white">Gross Margin Yield</div>
-              <div className="text-[10px] text-slate-400 mt-0.5">At {Math.round(activeSector.margin * 100)}% Margin</div>
+              <div className="text-[11px] sm:text-xs font-bold text-slate-200">Gross Margin Yield</div>
+              <div className="text-[9px] sm:text-[10px] text-slate-400 mt-0.5">At {Math.round(activeSector.margin * 100)}% Margin</div>
             </div>
-            <div className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800">
-              <div className="text-2xl sm:text-3xl font-black text-blue-400 mb-1">
+            <div className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-950/90 border border-slate-800 shadow-md">
+              <div className="text-xl sm:text-2xl md:text-3xl font-black text-blue-400 mb-1 tracking-tight truncate">
                 {calculatedMetrics.estimatedLeads}+
               </div>
-              <div className="text-xs font-bold text-white">{loc.name} Leads/Walk-ins</div>
-              <div className="text-[10px] text-slate-400 mt-0.5">High-intent local buyers</div>
+              <div className="text-[11px] sm:text-xs font-bold text-slate-200">{loc.name} Leads</div>
+              <div className="text-[9px] sm:text-[10px] text-slate-400 mt-0.5">High-intent buyers</div>
             </div>
-            <div className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800">
-              <div className="text-2xl sm:text-3xl font-black text-amber-400 mb-1">
+            <div className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-950/90 border border-slate-800 shadow-md">
+              <div className="text-xl sm:text-2xl md:text-3xl font-black text-amber-400 mb-1 tracking-tight truncate">
                 -{calculatedMetrics.cacReduction}%
               </div>
-              <div className="text-xs font-bold text-white">Target CAC Cut</div>
-              <div className="text-[10px] text-slate-400 mt-0.5">Via sub-second CAPI</div>
+              <div className="text-[11px] sm:text-xs font-bold text-slate-200">Target CAC Cut</div>
+              <div className="text-[9px] sm:text-[10px] text-slate-400 mt-0.5">Via sub-second CAPI</div>
             </div>
           </div>
 
@@ -842,8 +842,11 @@ export default function LocationTemplate() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto overflow-x-auto">
-          <table className="w-full text-left text-xs sm:text-sm border-collapse min-w-[600px]">
+        <div className="max-w-5xl mx-auto overflow-x-auto pb-4">
+          <div className="block sm:hidden text-[11px] text-orange-400 font-medium mb-2 text-right">
+            ← Scroll horizontally to compare all features →
+          </div>
+          <table className="w-full text-left text-xs sm:text-sm border-collapse min-w-[540px]">
             <thead>
               <tr className="border-b border-slate-800 text-slate-400">
                 <th className="py-4 px-4 font-bold uppercase tracking-wider">Evaluation Vector</th>
@@ -1054,13 +1057,13 @@ export default function LocationTemplate() {
             Partner with West Bengal's leading performance marketing and software engineering agency to acquire customers predictably.
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button asChild size="lg" className="h-16 px-10 text-base rounded-full bg-orange-500 hover:bg-orange-600 text-white font-bold shadow-xl shadow-orange-500/25 transition-transform active:scale-95">
-              <Link to="/contact">Claim Free {loc.name} Strategy Audit <ArrowRight className="ml-2 w-5 h-5" /></Link>
+          <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3.5 sm:gap-4 max-w-xl mx-auto">
+            <Button asChild size="lg" className="w-full sm:w-auto h-14 sm:h-16 px-6 sm:px-10 text-sm sm:text-base rounded-full bg-orange-500 hover:bg-orange-600 text-white font-bold shadow-xl shadow-orange-500/25 transition-transform active:scale-95 justify-center">
+              <Link to="/contact">Claim Free {loc.name} Strategy Audit <ArrowRight className="ml-2 w-4 sm:w-5 h-4 sm:h-5 shrink-0" /></Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="h-16 px-8 text-base rounded-full border-slate-700 hover:bg-slate-900 text-white font-semibold">
+            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto h-14 sm:h-16 px-6 sm:px-8 text-sm sm:text-base rounded-full bg-slate-900/80 border-slate-700 hover:bg-slate-800 text-white font-semibold justify-center">
               <a href={`https://wa.me/917872490719?text=Hello%20Jaydeb,%20I%20am%20interested%20in%20digital%20marketing%20in%20${encodeURIComponent(loc.name)}`} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="mr-2 w-5 h-5 text-emerald-400" /> WhatsApp Direct (+91 7872490719)
+                <MessageCircle className="mr-2 w-4 sm:w-5 h-4 sm:h-5 text-emerald-400 shrink-0" /> WhatsApp Direct (+91 7872490719)
               </a>
             </Button>
           </div>

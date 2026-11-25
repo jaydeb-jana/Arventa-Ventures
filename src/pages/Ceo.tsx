@@ -583,9 +583,9 @@ ${consultForm.message || "Executive strategy consultation requested directly wit
               className="lg:col-span-7"
             >
               {/* Executive Status Badge */}
-              <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-card border border-border text-foreground text-xs sm:text-sm mb-6 tracking-wide uppercase font-semibold shadow-md">
-                <span className="w-2.5 h-2.5 rounded-full bg-orange-500 animate-pulse" />
-                <span>Executive Leadership & Founder</span>
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-card border border-border text-foreground text-[11px] sm:text-xs mb-6 tracking-wide uppercase font-semibold shadow-md">
+                <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse shrink-0" />
+                <span>Executive Leadership</span>
                 <span className="text-muted-foreground">•</span>
                 <span className="text-orange-500 font-bold">Arventa Ventures</span>
               </div>
@@ -783,12 +783,12 @@ ${consultForm.message || "Executive strategy consultation requested directly wit
                 <img 
                   src="/images/jaydeb-jana-warroom.webp" 
                   alt="Jaydeb Jana directing strategy at Arventa Ventures Innovation War Room" 
-                  className="w-full h-[380px] sm:h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full aspect-[16/10] sm:aspect-video lg:aspect-auto lg:h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
                 
-                <div className="absolute bottom-6 left-6 right-6 p-5 rounded-2xl bg-slate-950/85 backdrop-blur-md border border-white/10">
+                <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-slate-950/85 backdrop-blur-md border border-white/10">
                   <div className="flex items-center gap-2 text-orange-400 text-xs font-bold uppercase tracking-wider mb-1">
                     <Terminal className="w-4 h-4" />
                     Arventa Ventures Strategy & Telemetry Hub
@@ -1038,7 +1038,7 @@ ${consultForm.message || "Executive strategy consultation requested directly wit
                   className="rounded-3xl bg-card border border-border overflow-hidden hover:border-orange-500/50 transition-all flex flex-col justify-between group shadow-xl"
                 >
                   {/* Image Card Header */}
-                  <div className="relative h-56 overflow-hidden">
+                  <div className="relative aspect-video sm:h-56 overflow-hidden">
                     <img 
                       src={study.image} 
                       alt={study.client} 
@@ -1209,12 +1209,12 @@ ${consultForm.message || "Executive strategy consultation requested directly wit
                 <img 
                   src="/images/jaydeb-jana-keynote.webp" 
                   alt="Jaydeb Jana presenting on stage at tech and performance marketing summit" 
-                  className="w-full h-[380px] sm:h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full aspect-[16/10] sm:aspect-video lg:aspect-auto lg:h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
                 
-                <div className="absolute bottom-6 left-6 right-6 p-5 rounded-2xl bg-slate-950/85 backdrop-blur-md border border-white/10">
+                <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-slate-950/85 backdrop-blur-md border border-white/10">
                   <div className="text-orange-400 text-xs font-bold uppercase tracking-wider mb-1 flex items-center gap-2">
                     <Rocket className="w-4 h-4" />
                     Public Keynotes & Executive Briefings
@@ -1479,7 +1479,7 @@ ${consultForm.message || "Executive strategy consultation requested directly wit
       {/* 8. Direct Consultation Booking Section */}
       <section id="consultation" className="py-24 bg-background relative border-b border-border">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="rounded-3xl bg-card border border-orange-500/30 p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+          <div className="rounded-3xl bg-card border border-orange-500/30 p-5 sm:p-8 md:p-12 shadow-2xl relative overflow-hidden">
             {/* Ambient Background Glow */}
             <div className="absolute top-0 right-0 w-80 h-80 bg-orange-500/10 blur-[100px] rounded-full pointer-events-none" />
 
@@ -1654,9 +1654,9 @@ ${consultForm.message || "Executive strategy consultation requested directly wit
                     <Button
                       type="submit"
                       size="lg"
-                      className="w-full rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-bold text-base h-12 shadow-lg shadow-orange-500/20"
+                      className="w-full rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-bold text-xs sm:text-base h-12 shadow-lg shadow-orange-500/20 text-center justify-center whitespace-normal px-4"
                     >
-                      Submit Executive Consultation Request <Send className="ml-2 w-4 h-4" />
+                      Submit Executive Consultation Request <Send className="ml-2 w-4 h-4 shrink-0" />
                     </Button>
                   </form>
                 )}

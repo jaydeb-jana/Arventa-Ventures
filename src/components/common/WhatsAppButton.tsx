@@ -28,7 +28,7 @@ export const WhatsAppButton: React.FC = () => {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end pointer-events-auto">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end pointer-events-auto">
       {/* Optional Notification Tooltip */}
       <AnimatePresence>
         {showTooltip && (
@@ -37,7 +37,7 @@ export const WhatsAppButton: React.FC = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.9 }}
             transition={{ duration: 0.3 }}
-            className="mb-3 mr-1 bg-slate-900/95 backdrop-blur-md border border-emerald-500/30 text-white rounded-2xl p-3.5 shadow-2xl max-w-[260px] relative text-xs md:text-sm flex items-start gap-2.5"
+            className="mb-2.5 mr-1 bg-slate-900/95 backdrop-blur-md border border-emerald-500/30 text-white rounded-2xl p-3 sm:p-3.5 shadow-2xl max-w-[220px] sm:max-w-[260px] relative text-xs flex items-start gap-2.5"
           >
             <button
               onClick={handleCloseTooltip}
@@ -46,10 +46,10 @@ export const WhatsAppButton: React.FC = () => {
             >
               <X className="w-3 h-3" />
             </button>
-            <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping shrink-0 mt-1" />
+            <div className="w-2 h-2 rounded-full bg-emerald-500 animate-ping shrink-0 mt-1" />
             <div>
-              <p className="font-semibold text-emerald-400 mb-0.5">Need Digital Marketing Services?</p>
-              <p className="text-slate-300 leading-tight">Chat with us directly on WhatsApp for quick inquiries!</p>
+              <p className="font-semibold text-emerald-400 text-xs mb-0.5">Need Growth Marketing?</p>
+              <p className="text-slate-300 text-[11px] leading-tight">Chat with us directly on WhatsApp for quick audits!</p>
             </div>
           </motion.div>
         )}
@@ -61,14 +61,14 @@ export const WhatsAppButton: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
-        className="group relative flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-[0_10px_25px_rgba(16,185,129,0.4)] hover:shadow-[0_15px_35px_rgba(16,185,129,0.6)] transition-all duration-300 hover:scale-110 active:scale-95"
+        className="group relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-[0_10px_25px_rgba(16,185,129,0.4)] hover:shadow-[0_15px_35px_rgba(16,185,129,0.6)] transition-all duration-300 hover:scale-105 active:scale-95"
       >
         {/* Pulse Effect Rings */}
         <span className="absolute inset-0 rounded-full bg-emerald-500 opacity-75 animate-ping pointer-events-none" />
         
         {/* Official WhatsApp SVG Icon */}
         <svg
-          className="w-7 h-7 md:w-8 md:h-8 fill-current relative z-10"
+          className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 fill-current relative z-10"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

@@ -327,7 +327,7 @@ export default function About() {
               className="lg:col-span-5 relative"
             >
               <div className="relative rounded-3xl overflow-hidden border border-border/80 shadow-2xl bg-card">
-                <div className="aspect-[4/5] overflow-hidden relative">
+                <div className="aspect-video sm:aspect-[4/3] lg:aspect-[4/5] overflow-hidden relative">
                   <img 
                     src="/images/about-team-hq.webp" 
                     alt="Arventa Ventures Global Agency Collaboration" 
@@ -411,7 +411,7 @@ export default function About() {
                 <img 
                   src="/images/jaydeb-jana-executive.webp" 
                   alt="Jaydeb Jana Founder & CEO" 
-                  className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full aspect-[3/4] sm:h-[450px] object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5 p-4 rounded-2xl bg-slate-950/85 backdrop-blur-md border border-white/10 text-white">
@@ -646,7 +646,7 @@ export default function About() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-          <div className="md:col-span-8 rounded-3xl overflow-hidden border border-border relative h-72 sm:h-96 group">
+          <div className="md:col-span-8 rounded-3xl overflow-hidden border border-border relative h-80 sm:h-96 group">
             <img 
               src="/images/creative-studio-production.webp" 
               alt="Arventa Video Studio Production" 
@@ -664,7 +664,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="md:col-span-4 rounded-3xl overflow-hidden border border-border relative h-72 sm:h-96 group">
+          <div className="md:col-span-4 rounded-3xl overflow-hidden border border-border relative h-80 sm:h-96 group">
             <img 
               src="/images/intro-strategy.webp" 
               alt="Arventa Team Strategy Session" 
@@ -682,7 +682,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="md:col-span-4 rounded-3xl overflow-hidden border border-border relative h-64 group">
+          <div className="md:col-span-4 rounded-3xl overflow-hidden border border-border relative h-72 sm:h-64 group">
             <img 
               src="/images/creative-strategy-studio.webp" 
               alt="Arventa Tech Architecture Workshop" 
@@ -695,7 +695,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="md:col-span-4 rounded-3xl overflow-hidden border border-border relative h-64 group">
+          <div className="md:col-span-4 rounded-3xl overflow-hidden border border-border relative h-72 sm:h-64 group">
             <img 
               src="/images/content-marketing.webp" 
               alt="Arventa Content & Copywriting Hub" 
@@ -708,7 +708,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="md:col-span-4 rounded-3xl overflow-hidden border border-border relative h-64 group">
+          <div className="md:col-span-4 rounded-3xl overflow-hidden border border-border relative h-72 sm:h-64 group">
             <img 
               src="/images/seo-strategy.webp" 
               alt="Arventa Search & Data Lab" 

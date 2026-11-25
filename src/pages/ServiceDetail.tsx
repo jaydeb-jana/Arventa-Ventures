@@ -342,15 +342,15 @@ export default function ServiceDetail() {
               </p>
 
               {/* Dual Action Conversion CTAs */}
-              <div className="flex flex-wrap items-center gap-4 mb-10">
-                <Button size="lg" className="rounded-full bg-orange-500 hover:bg-orange-600 text-white font-bold h-14 px-8 text-base shadow-xl shadow-orange-500/25 transition-transform active:scale-95" asChild>
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 mb-10">
+                <Button size="lg" className="w-full sm:w-auto rounded-full bg-orange-500 hover:bg-orange-600 text-white font-bold h-12 sm:h-14 px-5 sm:px-8 text-sm sm:text-base shadow-xl shadow-orange-500/25 transition-transform active:scale-95 justify-center" asChild>
                   <Link to="/contact">
-                    Claim Free Architecture Audit <ArrowRight className="ml-2 w-5 h-5" />
+                    Claim Free Architecture Audit <ArrowRight className="ml-2 w-4 sm:w-5 h-4 sm:h-5 shrink-0" />
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="rounded-full border-slate-700 hover:bg-slate-900 text-slate-200 h-14 px-8 text-base font-semibold" asChild>
+                <Button size="lg" variant="outline" className="w-full sm:w-auto rounded-full bg-slate-900/80 border-slate-700 hover:bg-slate-800 text-white h-12 sm:h-14 px-5 sm:px-8 text-sm sm:text-base font-semibold justify-center" asChild>
                   <a href="https://wa.me/917872490719?text=Hello%20Jaydeb,%20I%20am%20interested%20in%20your%20service." target="_blank" rel="noopener noreferrer">
-                    <MessageCircle className="mr-2 w-5 h-5 text-emerald-400" /> WhatsApp Direct (+91 7872490719)
+                    <MessageCircle className="mr-2 w-4 sm:w-5 h-4 sm:h-5 text-emerald-400 shrink-0" /> WhatsApp Direct (+91 7872490719)
                   </a>
                 </Button>
               </div>
@@ -377,7 +377,7 @@ export default function ServiceDetail() {
               className="lg:col-span-5 relative"
             >
               <div className="relative rounded-3xl overflow-hidden border border-slate-800 shadow-[0_0_50px_rgba(0,0,0,0.8)] bg-slate-900 group">
-                <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="aspect-video sm:aspect-[4/3] overflow-hidden relative">
                   <img
                     src={data.image}
                     alt={data.title}
@@ -448,7 +448,7 @@ export default function ServiceDetail() {
       {/* SECTION 5: KEY METRICS TICKER */}
       <section className="py-12 border-b border-slate-900 bg-slate-900/30">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {data.stats.map((stat, idx) => (
               <motion.div
                 key={idx}
@@ -456,11 +456,11 @@ export default function ServiceDetail() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: idx * 0.1 }}
-                className="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-orange-500/40 transition-colors"
+                className="p-3.5 sm:p-6 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-orange-500/40 transition-colors text-center sm:text-left"
               >
-                <div className="text-3xl sm:text-4xl font-black text-orange-500 mb-1">{stat.value}</div>
-                <div className="text-sm font-bold text-white mb-0.5">{stat.label}</div>
-                <div className="text-xs text-slate-400">{stat.sub}</div>
+                <div className="text-2xl sm:text-4xl font-black text-orange-500 mb-1">{stat.value}</div>
+                <div className="text-xs sm:text-sm font-bold text-white mb-0.5">{stat.label}</div>
+                <div className="text-[10px] sm:text-xs text-slate-400">{stat.sub}</div>
               </motion.div>
             ))}
           </div>
@@ -886,7 +886,7 @@ export default function ServiceDetail() {
               </div>
 
               <div className="lg:col-span-5">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-slate-800 shadow-xl">
+                <div className="aspect-video sm:aspect-[4/3] rounded-2xl overflow-hidden border border-slate-800 shadow-xl">
                   <img src={data.caseStudy.image} alt={data.caseStudy.client} className="w-full h-full object-cover" />
                 </div>
               </div>
@@ -1326,7 +1326,7 @@ export default function ServiceDetail() {
             </Button>
           </div>
 
-          <div className="mt-8 flex items-center justify-center gap-6 text-xs text-slate-400">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs text-slate-400">
             <span className="flex items-center gap-1.5">
               <Check className="w-4 h-4 text-emerald-400" /> 100% Free Consultation
             </span>
