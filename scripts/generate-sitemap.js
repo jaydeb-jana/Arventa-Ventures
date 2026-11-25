@@ -203,18 +203,13 @@ ${buildHreflangTags(srvLocPath)}
     ...infoUrls
   ];
 
-  // Write master sitemap.xml (Comprehensive URLset)
-  fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), wrapUrlset(masterUrls), 'utf-8');
+  // 7. Complete Flat Unified Sitemap (All 2,953 URLs ordered for Contai & Core Dominance)
   fs.writeFileSync(path.join(publicDir, 'sitemap-all.xml'), wrapUrlset(masterUrls), 'utf-8');
 
-  // 8. MASTER SITEMAP INDEX (https://arventaventures.online/sitemap-index.xml)
+  // 8. MASTER SITEMAP INDEX (https://arventaventures.online/sitemap.xml & sitemap-index.xml)
   const sitemapIndexContent = `<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>${DOMAIN}/sitemap.xml</loc>
-    <lastmod>${TODAY}</lastmod>
-  </sitemap>
   <sitemap>
     <loc>${DOMAIN}/sitemap-pages.xml</loc>
     <lastmod>${TODAY}</lastmod>
@@ -239,14 +234,20 @@ ${buildHreflangTags(srvLocPath)}
     <loc>${DOMAIN}/sitemap-info.xml</loc>
     <lastmod>${TODAY}</lastmod>
   </sitemap>
+  <sitemap>
+    <loc>${DOMAIN}/sitemap-all.xml</loc>
+    <lastmod>${TODAY}</lastmod>
+  </sitemap>
 </sitemapindex>
 `;
 
+  fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapIndexContent, 'utf-8');
   fs.writeFileSync(path.join(publicDir, 'sitemap-index.xml'), sitemapIndexContent, 'utf-8');
 
   console.log(`✅ Enterprise Unified & Indexed XML Sitemaps generated successfully!`);
-  console.log(`- Master Comprehensive Sitemap: ${DOMAIN}/sitemap.xml (${masterUrls.length} URLs with Contai prioritized)`);
-  console.log(`- Sitemap Index: ${DOMAIN}/sitemap-index.xml`);
+  console.log(`- Master Sitemap Index: ${DOMAIN}/sitemap.xml (links 7 specialized sub-sitemaps)`);
+  console.log(`- Sitemap Index Clone: ${DOMAIN}/sitemap-index.xml`);
+  console.log(`- Complete Flat Sitemap: ${DOMAIN}/sitemap-all.xml (${masterUrls.length} URLs with Contai prioritized)`);
   console.log(`- Core Pages: ${pageUrls.length} URLs`);
   console.log(`- Services: ${serviceUrls.length} URLs`);
   console.log(`- City Locations: ${locationUrls.length} URLs`);
