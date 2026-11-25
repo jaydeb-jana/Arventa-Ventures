@@ -2,6 +2,10 @@
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
+    <loc>https://arventaventures.online/sitemap.xml</loc>
+    <lastmod>2026-11-25</lastmod>
+  </sitemap>
+  <sitemap>
     <loc>https://arventaventures.online/sitemap-pages.xml</loc>
     <lastmod>2026-11-25</lastmod>
   </sitemap>
@@ -23,10 +27,6 @@
   </sitemap>
   <sitemap>
     <loc>https://arventaventures.online/sitemap-info.xml</loc>
-    <lastmod>2026-11-25</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://arventaventures.online/sitemap-all.xml</loc>
     <lastmod>2026-11-25</lastmod>
   </sitemap>
 </sitemapindex>
