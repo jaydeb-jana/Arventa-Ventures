@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <url>
+    <loc>https://arventaventures.online/services/video-marketing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/services/video-marketing"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/services/video-marketing?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/services/video-marketing?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/services/video-marketing?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/services/video-marketing?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/services/video-marketing?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/services/video-marketing?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/services/video-marketing"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://arventaventures.online/services/search-engine-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/services/search-engine-optimization"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/services/search-engine-optimization?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/services/search-engine-optimization?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/services/search-engine-optimization?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/services/search-engine-optimization?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/services/search-engine-optimization?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/services/search-engine-optimization?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/services/search-engine-optimization"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://arventaventures.online/services/paid-advertising</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/services/paid-advertising"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/services/paid-advertising?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/services/paid-advertising?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/services/paid-advertising?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/services/paid-advertising?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/services/paid-advertising?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/services/paid-advertising?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/services/paid-advertising"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://arventaventures.online/services/brand-identity</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/services/brand-identity"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/services/brand-identity?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/services/brand-identity?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/services/brand-identity?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/services/brand-identity?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/services/brand-identity?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/services/brand-identity?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/services/brand-identity"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+</urlset>

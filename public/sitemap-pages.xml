@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <url>
+    <loc>https://arventaventures.online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://arventaventures.online/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/about"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/about?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/about?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/about?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/about?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/about?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/about?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/about"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://arventaventures.online/ceo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/ceo"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/ceo?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/ceo?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/ceo?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/ceo?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/ceo?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/ceo?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/ceo"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://arventaventures.online/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/services"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/services?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/services?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/services?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/services?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/services?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/services?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/services"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://arventaventures.online/portfolio</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/portfolio?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/portfolio?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/portfolio?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/portfolio?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/portfolio?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/portfolio?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/portfolio"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://arventaventures.online/industries</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/industries"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/industries?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/industries?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/industries?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/industries?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/industries?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/industries?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/industries"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://arventaventures.online/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/pricing"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/pricing?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/pricing?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/pricing?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/pricing?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/pricing?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/pricing?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/pricing"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://arventaventures.online/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/blog"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/blog?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/blog?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/blog?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/blog?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/blog?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/blog?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/blog"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://arventaventures.online/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/faq"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/faq?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/faq?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/faq?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/faq?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/faq?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/faq?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/faq"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://arventaventures.online/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/privacy"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/privacy?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/privacy?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/privacy?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/privacy?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/privacy?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/privacy?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/privacy"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://arventaventures.online/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/terms"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/terms?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/terms?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/terms?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/terms?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/terms?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/terms?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/terms"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://arventaventures.online/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arventaventures.online/contact"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://arventaventures.online/contact?lang=bn"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://arventaventures.online/contact?lang=hi"/>
+    <xhtml:link rel="alternate" hreflang="te" href="https://arventaventures.online/contact?lang=te"/>
+    <xhtml:link rel="alternate" hreflang="ta" href="https://arventaventures.online/contact?lang=ta"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://arventaventures.online/contact?lang=mr"/>
+    <xhtml:link rel="alternate" hreflang="gu" href="https://arventaventures.online/contact?lang=gu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arventaventures.online/contact"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+</urlset>

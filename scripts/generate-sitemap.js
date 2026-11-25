@@ -19,18 +19,30 @@ function escapeXml(unsafe) {
   });
 }
 
+function wrapUrlset(urlEntries) {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+${urlEntries.join('')}
+</urlset>
+`;
+}
+
 async function generateSitemap() {
-  console.log('Generating comprehensive multilingual sitemap.xml for arventaventures.online...');
+  console.log('Generating enterprise categorized XML Sitemaps with XSLT styling for arventaventures.online...');
 
   const DOMAIN = 'https://arventaventures.online';
   const TODAY = new Date().toISOString().split('T')[0];
+  const publicDir = path.resolve(__dirname, '../public');
 
   // Import dynamic data from project files
   const { locationsByState } = await import('../src/data/locationsData.ts');
   const { servicesData, infoData } = await import('../src/data/pageContent.ts');
   const { blogPosts } = await import('../src/data/blogs.ts');
-
-  const urls = [];
 
   const supportedLangs = [
     { code: 'en', param: '' },
@@ -52,79 +64,81 @@ async function generateSitemap() {
     return links.join('\n');
   }
 
-  // 1. Static Main Pages
+  // 1. Core Company Pages
   const mainPages = [
     { path: '/', priority: '1.0', changefreq: 'daily' },
     { path: '/about', priority: '0.85', changefreq: 'weekly' },
     { path: '/ceo', priority: '0.85', changefreq: 'weekly' },
-    { path: '/services', priority: '0.9', changefreq: 'weekly' },
+    { path: '/services', priority: '0.90', changefreq: 'weekly' },
     { path: '/portfolio', priority: '0.85', changefreq: 'weekly' },
-    { path: '/industries', priority: '0.8', changefreq: 'monthly' },
+    { path: '/industries', priority: '0.80', changefreq: 'monthly' },
     { path: '/pricing', priority: '0.85', changefreq: 'weekly' },
-    { path: '/blog', priority: '0.9', changefreq: 'daily' },
+    { path: '/blog', priority: '0.90', changefreq: 'daily' },
     { path: '/faq', priority: '0.75', changefreq: 'monthly' },
-    { path: '/privacy', priority: '0.3', changefreq: 'yearly' },
-    { path: '/terms', priority: '0.3', changefreq: 'yearly' },
-    { path: '/contact', priority: '0.9', changefreq: 'weekly' },
+    { path: '/privacy', priority: '0.30', changefreq: 'yearly' },
+    { path: '/terms', priority: '0.30', changefreq: 'yearly' },
+    { path: '/contact', priority: '0.90', changefreq: 'weekly' },
   ];
 
-  mainPages.forEach((p) => {
-    const hrefTags = buildHreflangTags(p.path);
-    urls.push(`
+  const pageUrls = mainPages.map(p => `
   <url>
     <loc>${DOMAIN}${p.path}</loc>
-${hrefTags}
+${buildHreflangTags(p.path)}
     <lastmod>${TODAY}</lastmod>
     <changefreq>${p.changefreq}</changefreq>
     <priority>${p.priority}</priority>
   </url>`);
-  });
+
+  fs.writeFileSync(path.join(publicDir, 'sitemap-pages.xml'), wrapUrlset(pageUrls), 'utf-8');
 
   // 2. Service Pages
   const serviceSlugs = Object.keys(servicesData);
-  serviceSlugs.forEach((slug) => {
+  const serviceUrls = serviceSlugs.map(slug => {
     const path = `/services/${slug}`;
-    const hrefTags = buildHreflangTags(path);
-    urls.push(`
+    return `
   <url>
     <loc>${DOMAIN}${path}</loc>
-${hrefTags}
+${buildHreflangTags(path)}
     <lastmod>${TODAY}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>`);
+    <priority>0.90</priority>
+  </url>`;
   });
+
+  fs.writeFileSync(path.join(publicDir, 'sitemap-services.xml'), wrapUrlset(serviceUrls), 'utf-8');
 
   // 3. Info Detail Pages
   const infoSlugs = Object.keys(infoData);
-  infoSlugs.forEach((slug) => {
+  const infoUrls = infoSlugs.map(slug => {
     const path = `/info/${slug}`;
-    const hrefTags = buildHreflangTags(path);
-    urls.push(`
+    return `
   <url>
     <loc>${DOMAIN}${path}</loc>
-${hrefTags}
+${buildHreflangTags(path)}
     <lastmod>${TODAY}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>`);
+    <priority>0.80</priority>
+  </url>`;
   });
+
+  fs.writeFileSync(path.join(publicDir, 'sitemap-info.xml'), wrapUrlset(infoUrls), 'utf-8');
 
   // 4. Blog Posts
-  blogPosts.forEach((post) => {
+  const blogUrls = blogPosts.map(post => {
     const path = `/blog/${post.id}`;
-    const hrefTags = buildHreflangTags(path);
-    urls.push(`
+    return `
   <url>
     <loc>${DOMAIN}${path}</loc>
-${hrefTags}
+${buildHreflangTags(path)}
     <lastmod>${TODAY}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>`);
+    <priority>0.85</priority>
+  </url>`;
   });
 
-  // 5. All Cities & Location Landing Pages with Multilingual XHTML tags
+  fs.writeFileSync(path.join(publicDir, 'sitemap-blogs.xml'), wrapUrlset(blogUrls), 'utf-8');
+
+  // 5. City Hub Landing Pages (Contai & Kanthi top priority)
   const allCitiesSet = new Set(['contai', 'kanthi']);
   Object.values(locationsByState).forEach((cities) => {
     cities.forEach((city) => {
@@ -135,30 +149,31 @@ ${hrefTags}
 
   const uniqueCitySlugs = Array.from(allCitiesSet).sort();
 
-  uniqueCitySlugs.forEach((citySlug) => {
+  const locationUrls = uniqueCitySlugs.map(citySlug => {
     const locPath = `/location/${citySlug}`;
-    const locHreflangs = buildHreflangTags(locPath);
     const isContaiOrKanthi = citySlug === 'contai' || citySlug === 'kanthi';
-
-    // General location page with hreflangs (Contai/Kanthi gets 0.95 priority)
-    urls.push(`
+    return `
   <url>
     <loc>${DOMAIN}${locPath}</loc>
-${locHreflangs}
+${buildHreflangTags(locPath)}
     <lastmod>${TODAY}</lastmod>
     <changefreq>${isContaiOrKanthi ? 'daily' : 'weekly'}</changefreq>
     <priority>${isContaiOrKanthi ? '0.95' : '0.85'}</priority>
-  </url>`);
+  </url>`;
+  });
 
-    // Service + Location combinations with hreflangs
-    serviceSlugs.forEach((serviceSlug) => {
+  fs.writeFileSync(path.join(publicDir, 'sitemap-locations.xml'), wrapUrlset(locationUrls), 'utf-8');
+
+  // 6. Service + Location Matrix
+  const serviceLocationUrls = [];
+  uniqueCitySlugs.forEach(citySlug => {
+    const isContaiOrKanthi = citySlug === 'contai' || citySlug === 'kanthi';
+    serviceSlugs.forEach(serviceSlug => {
       const srvLocPath = `/services/${serviceSlug}/in/${citySlug}`;
-      const srvHreflangs = buildHreflangTags(srvLocPath);
-
-      urls.push(`
+      serviceLocationUrls.push(`
   <url>
     <loc>${DOMAIN}${srvLocPath}</loc>
-${srvHreflangs}
+${buildHreflangTags(srvLocPath)}
     <lastmod>${TODAY}</lastmod>
     <changefreq>${isContaiOrKanthi ? 'daily' : 'weekly'}</changefreq>
     <priority>${isContaiOrKanthi ? '0.90' : '0.80'}</priority>
@@ -166,21 +181,61 @@ ${srvHreflangs}
     });
   });
 
-  const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-${urls.join('')}
-</urlset>
+  fs.writeFileSync(path.join(publicDir, 'sitemap-service-locations.xml'), wrapUrlset(serviceLocationUrls), 'utf-8');
+
+  // 7. Complete Flat Sitemap (For legacy consumers)
+  const allUrls = [
+    ...pageUrls,
+    ...serviceUrls,
+    ...infoUrls,
+    ...blogUrls,
+    ...locationUrls,
+    ...serviceLocationUrls
+  ];
+  fs.writeFileSync(path.join(publicDir, 'sitemap-all.xml'), wrapUrlset(allUrls), 'utf-8');
+
+  // 8. MASTER SITEMAP INDEX (https://arventaventures.online/sitemap.xml)
+  const sitemapIndexContent = `<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>${DOMAIN}/sitemap-pages.xml</loc>
+    <lastmod>${TODAY}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>${DOMAIN}/sitemap-services.xml</loc>
+    <lastmod>${TODAY}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>${DOMAIN}/sitemap-locations.xml</loc>
+    <lastmod>${TODAY}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>${DOMAIN}/sitemap-service-locations.xml</loc>
+    <lastmod>${TODAY}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>${DOMAIN}/sitemap-blogs.xml</loc>
+    <lastmod>${TODAY}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>${DOMAIN}/sitemap-info.xml</loc>
+    <lastmod>${TODAY}</lastmod>
+  </sitemap>
+</sitemapindex>
 `;
 
-  const publicPath = path.resolve(__dirname, '../public/sitemap.xml');
-  fs.writeFileSync(publicPath, xmlContent, 'utf-8');
+  fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapIndexContent, 'utf-8');
 
-  console.log(`✅ Successfully generated sitemap.xml with ${urls.length} total URLs and multilingual hreflang attributes!`);
-  console.log(`Saved to: ${publicPath}`);
+  console.log(`✅ Enterprise Sitemap Index & Sub-Sitemaps generated successfully!`);
+  console.log(`- Master Index: ${DOMAIN}/sitemap.xml (links 6 specialized sub-sitemaps)`);
+  console.log(`- Core Pages: ${pageUrls.length} URLs`);
+  console.log(`- Services: ${serviceUrls.length} URLs`);
+  console.log(`- City Locations: ${locationUrls.length} URLs`);
+  console.log(`- Service Locations: ${serviceLocationUrls.length} URLs`);
+  console.log(`- Blogs: ${blogUrls.length} URLs`);
+  console.log(`- Total Indexed URLs: ${allUrls.length}`);
+  console.log(`- Interactive XSLT Styling: ${DOMAIN}/sitemap.xsl`);
 }
 
 generateSitemap().catch((err) => {
