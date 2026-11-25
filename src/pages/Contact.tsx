@@ -388,6 +388,55 @@ ${formData.message}`;
           </motion.div>
         </div>
       </Section>
+
+      {/* Contai Headquarters Map & Regional Directions Section */}
+      <section className="py-12 md:py-16 bg-slate-950 border-t border-slate-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="p-6 sm:p-10 rounded-3xl bg-slate-900/60 border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-5 space-y-4">
+              <span className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-orange-500/10 text-orange-400 border border-orange-500/20">
+                Direct Contai Headquarters Walk-In
+              </span>
+              <h3 className="text-2xl sm:text-3xl font-bold text-white">
+                Visit Us at Contai (কাঁথি) HQ
+              </h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Operating directly at Purba Gopinathpur, Chapatala More, Contai, Purba Medinipur, West Bengal 721401. Regional business owners and directors are welcome to schedule an in-person briefing with founder Jaydeb Jana.
+              </p>
+              <div className="flex flex-wrap items-center gap-3 pt-2">
+                <a
+                  href="https://share.google/9g673CLWFHS9j6tb9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-bold text-sm transition-all shadow-lg shadow-orange-500/20"
+                >
+                  <MapPin className="w-4 h-4" />
+                  Get Google Maps Directions
+                </a>
+                <a
+                  href="tel:+917872490719"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-sm transition-all border border-slate-700"
+                >
+                  <PhoneCall className="w-4 h-4 text-orange-400" />
+                  +91 7872490719
+                </a>
+              </div>
+            </div>
+            <div className="lg:col-span-7 rounded-2xl overflow-hidden border border-slate-800 shadow-xl aspect-video sm:aspect-[21/9]">
+              <iframe
+                title="Arventa Ventures Contai Headquarters Location"
+                src="https://maps.google.com/maps?q=Contai,%20Purba%20Medinipur,%20West%20Bengal%20721401&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

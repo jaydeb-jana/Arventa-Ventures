@@ -17,7 +17,7 @@ export function MetricsSection() {
       <div className="absolute inset-0 bg-orange-950/20"></div>
       <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         {[
-          { value: "$5,000+", label: "Client Revenue Generated" },
+          { value: "₹15 Cr+", label: "Client Revenue Generated" },
           { value: "500+", label: "Businesses Helped" },
           { value: "4.8x", label: "Average ROAS" },
           { value: "98%", label: "Client Retention Rate" },
@@ -102,19 +102,17 @@ export function SEOSpecialization() {
             <TrendingUp className="w-6 h-6" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Dominate Organic Search
+            Dominate Organic Search & Google Maps in Contai
           </h2>
           <p className="text-lg text-slate-400 mb-6">
-            Stop paying for every click. Our technical SEO and content
-            strategies build a sustainable pipeline of high-intent organic
-            traffic that converts.
+            Stop paying for every single click. From ranking local Contai showrooms and clinics #1 on Google Maps to scaling national brands on Google Search, our technical SEO builds a predictable pipeline of high-intent buyers.
           </p>
           <ul className="space-y-3 mb-8">
             {[
-              "Technical SEO Audits",
-              "Keyword Gap Analysis",
-              "High-Authority Link Building",
-              "Local SEO & GMB Optimization",
+              "Contai & Regional Google Business Profile #1 Ranking",
+              "Technical SEO Audits & Core Web Vitals Optimization",
+              "Hyper-Local Keyword Gap Analysis (Contai & Purba Medinipur)",
+              "High-Authority Editorial Backlink Building",
             ].map((item, i) => (
               <li key={i} className="flex items-center text-slate-300">
                 <CheckCircle2 className="w-5 h-5 text-orange-500 mr-3" /> {item}

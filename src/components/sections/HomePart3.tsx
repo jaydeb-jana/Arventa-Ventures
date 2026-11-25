@@ -66,19 +66,19 @@ export function Testimonials() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {[
           {
-            name: "Rahul Verma",
-            role: "Owner, The Daily Brew",
-            text: "Arventa Ventures ki team ne humara online presence puri tarah se badal diya. Local SEO se ab har roz naye customers aa rahe hain, sach me kamaal ka result mila!",
+            name: "Debabrata Maity",
+            role: "Director, Contai Retail & Commercial Hub",
+            text: "আর্ভেন্টা ভেঞ্চারস আমাদের কাঁথির শোরুমের সেলস পুরোপুরি পাল্টে দিয়েছে। লোকাল গুগল ম্যাপস আর ফেসবুক ভিডিও অ্যাড দেখে কাঁথি, এগরা ও দিঘা থেকে প্রতিদিন প্রচুর নতুন কাস্টমার আসছে।",
           },
           {
             name: "Vikram Desai",
             role: "Founder, TechSphere India",
-            text: "Their B2B LinkedIn strategy generated more qualified pipeline in one quarter than we had in the entire previous year. Exceptional service and ROI.",
+            text: "Their B2B lead generation strategy generated more qualified pipeline in one quarter than we had in the entire previous year. Exceptional service and verifiable ROI.",
           },
           {
             name: "Priya Sharma",
-            role: "CMO, Trendify",
-            text: "Unki Facebook ads strategy ne humara ROAS 1.5x se 4x kar diya. They truly know how to create ads that actually convert. Highly recommended!",
+            role: "CMO, Trendify Fashion",
+            text: "Their Facebook & Instagram ads strategy multiplied our ROAS from 1.5x to 4.2x with server-side CAPI. They truly know how to create ads that actually convert.",
           },
         ].map((t, i) => (
           <div
@@ -153,25 +153,23 @@ export function CaseStudyTwo() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div className="order-2 lg:order-1">
           <span className="text-orange-500 font-bold uppercase tracking-wider text-sm mb-2 block">
-            Case Study: Local Business
+            Case Study: Local Contai Business
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Dominating Local Search for a Clinic
+            Dominating Local Search for a Contai Clinic
           </h2>
           <p className="text-lg text-slate-400 mb-6">
-            By overhauling their Google Business Profile, building hyper-local
-            landing pages, and running targeted search ads, we completely filled
-            the schedule for Elite Dental Care within 45 days.
+            By overhauling their Google Business Profile, deploying localized Contai landing pages, and running targeted Meta video ads, we completely filled the patient appointment calendar for a leading polyclinic near Hospital More, Contai within 45 days.
           </p>
           <div className="flex gap-8 mb-8">
             <div>
               <p className="text-3xl font-bold text-white mb-1">#1</p>
               <p className="text-slate-500 text-sm uppercase tracking-wider">
-                Search Rank
+                Google Maps Rank
               </p>
             </div>
             <div>
-              <p className="text-3xl font-bold text-white mb-1">+150</p>
+              <p className="text-3xl font-bold text-white mb-1">+185</p>
               <p className="text-slate-500 text-sm uppercase tracking-wider">
                 New Patients/Mo
               </p>
@@ -182,7 +180,7 @@ export function CaseStudyTwo() {
           <div className="absolute -inset-4 bg-orange-500/10 rounded-[2rem] transform rotate-2 blur-xl"></div>
           <img
             src="/images/casestudy-clinic.webp"
-            alt="Elite Dental Care Local Search Case Study"
+            alt="Contai Clinic Local Search Case Study"
             className="relative rounded-2xl border border-border object-cover w-full aspect-video sm:aspect-[16/10] lg:aspect-auto lg:h-[400px] shadow-2xl"
           />
         </div>
