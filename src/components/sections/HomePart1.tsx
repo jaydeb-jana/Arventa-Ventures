@@ -44,14 +44,14 @@ export function HeroSection() {
         >
           <span className="inline-flex items-center gap-2 rounded-full px-3.5 sm:px-4 py-1.5 text-[11px] sm:text-sm font-semibold bg-orange-500/10 text-orange-400 ring-1 ring-inset ring-orange-500/30 mb-6 sm:mb-8 shadow-sm text-center">
             <Sparkles className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-amber-400 shrink-0" />
-            <span>Digital Marketing • Web & App Development</span>
+            <span>Contai (HQ) • Digital Marketing • Web & App Development</span>
           </span>
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-black tracking-tight text-white mb-6 sm:mb-8 leading-[1.15]">
             We Don't Just Market Brands. <br className="hidden md:block" />
             <span className="text-gradient">We Build Them.</span>
           </h1>
           <p className="text-xl leading-relaxed text-slate-300 mb-10 max-w-2xl mx-auto">
-            Partner with an elite full-service digital agency. We combine high-ROI marketing funnels with high-performance web development, mobile applications, and custom software engineering.
+            Partner with Contai's premier full-service digital agency. Headquartered at Chapatala More, Contai, we combine high-ROI Meta Ads and local Google SEO with sub-second React web development, mobile apps, and custom software engineering.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" className="w-full sm:w-auto font-bold bg-orange-500 hover:bg-orange-600">
@@ -135,6 +135,8 @@ export function IntroSection() {
           <img
             src="/images/intro-strategy.webp"
             alt="Arventa Ventures Strategy Session"
+            loading="lazy"
+            decoding="async"
             className="relative rounded-2xl border border-border shadow-2xl object-cover w-full aspect-video sm:aspect-[16/10] lg:aspect-auto lg:h-[480px]"
           />
         </div>
@@ -199,6 +201,8 @@ export function SolutionSection() {
           <img
             src="/images/solution-funnel.webp"
             alt="Arventa Ventures Funnel and Marketing Analytics"
+            loading="lazy"
+            decoding="async"
             className="relative rounded-2xl border border-border shadow-2xl object-cover w-full aspect-video sm:aspect-[16/10] lg:aspect-auto lg:h-[480px]"
           />
         </div>

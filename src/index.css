@@ -338,3 +338,26 @@ body {
     background: none !important;
     box-shadow: none !important;
 }
+
+/* ==========================================================================
+   MOBILE HARDWARE ACCELERATION & LOW-END DEVICE OPTIMIZATIONS
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Reduce GPU rasterization load from extreme blur filters on mobile */
+  [class*="blur-[1"] {
+    filter: blur(35px) !important;
+  }
+  [class*="blur-[8"] {
+    filter: blur(25px) !important;
+  }
+  /* Enable native hardware-accelerated momentum scrolling on touch devices */
+  html, body {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Async decoding & content visibility so off-screen images don't block mobile main thread */
+img {
+  content-visibility: auto;
+}

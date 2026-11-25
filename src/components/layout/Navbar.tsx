@@ -9,6 +9,7 @@ import { Button } from "@/src/components/ui/Button";
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "Services", path: "/services" },
+  { name: "Contai (HQ)", path: "/location/contai" },
   { name: "Portfolio", path: "/portfolio" },
   { name: "Industries", path: "/industries" },
   { name: "Pricing", path: "/pricing" },
@@ -62,7 +63,7 @@ export const Navbar = () => {
   return (
     <>
       <header
-        className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 border-b ${
+        className={`fixed top-0 inset-x-0 z-[60] transition-all duration-300 border-b ${
           isScrolled || mobileMenuOpen
             ? "bg-slate-950/95 backdrop-blur-xl border-slate-800/80 py-3 sm:py-4"
             : "bg-transparent border-transparent py-4 sm:py-6"
@@ -174,7 +175,7 @@ export const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 bg-slate-950/98 backdrop-blur-2xl lg:hidden pt-20 pb-10 px-5 sm:px-6 overflow-y-auto flex flex-col justify-between"
+            className="fixed inset-0 z-[55] bg-slate-950/98 backdrop-blur-2xl lg:hidden pt-20 pb-16 px-5 sm:px-6 overflow-y-auto flex flex-col justify-between"
           >
             <nav className="flex flex-col pt-4">
               {[
@@ -206,7 +207,7 @@ export const Navbar = () => {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="w-full h-12 border-slate-700 bg-slate-900/60 text-white hover:bg-slate-800 rounded-xl"
+                  className="w-full h-12 border-emerald-500/40 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 rounded-xl font-bold"
                 >
                   <a href="https://wa.me/917872490719?text=Hello%20Arventa%20Ventures!%20I'd%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">
                     WhatsApp Jaydeb Jana (+91 7872490719)

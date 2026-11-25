@@ -250,9 +250,9 @@ export default function About() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground transition-colors duration-200">
       <SEO
-        title="About Us | Elite Performance Digital Marketing Agency | Arventa Ventures"
-        description="Discover Arventa Ventures — founded by Jaydeb Jana. We engineer data-driven digital dominance, high-converting Meta Ads, SEO blueprints, and scalable revenue engines."
-        keywords="About Arventa Ventures, Jaydeb Jana CEO, Performance Marketing Agency India, Digital Growth Agency, ROI Marketing, Meta Ads Partner"
+        title="About Arventa Ventures | Best Digital Marketing & Tech Agency in Contai | Jaydeb Jana"
+        description="Learn about Arventa Ventures, founded by CEO Jaydeb Jana and headquartered in Contai, Purba Medinipur. We engineer high-ROI Meta Ads, local Google SEO dominance, sub-second React websites, and custom mobile applications."
+        keywords="About Arventa Ventures, Jaydeb Jana CEO, Digital Marketing Agency Contai, Web Development Company Contai, App Development Contai, Performance Marketing Purba Medinipur, ROI Marketing Contai, কাঁথির সেরা ডিজিটাল মার্কেটিং, Arventa Ventures Contai"
         canonicalUrl="/about"
         structuredData={[aboutSchema, faqSchema]}
       />

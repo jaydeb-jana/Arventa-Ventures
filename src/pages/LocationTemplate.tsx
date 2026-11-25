@@ -114,6 +114,7 @@ export default function LocationTemplate() {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": `Arventa Ventures - Best Digital Marketing & Web Development in ${loc.name}`,
+      "alternateName": [`Arventa ${loc.name}`, `Digital Marketing Agency in ${loc.name}`, `Web Development Company in ${loc.name}`],
       "description": loc.heroSubtitle,
       "url": `https://arventaventures.online/location/${loc.id}`,
       "telephone": "+917872490719",
@@ -136,7 +137,45 @@ export default function LocationTemplate() {
         "https://www.instagram.com/arventaventures/",
         "https://share.google/9g673CLWFHS9j6tb9"
       ]
-    }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://arventaventures.online"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Locations",
+          "item": "https://arventaventures.online/location/contai"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": `${loc.name} (${loc.bengaliName || loc.name})`,
+          "item": `https://arventaventures.online/location/${loc.id}`
+        }
+      ]
+    },
+    ...(loc.faqs && loc.faqs.length > 0 ? [
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": loc.faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.a
+          }
+        }))
+      }
+    ] : [])
   ];
 
   return (
@@ -144,7 +183,7 @@ export default function LocationTemplate() {
       <SEO
         title={`Best Digital Marketing Agency in ${loc.name} | Web Dev & Meta Ads | Arventa Ventures`}
         description={loc.heroSubtitle}
-        keywords={`Digital Marketing ${loc.name}, Web Development ${loc.name}, Meta Ads Agency ${loc.name}, SEO Agency ${loc.name}, Best Agency in ${loc.district}, Arventa Ventures`}
+        keywords={`best digital marketing agency in ${loc.name.toLowerCase()}, digital marketing agency in ${loc.bengaliName || loc.name}, web development company in ${loc.name.toLowerCase()}, app development company in ${loc.name.toLowerCase()}, website design ${loc.name}, software company in ${loc.name.toLowerCase()}, meta ads agency ${loc.name}, SEO agency ${loc.name}, local SEO ${loc.name}, best agency in ${loc.district}, Arventa Ventures, কাঁথির সেরা ডিজিটাল মার্কেটিং এজেন্সী`}
         canonicalUrl={`/location/${loc.id}`}
         structuredData={localSchema}
       />

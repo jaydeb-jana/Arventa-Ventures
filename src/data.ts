@@ -247,7 +247,7 @@ export const portfolio: PortfolioItem[] = [
     service: "Facebook & Instagram Ads",
     description:
       "Scaled their online sales through targeted ad funnels, achieving a 4.5x Return on Ad Spend during the holiday season.",
-    metrics: ["4.5x ROAS", "+120% Online Sales", "Reduced CPA by 30%"],
+    metrics: ["4.5x ROAS", "+120% Sales", "-30% CPA"],
     detailedMetrics: [
       { label: "Blended Ad ROAS", value: "4.52x", before: "1.45x", after: "4.52x", growth: "+211%" },
       { label: "Monthly Online Sales", value: "+120%", before: "₹4.8L/mo", after: "₹10.6L/mo", growth: "+120%" },

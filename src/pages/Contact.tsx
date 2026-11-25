@@ -21,8 +21,27 @@ export default function Contact() {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "name": "Contact Arventa Ventures",
-    "description": "Get in touch with Arventa Ventures for digital marketing inquiries, free SEO audits, Meta Ads strategy, and growth consultations.",
-    "url": "https://arventaventures.online/contact"
+    "description": "Get in touch with Arventa Ventures at our Contai Headquarters for digital marketing inquiries, free SEO audits, Meta Ads strategy, web development, and app development consultations.",
+    "url": "https://arventaventures.online/contact",
+    "mainEntity": {
+      "@type": "ProfessionalService",
+      "name": "Arventa Ventures Global Headquarters",
+      "telephone": "+917872490719",
+      "email": "info@arventaventures.online",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Purba Gopinathpur, Chapatala More",
+        "addressLocality": "Contai",
+        "addressRegion": "West Bengal",
+        "postalCode": "721401",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 21.7781,
+        "longitude": 87.7516
+      }
+    }
   };
 
   const handleChange = (
@@ -64,9 +83,9 @@ ${formData.message}`;
   return (
     <div className="flex flex-col min-h-screen pt-24 bg-background">
       <SEO
-        title="Contact Us | Arventa Ventures - Start Your Project Today"
-        description="Connect with Arventa Ventures. Request a free digital marketing audit, discuss Meta & Google Ads campaigns, or talk to our growth specialists."
-        keywords="Contact Arventa Ventures, Digital Marketing Audit, Hire SEO Agency, Meta Ads Specialist, Arventa Ventures Contact"
+        title="Contact Us in Contai (HQ) | Arventa Ventures - Start Your Project Today"
+        description="Connect with Arventa Ventures at our Contai Global Headquarters (Chapatala More). Request a free SEO & digital marketing audit, discuss custom web & mobile app development, or book a strategy session with founder Jaydeb Jana."
+        keywords="Contact Arventa Ventures, Digital Marketing Agency Contai, Web Development Company Contai, App Development Contai, Hire SEO Agency Contai, Meta Ads Specialist, Chapatala More Contai, কাঁথির ডিজিটাল মার্কেটিং, Arventa Ventures Contact"
         canonicalUrl="/contact"
         structuredData={contactSchema}
       />

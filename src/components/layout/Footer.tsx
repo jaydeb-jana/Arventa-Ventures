@@ -25,8 +25,7 @@ export const Footer = () => {
               />
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
-              We don't just market brands — we build them. Full-service digital
-              marketing agency driving measurable growth.
+              We don't just market brands — we build them. Full-service digital marketing, custom web & app development agency headquartered in Contai.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -71,17 +70,16 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-6">Quick Links</h4>
-            <ul className="space-y-4">
+            <h4 className="text-white font-semibold mb-6">Contai HQ Services</h4>
+            <ul className="space-y-3">
               {[
-                { name: "Home", path: "/" },
-                { name: "About", path: "/about" },
-                { name: "CEO", path: "/ceo" },
-                { name: "Portfolio", path: "/portfolio" },
-                { name: "Pricing", path: "/pricing" },
-                { name: "Blog", path: "/blog" },
-                { name: "FAQ", path: "/faq" },
-                { name: "Contai Global HQ", path: "/location/contai" },
+                { name: "Digital Marketing Contai", path: "/location/contai" },
+                { name: "Web Development in Contai", path: "/services/web-development/in/contai" },
+                { name: "App Development in Contai", path: "/services/app-development/in/contai" },
+                { name: "SEO Agency in Contai", path: "/services/seo-services/in/contai" },
+                { name: "Meta Ads Service Contai", path: "/services/meta-ads/in/contai" },
+                { name: "Video Production in Contai", path: "/services/video-marketing/in/contai" },
+                { name: "Agency in Kanthi (কাঁথি)", path: "/location/kanthi" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -97,7 +95,7 @@ export const Footer = () => {
 
           <div>
             <h4 className="text-white font-semibold mb-6">Core Services</h4>
-            <ul className="space-y-4">
+            <ul className="space-y-3">
               {[
                 { name: "Website Development", path: "/services/web-development" },
                 { name: "App & Software Development", path: "/services/app-development" },
@@ -119,14 +117,16 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-6">Resources</h4>
-            <ul className="space-y-4">
+            <h4 className="text-white font-semibold mb-6">Quick Links</h4>
+            <ul className="space-y-3">
               {[
-                { name: "Benefit of Arventa Ventures", path: "/info/benefit-of-arventa-ventures" },
-                { name: "What is Arventa Ventures", path: "/info/what-is-arventa-ventures" },
-                { name: "What is Digital Marketing", path: "/info/what-is-digital-marketing" },
-                { name: "Benefit of Meta Ads", path: "/info/benefit-of-meta-ads" },
-                { name: "Benefit of Social Media", path: "/info/benefit-of-social-media" },
+                { name: "About Us", path: "/about" },
+                { name: "CEO Portfolio (Jaydeb Jana)", path: "/ceo" },
+                { name: "Portfolio & Case Studies", path: "/portfolio" },
+                { name: "Pricing Packages", path: "/pricing" },
+                { name: "Industry Solutions", path: "/industries" },
+                { name: "Blog & Insights", path: "/blog" },
+                { name: "Frequently Asked Questions", path: "/faq" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -141,7 +141,7 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-6">Contact Us</h4>
+            <h4 className="text-white font-semibold mb-6">Contai Headquarters</h4>
             <ul className="space-y-4 text-slate-400 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-primary shrink-0 mt-0.5" />
@@ -152,9 +152,9 @@ export const Footer = () => {
                   className="hover:text-white transition-colors"
                   title="View Arventa Ventures on Google"
                 >
-                  Purba Gopinathpur, Chapatala,
+                  Purba Gopinathpur, Chapatala More,
                   <br />
-                  More, Contai, West Bengal 721442
+                  Contai (কাঁথি), West Bengal 721401
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -174,7 +174,7 @@ export const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  Contact on WhatsApp (+91 7872490719)
+                  WhatsApp: +91 7872490719
                 </a>
               </li>
             </ul>
@@ -196,6 +196,29 @@ export const Footer = () => {
                 <Link to="/contact">Book a Consultation</Link>
               </Button>
             </div>
+          </div>
+        </div>
+
+        {/* Localized Purba Medinipur & Bengal SEO Ribbon */}
+        <div className="py-6 border-t border-slate-900 text-xs text-slate-500">
+          <p className="font-semibold text-slate-400 mb-2">
+            Topical Search Hubs & Local Regional Service Presence:
+          </p>
+          <div className="flex flex-wrap gap-x-3 gap-y-1.5 leading-relaxed">
+            <Link to="/location/contai" className="hover:text-orange-400 transition-colors">Contai (কাঁথি Global HQ)</Link> •
+            <Link to="/location/kanthi" className="hover:text-orange-400 transition-colors">Kanthi Supermarket & Bada Bazar</Link> •
+            <Link to="/services/web-development/in/contai" className="hover:text-orange-400 transition-colors">Web Development in Contai</Link> •
+            <Link to="/services/app-development/in/contai" className="hover:text-orange-400 transition-colors">App Development in Contai</Link> •
+            <Link to="/services/seo-services/in/contai" className="hover:text-orange-400 transition-colors">SEO Services in Contai</Link> •
+            <Link to="/services/meta-ads/in/contai" className="hover:text-orange-400 transition-colors">Meta Ads in Contai</Link> •
+            <Link to="/services/video-marketing/in/contai" className="hover:text-orange-400 transition-colors">Video Production in Contai</Link> •
+            <Link to="/location/contai" className="hover:text-orange-400 transition-colors">Digha Tourism Belt</Link> •
+            <Link to="/location/contai" className="hover:text-orange-400 transition-colors">Mandarmani Coastal Corridor</Link> •
+            <Link to="/location/contai" className="hover:text-orange-400 transition-colors">Egra</Link> •
+            <Link to="/location/contai" className="hover:text-orange-400 transition-colors">Ramnagar</Link> •
+            <Link to="/location/haldia" className="hover:text-orange-400 transition-colors">Haldia Port Zone</Link> •
+            <Link to="/location/kharagpur" className="hover:text-orange-400 transition-colors">Kharagpur</Link> •
+            <Link to="/location/kolkata" className="hover:text-orange-400 transition-colors">Kolkata</Link>
           </div>
         </div>
 

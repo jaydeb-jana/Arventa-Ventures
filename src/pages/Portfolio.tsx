@@ -304,37 +304,37 @@ ${formData.message || "Looking to discuss scalable growth strategies and free au
           {/* Spotlight Hero Box */}
           <div className="bg-card border border-border rounded-3xl overflow-hidden shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-0">
             {/* Visual Column */}
-            <div className="lg:col-span-5 relative min-h-[240px] sm:min-h-[320px] lg:min-h-full aspect-video sm:aspect-auto overflow-hidden bg-slate-950 flex flex-col justify-end p-6 sm:p-8">
+            <div className="lg:col-span-5 relative min-h-[300px] sm:min-h-[340px] lg:min-h-full overflow-hidden bg-slate-950 flex flex-col justify-end p-5 sm:p-8">
               <img
                 src={currentSpotlight.image}
                 alt={currentSpotlight.client}
                 className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/20"></div>
 
               <div className="relative z-10">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/20 border border-orange-500/40 text-orange-300 text-xs font-bold uppercase tracking-wider mb-3 backdrop-blur-md">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/20 border border-orange-500/40 text-orange-300 text-xs font-bold uppercase tracking-wider mb-2.5 backdrop-blur-md">
                   <span>{currentSpotlight.category}</span>
                   <span>•</span>
                   <span>{currentSpotlight.duration}</span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-2">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white mb-1.5">
                   {currentSpotlight.client}
                 </h3>
-                <p className="text-sm text-slate-300 mb-6">
+                <p className="text-xs sm:text-sm text-slate-300 mb-4 sm:mb-6 line-clamp-2">
                   {currentSpotlight.tagline}
                 </p>
 
                 {/* Key Metrics Chips */}
-                <div className="grid grid-cols-3 gap-2 p-3 bg-slate-900/80 backdrop-blur-md rounded-2xl border border-slate-800">
+                <div className="grid grid-cols-3 gap-1.5 sm:gap-2 p-2.5 sm:p-3 bg-slate-900/90 backdrop-blur-md rounded-2xl border border-slate-800">
                   {currentSpotlight.metrics.map((m, i) => {
                     const [val, ...rest] = m.split(" ");
                     return (
-                      <div key={i} className="text-center">
-                        <div className="text-base font-extrabold text-orange-400">
+                      <div key={i} className="text-center px-1">
+                        <div className="text-sm sm:text-base font-extrabold text-orange-400 leading-tight">
                           {val}
                         </div>
-                        <div className="text-[10px] text-slate-400 uppercase font-medium">
+                        <div className="text-[9px] sm:text-[10px] text-slate-300 uppercase font-medium leading-tight mt-0.5 break-words">
                           {rest.join(" ")}
                         </div>
                       </div>

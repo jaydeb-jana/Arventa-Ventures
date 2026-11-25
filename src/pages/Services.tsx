@@ -287,13 +287,13 @@ export default function Services() {
               We eliminate guesswork with full-funnel mathematical precision. From sub-second React web apps and native mobile software to algorithmic Meta Ads and technical SEO.
             </p>
 
-            <div className="flex flex-wrap items-center justify-center gap-4 mb-14">
-              <Button asChild size="lg" className="h-14 px-8 text-base rounded-full bg-orange-500 hover:bg-orange-600 text-white font-bold shadow-xl shadow-orange-500/25 transition-transform active:scale-95">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+              <Button asChild size="lg" className="w-full sm:w-auto h-14 px-8 text-base rounded-full bg-orange-500 hover:bg-orange-600 text-white font-bold shadow-xl shadow-orange-500/25 transition-transform active:scale-95">
                 <Link to="/contact">Schedule Free Strategy Audit <ArrowRight className="ml-2 w-5 h-5" /></Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="h-14 px-8 text-base rounded-full border-slate-700 hover:bg-slate-900 text-slate-200 font-semibold">
+              <Button asChild size="lg" variant="outline" className="w-full sm:w-auto h-14 px-8 text-base rounded-full border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-900 text-slate-900 dark:text-slate-100 font-semibold">
                 <a href="https://wa.me/917872490719?text=Hello%20Jaydeb,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="mr-2 w-5 h-5 text-emerald-400" /> WhatsApp Direct (+91 7872490719)
+                  <MessageCircle className="mr-2 w-5 h-5 text-emerald-500 dark:text-emerald-400" /> WhatsApp Direct (+91 7872490719)
                 </a>
               </Button>
             </div>
@@ -572,6 +572,8 @@ export default function Services() {
                     <img
                       src={service.image}
                       alt={service.title}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                     />
                     

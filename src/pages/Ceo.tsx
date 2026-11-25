@@ -8,6 +8,7 @@ import {
   ArrowRight,
   Facebook,
   Instagram,
+  Github,
   Mail,
   Briefcase,
   Award,
@@ -113,6 +114,7 @@ export default function Ceo() {
           "logo": "https://arventaventures.online/logo.png"
         },
         "sameAs": [
+          "https://github.com/jaydeb-jana",
           "https://www.instagram.com/iamjaydebjana",
           "https://www.facebook.com/share/19J9Nm6Gg6/",
           "https://www.facebook.com/p/Arventa-Ventures-61573258438828/",
@@ -558,7 +560,7 @@ ${consultForm.message || "Executive strategy consultation requested directly wit
       <SEO
         title="Jaydeb Jana | Founder & CEO at Arventa Ventures - Growth Architect & Tech Entrepreneur"
         description="Explore the executive portfolio of Jaydeb Jana, Founder & CEO of Arventa Ventures. Track record of scaling 500+ campaigns, generating ₹15 Cr+ client revenue, mastering Meta/Google ads, technical SEO, and full-stack software engineering."
-        keywords="Jaydeb Jana, Jaydeb Jana CEO, Founder Arventa Ventures, Tech Entrepreneur India, Digital Growth Architect, Performance Marketing Expert Kolkata, Technical SEO Specialist, Full Stack Engineer Marketing"
+        keywords="Jaydeb Jana, Jaydeb Jana CEO, Founder Arventa Ventures, Tech Entrepreneur Contai, Digital Marketing CEO Contai, Web Development Founder Kanthi, কাঁথির সেরা ডিজিটাল মার্কেটিং, Digital Growth Architect, Performance Marketing Expert Kolkata, Technical SEO Specialist, Full Stack Engineer Marketing, Arventa Ventures Contai"
         canonicalUrl="/ceo"
         ogType="website"
         ogImage="https://arventaventures.online/images/jaydeb-jana-executive.webp"
@@ -672,6 +674,15 @@ ${consultForm.message || "Executive strategy consultation requested directly wit
 
                 <div className="flex items-center gap-2 ml-auto">
                   <a 
+                    href="https://github.com/jaydeb-jana" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 rounded-full bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-orange-500 hover:border-orange-500/50 transition-all shadow-sm"
+                    title="Jaydeb Jana GitHub"
+                  >
+                    <Github className="w-4 h-4" />
+                  </a>
+                  <a 
                     href="https://www.instagram.com/iamjaydebjana" 
                     target="_blank" 
                     rel="noopener noreferrer"
@@ -727,16 +738,17 @@ ${consultForm.message || "Executive strategy consultation requested directly wit
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-90" />
 
-                {/* Floating Top Badge */}
-                <div className="absolute top-5 left-5 px-3.5 py-1.5 rounded-full bg-slate-950/85 backdrop-blur-md border border-orange-500/40 text-orange-400 text-xs font-bold flex items-center gap-1.5 shadow-lg">
-                  <BadgeCheck className="w-4 h-4 text-orange-500" />
-                  Verified Tech Founder & CEO
-                </div>
+                {/* Floating Top Badges */}
+                <div className="absolute top-3.5 sm:top-5 left-3.5 sm:left-5 right-3.5 sm:right-5 flex items-center justify-between gap-2 z-10">
+                  <div className="px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full bg-slate-950/85 backdrop-blur-md border border-orange-500/40 text-orange-400 text-[11px] sm:text-xs font-bold flex items-center gap-1.5 shadow-lg shrink-0">
+                    <BadgeCheck className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-orange-500 shrink-0" />
+                    <span>Verified Founder & CEO</span>
+                  </div>
 
-                {/* Floating Revenue Badge */}
-                <div className="absolute top-5 right-5 px-3.5 py-1.5 rounded-full bg-slate-950/85 backdrop-blur-md border border-emerald-500/40 text-emerald-400 text-xs font-bold flex items-center gap-1.5 shadow-lg">
-                  <TrendingUp className="w-4 h-4 text-emerald-500" />
-                  ₹15 Cr+ Scaled
+                  <div className="px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full bg-slate-950/85 backdrop-blur-md border border-emerald-500/40 text-emerald-400 text-[11px] sm:text-xs font-bold flex items-center gap-1.5 shadow-lg shrink-0">
+                    <TrendingUp className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-emerald-500 shrink-0" />
+                    <span>₹15 Cr+ Scaled</span>
+                  </div>
                 </div>
 
                 {/* Bottom Profile Details */}
@@ -1525,6 +1537,23 @@ ${consultForm.message || "Executive strategy consultation requested directly wit
                         className="font-semibold text-foreground hover:text-emerald-500"
                       >
                         +91 7872490719
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-full bg-muted flex items-center justify-center text-foreground">
+                      <Github className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="text-xs text-muted-foreground">CEO GitHub</div>
+                      <a 
+                        href="https://github.com/jaydeb-jana" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="font-semibold text-foreground hover:text-orange-500 inline-flex items-center gap-1.5 transition-colors"
+                      >
+                        github.com/jaydeb-jana <ArrowRight className="w-3 h-3 text-orange-400" />
                       </a>
                     </div>
                   </div>

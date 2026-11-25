@@ -1209,3 +1209,15 @@ export const topLocationsMap: Record<string, LocationDetailedItem> = {
     ]
   }
 };
+
+// Hyper-local Kanthi (কাঁথি) alias targeting regional Bengali & English search queries
+topLocationsMap["kanthi"] = {
+  ...topLocationsMap["contai"],
+  id: "kanthi",
+  name: "Kanthi",
+  bengaliName: "কাঁথি",
+  badge: "Global Headquarters & Executive Hub (কাঁথি)",
+  heroTitle: "The Best Digital Marketing Agency in Kanthi (কাঁথি) | Web & App Development",
+  heroSubtitle: "কাঁথির শীর্ষস্থানীয় ডিজিটাল মার্কেটিং, ওয়েব ডেভেলপমেন্ট ও সফটওয়্যার কোম্পানি। Headquartered at Chapatala More, Kanthi. Sub-second React 19 websites, algorithmic Meta Ads, and #1 Google rankings across Purba Medinipur."
+};
+

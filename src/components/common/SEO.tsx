@@ -14,9 +14,9 @@ export interface SEOProps {
 }
 
 const DEFAULT_SITE_NAME = "Arventa Ventures";
-const DEFAULT_TITLE = "Arventa Ventures - Best Digital Marketing Agency | Low Budget Packages, Meta Ads & SEO";
-const DEFAULT_DESCRIPTION = "Arventa Ventures is the best digital marketing agency offering low budget packages, Meta Ads service, video making services near me, Google Ads & high-ROI SEO in Kolkata and worldwide.";
-const DEFAULT_KEYWORDS = "best digital marketing agency, best digital marketing agency in kolkata, video making services near me, meta ads service, meta ads services near me, low budget digital marketing agency, affordable digital marketing agency, local SEO services, performance marketing agency, Arventa Ventures";
+const DEFAULT_TITLE = "Arventa Ventures - Best Digital Marketing Agency in Contai | Web & App Development";
+const DEFAULT_DESCRIPTION = "Arventa Ventures is the premier digital marketing agency, web development company, and app development firm in Contai (Kanthi), Purba Medinipur. High-ROI Meta Ads, Google Ads, SEO, and sub-second web applications.";
+const DEFAULT_KEYWORDS = "best digital marketing agency in contai, digital marketing agency in kanthi, web development company in contai, app development company in contai, website design in kanthi, software company in contai, best digital marketing agency in kolkata, video making services near me, meta ads service, meta ads services near me, low budget digital marketing agency, affordable digital marketing agency, local SEO services, performance marketing agency, Arventa Ventures, কাঁথির সেরা ডিজিটাল মার্কেটিং এজেন্সি";
 const DEFAULT_DOMAIN = "https://arventaventures.online";
 const DEFAULT_OG_IMAGE = "https://arventaventures.online/images/arventa-og-banner.webp";
 
@@ -39,23 +39,116 @@ export const SEO: React.FC<SEOProps> = ({
     ? (canonicalUrl.startsWith("http") ? canonicalUrl : `${DEFAULT_DOMAIN}${canonicalUrl}`) 
     : DEFAULT_DOMAIN;
 
-  // Base Organization Schema
+  // Base Organization & LocalBusiness Schema
   const organizationSchema = {
     "@context": "https://schema.org",
-    "@type": "DigitalMarketingAgency",
+    "@type": ["ProfessionalService", "DigitalMarketingAgency"],
     "name": "Arventa Ventures",
+    "alternateName": ["Arventa", "Arventa Ventures Contai", "Arventa Ventures Kanthi"],
     "url": DEFAULT_DOMAIN,
     "logo": `${DEFAULT_DOMAIN}/logo.png`,
+    "image": `${DEFAULT_DOMAIN}/images/about-team-hq.webp`,
     "description": DEFAULT_DESCRIPTION,
     "telephone": "+917872490719",
     "email": "info@arventaventures.online",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Purba Gopinathpur, Chapatala More",
+      "addressLocality": "Contai",
+      "addressRegion": "West Bengal",
+      "postalCode": "721401",
       "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 21.7781,
+      "longitude": 87.7516
+    },
+    "hasMap": "https://share.google/9g673CLWFHS9j6tb9",
+    "areaServed": [
+      { "@type": "City", "name": "Contai" },
+      { "@type": "City", "name": "Kanthi" },
+      { "@type": "AdministrativeArea", "name": "Purba Medinipur" },
+      { "@type": "City", "name": "Digha" },
+      { "@type": "City", "name": "Mandarmani" },
+      { "@type": "City", "name": "Egra" },
+      { "@type": "City", "name": "Ramnagar" },
+      { "@type": "City", "name": "Haldia" },
+      { "@type": "City", "name": "Kolkata" },
+      { "@type": "State", "name": "West Bengal" },
+      { "@type": "Country", "name": "India" }
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Jaydeb Jana",
+      "jobTitle": "Founder & CEO",
+      "url": `${DEFAULT_DOMAIN}/ceo`
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "128",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Digital Marketing, Web & App Development Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web Development in Contai",
+            "description": "High-performance React 19 & Next.js custom web applications with sub-second loading speeds."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mobile App Development in Contai",
+            "description": "Cross-platform iOS and Android mobile app development for businesses in Purba Medinipur."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "SEO & Google Maps Ranking in Contai",
+            "description": "Local SEO and Google Business Profile optimization to rank #1 in Contai and Purba Medinipur."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Meta Ads & Performance Marketing",
+            "description": "Algorithmic Facebook & Instagram advertising powered by Meta Conversions API."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "4K On-Location Video Production in Contai",
+            "description": "Cinematic commercial shoots for showrooms, clinics, resorts, and education institutes."
+          }
+        }
+      ]
     },
     "sameAs": [
       "https://www.facebook.com/p/Arventa-Ventures-61573258438828/",
       "https://www.instagram.com/arventaventures/",
+      "https://x.com/arventaventures",
       "https://share.google/9g673CLWFHS9j6tb9"
     ],
     "priceRange": "$$"

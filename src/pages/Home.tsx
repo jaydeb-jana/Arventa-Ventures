@@ -82,9 +82,9 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <SEO
-        title="Arventa Ventures | Digital Marketing, Web & App Development Agency"
-        description="Arventa Ventures is a premier full-service digital agency providing high-ROI digital marketing, Meta Ads, SEO, custom website development, mobile application development, and enterprise tech solutions."
-        keywords="web development agency, app development company, software development, custom tech services, digital marketing agency, best digital marketing agency in kolkata, meta ads service, SEO agency Kolkata, performance marketing, Arventa Ventures"
+        title="Arventa Ventures - Best Digital Marketing Agency in Contai | Web & App Development Company Kanthi"
+        description="Arventa Ventures is the premier digital marketing agency, web development company, and app development firm headquartered in Contai (Kanthi), Purba Medinipur. High-ROI Meta Ads, local Google SEO, sub-second React websites, and custom mobile applications."
+        keywords="best digital marketing agency in contai, digital marketing agency in kanthi, web development company in contai, app development company in contai, website design in kanthi, software company in contai, best digital marketing agency in kolkata, meta ads service contai, SEO agency contai, purba medinipur digital marketing, কাঁথির সেরা ডিজিটাল মার্কেটিং এজেন্সী, কাঁথিতে ওয়েব ডেভেলপমেন্ট, Arventa Ventures"
         canonicalUrl="/"
         structuredData={[homeSchema, localBusinessSchema]}
       />

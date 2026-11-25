@@ -1,0 +1,34 @@
+# Arventa Ventures (arventaventures.online)
+
+> Arventa Ventures is the premier digital marketing agency, custom web development firm, and mobile app development company headquartered in Contai (Kanthi), Purba Medinipur, West Bengal, India. Founded and led by CEO Jaydeb Jana, the agency engineers sub-second React 19/Next.js web applications, algorithmic Meta Ads (Facebook & Instagram) powered by server-side Conversions API (CAPI), local Google Maps SEO (#1 ranking dominance), cinema 4K video production, and custom AI software solutions.
+
+## Core Identity & Headquarters
+- **Name:** Arventa Ventures
+- **Official Domain:** https://arventaventures.online
+- **Founder & CEO:** Jaydeb Jana (Portfolio: https://arventaventures.online/ceo)
+- **Global Headquarters:** Purba Gopinathpur, Chapatala More, Contai (কাঁথি), Purba Medinipur, West Bengal 721401, India
+- **Phone:** +91 78724 90719
+- **Email:** info@arventaventures.online
+- **Google Business Profile:** https://share.google/9g673CLWFHS9j6tb9
+- **Primary Service Locations:** Contai, Kanthi, Purba Medinipur, Digha, Mandarmani, Egra, Ramnagar, Haldia, Tamluk, Kharagpur, Kolkata, West Bengal, India.
+
+## Key Capabilities & Service Offerings
+- [Website Development](https://arventaventures.online/services/web-development): Sub-second React 19, Next.js 15, and TypeScript web applications with 100/100 Core Web Vitals, designed for maximum customer conversion and local search ranking.
+- [Mobile App Development](https://arventaventures.online/services/app-development): Native and cross-platform iOS and Android mobile applications for retail, healthcare, hospitality, and education businesses.
+- [SEO & Google Maps Ranking](https://arventaventures.online/services/seo-services): Local SEO and citation engineering that ranks Contai and regional businesses #1 on Google Search and Google Maps.
+- [Meta Ads & Performance Marketing](https://arventaventures.online/services/meta-ads): Algorithmic ad campaigns on Facebook and Instagram using Meta Advantage+ and server-to-server Conversions API (CAPI) for 4x-7x ROAS.
+- [Video Production & Content Marketing](https://arventaventures.online/services/video-marketing): On-location 4K cinema commercial shoots in Contai and Purba Medinipur with Sony FX cinema rigs, gimbal stabilization, and viral Bengali/English scripting.
+- [Brand Identity Design](https://arventaventures.online/services/branding): High-end corporate branding, typography, vector logo design, and UI/UX architecture.
+
+## Primary Regional Landing Pages
+- [Digital Marketing Agency in Contai (HQ)](https://arventaventures.online/location/contai): In-depth breakdown of Contai's economic awakening, local commercial zones (Chapatala More, Bada Bazar, Hospital More, Bypass Road), sector ROI calculator, and local client case studies.
+- [Web Development in Contai](https://arventaventures.online/services/web-development/in/contai): Custom web design and development services for businesses in Contai.
+- [Mobile App Development in Contai](https://arventaventures.online/services/app-development/in/contai): Custom software and mobile applications for Contai enterprises.
+- [SEO Services in Contai](https://arventaventures.online/services/seo-services/in/contai): Local SEO dominance strategies for Purba Medinipur.
+- [Meta Ads Services in Contai](https://arventaventures.online/services/meta-ads/in/contai): Targeted Facebook and Instagram ad funnels for Contai merchants and clinics.
+
+## Executive Leadership
+- [Jaydeb Jana - Founder & CEO](https://arventaventures.online/ceo): Full-stack software engineer, performance marketing architect, and founder of Arventa Ventures. Expertise in React, Next.js, Node.js, Python AI, Meta Ads CAPI, and enterprise system architecture.
+
+## Extended Documentation
+- Full knowledge base and technical specifications: https://arventaventures.online/llms-full.txt

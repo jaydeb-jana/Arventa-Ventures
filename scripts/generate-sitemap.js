@@ -55,17 +55,17 @@ async function generateSitemap() {
   // 1. Static Main Pages
   const mainPages = [
     { path: '/', priority: '1.0', changefreq: 'daily' },
-    { path: '/about', priority: '0.8', changefreq: 'weekly' },
-    { path: '/ceo', priority: '0.7', changefreq: 'monthly' },
+    { path: '/about', priority: '0.85', changefreq: 'weekly' },
+    { path: '/ceo', priority: '0.85', changefreq: 'weekly' },
     { path: '/services', priority: '0.9', changefreq: 'weekly' },
     { path: '/portfolio', priority: '0.85', changefreq: 'weekly' },
     { path: '/industries', priority: '0.8', changefreq: 'monthly' },
     { path: '/pricing', priority: '0.85', changefreq: 'weekly' },
     { path: '/blog', priority: '0.9', changefreq: 'daily' },
-    { path: '/faq', priority: '0.7', changefreq: 'monthly' },
+    { path: '/faq', priority: '0.75', changefreq: 'monthly' },
     { path: '/privacy', priority: '0.3', changefreq: 'yearly' },
     { path: '/terms', priority: '0.3', changefreq: 'yearly' },
-    { path: '/contact', priority: '0.85', changefreq: 'monthly' },
+    { path: '/contact', priority: '0.9', changefreq: 'weekly' },
   ];
 
   mainPages.forEach((p) => {
@@ -125,7 +125,7 @@ ${hrefTags}
   });
 
   // 5. All Cities & Location Landing Pages with Multilingual XHTML tags
-  const allCitiesSet = new Set();
+  const allCitiesSet = new Set(['contai', 'kanthi']);
   Object.values(locationsByState).forEach((cities) => {
     cities.forEach((city) => {
       const citySlug = city.toLowerCase().trim().replace(/\s+/g, '-');
@@ -138,15 +138,16 @@ ${hrefTags}
   uniqueCitySlugs.forEach((citySlug) => {
     const locPath = `/location/${citySlug}`;
     const locHreflangs = buildHreflangTags(locPath);
+    const isContaiOrKanthi = citySlug === 'contai' || citySlug === 'kanthi';
 
-    // General location page with hreflangs
+    // General location page with hreflangs (Contai/Kanthi gets 0.95 priority)
     urls.push(`
   <url>
     <loc>${DOMAIN}${locPath}</loc>
 ${locHreflangs}
     <lastmod>${TODAY}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>${isContaiOrKanthi ? 'daily' : 'weekly'}</changefreq>
+    <priority>${isContaiOrKanthi ? '0.95' : '0.85'}</priority>
   </url>`);
 
     // Service + Location combinations with hreflangs
@@ -159,8 +160,8 @@ ${locHreflangs}
     <loc>${DOMAIN}${srvLocPath}</loc>
 ${srvHreflangs}
     <lastmod>${TODAY}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>${isContaiOrKanthi ? 'daily' : 'weekly'}</changefreq>
+    <priority>${isContaiOrKanthi ? '0.90' : '0.80'}</priority>
   </url>`);
     });
   });

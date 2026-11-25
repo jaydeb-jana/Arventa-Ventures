@@ -14,7 +14,7 @@ export const PageLoader: React.FC<PageLoaderProps> = ({ isLoading }) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.2 }}
-      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-slate-950/90 backdrop-blur-md pointer-events-auto"
+      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-slate-950/95 sm:backdrop-blur-sm pointer-events-auto"
     >
       {/* Top Animated Progress Bar */}
       <div className="fixed top-0 left-0 right-0 h-1 bg-slate-900 overflow-hidden z-[10000]">

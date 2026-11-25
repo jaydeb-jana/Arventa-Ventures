@@ -19,16 +19,27 @@ export const Layout = () => {
     }
   }, []);
 
-  // Initialize Lenis smooth scrolling once
+  // Initialize Lenis smooth scrolling ONLY on desktop pointer devices
+  // On mobile touch devices, native momentum scrolling is faster, 60-120fps and never freezes
   useEffect(() => {
+    const isTouchDevice =
+      typeof window !== "undefined" &&
+      (window.matchMedia("(pointer: coarse)").matches ||
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+        window.innerWidth < 1024);
+
+    if (isTouchDevice) {
+      return;
+    }
+
     const lenis = new Lenis({
-      duration: 1.4,
+      duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: "vertical",
       gestureOrientation: "vertical",
       smoothWheel: true,
-      wheelMultiplier: 1.1,
-      touchMultiplier: 1.8,
+      wheelMultiplier: 1.0,
+      touchMultiplier: 0,
       infinite: false,
     });
 
@@ -47,23 +58,22 @@ export const Layout = () => {
     };
   }, []);
 
-  // Single unified effect for initial load & route changes
+  // Scroll to top on route changes without artificial blocking freeze
   useEffect(() => {
-    setIsLoading(true);
-
     window.scrollTo(0, 0);
     if ((window as any).__lenis) {
       (window as any).__lenis.scrollTo(0, { immediate: true });
     }
 
-    const loadDuration = isFirstRender.current ? 400 : 300;
-    isFirstRender.current = false;
-
-    const timer = setTimeout(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      const timer = setTimeout(() => {
+        setIsLoading(false);
+      }, 150);
+      return () => clearTimeout(timer);
+    } else {
       setIsLoading(false);
-    }, loadDuration);
-
-    return () => clearTimeout(timer);
+    }
   }, [location.pathname, location.search]);
 
   // Handle custom same-page click reloads
