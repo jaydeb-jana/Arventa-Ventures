@@ -33,16 +33,16 @@ ${urlEntries.join('')}
 }
 
 async function generateSitemap() {
-  console.log('Generating enterprise categorized XML Sitemaps with XSLT styling for arventaventures.online...');
+  console.log('Generating standard XML Sitemap for arventaventures.online (Only real existing pages)...');
 
   const DOMAIN = 'https://arventaventures.online';
   const TODAY = new Date().toISOString().split('T')[0];
   const publicDir = path.resolve(__dirname, '../public');
 
-  // Import dynamic data from project files
-  const { locationsByState } = await import('../src/data/locationsData.ts');
-  const { servicesData, infoData } = await import('../src/data/pageContent.ts');
+  // Import real project data
   const { blogPosts } = await import('../src/data/blogs.ts');
+  const { infoData } = await import('../src/data/pageContent.ts');
+  const { topLocationsMap } = await import('../src/data/topLocationsDetailedData.ts');
 
   const supportedLangs = [
     { code: 'en', param: '' },
@@ -64,7 +64,18 @@ async function generateSitemap() {
     return links.join('\n');
   }
 
-  // 1. Core Company Pages
+  function createUrlEntry(urlPath, priority = '0.80', changefreq = 'weekly') {
+    return `
+  <url>
+    <loc>${DOMAIN}${urlPath}</loc>
+${buildHreflangTags(urlPath)}
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+  </url>`;
+  }
+
+  // 1. Real Core Company Pages (12)
   const mainPages = [
     { path: '/', priority: '1.0', changefreq: 'daily' },
     { path: '/about', priority: '0.85', changefreq: 'weekly' },
@@ -74,180 +85,90 @@ async function generateSitemap() {
     { path: '/industries', priority: '0.80', changefreq: 'monthly' },
     { path: '/pricing', priority: '0.85', changefreq: 'weekly' },
     { path: '/blog', priority: '0.90', changefreq: 'daily' },
+    { path: '/contact', priority: '0.90', changefreq: 'weekly' },
     { path: '/faq', priority: '0.75', changefreq: 'monthly' },
     { path: '/privacy', priority: '0.30', changefreq: 'yearly' },
     { path: '/terms', priority: '0.30', changefreq: 'yearly' },
-    { path: '/contact', priority: '0.90', changefreq: 'weekly' },
   ];
+  const pageEntries = mainPages.map(p => createUrlEntry(p.path, p.priority, p.changefreq));
 
-  const pageUrls = mainPages.map(p => `
-  <url>
-    <loc>${DOMAIN}${p.path}</loc>
-${buildHreflangTags(p.path)}
-    <lastmod>${TODAY}</lastmod>
-    <changefreq>${p.changefreq}</changefreq>
-    <priority>${p.priority}</priority>
-  </url>`);
+  // 2. Real Core Services (6)
+  const coreServices = [
+    '/services/web-development',
+    '/services/app-development',
+    '/services/meta-ads',
+    '/services/seo-services',
+    '/services/video-marketing',
+    '/services/branding',
+  ];
+  const serviceEntries = coreServices.map(path => createUrlEntry(path, '0.90', 'weekly'));
 
-  fs.writeFileSync(path.join(publicDir, 'sitemap-pages.xml'), wrapUrlset(pageUrls), 'utf-8');
-
-  // 2. Service Pages
-  const serviceSlugs = Object.keys(servicesData);
-  const serviceUrls = serviceSlugs.map(slug => {
-    const path = `/services/${slug}`;
-    return `
-  <url>
-    <loc>${DOMAIN}${path}</loc>
-${buildHreflangTags(path)}
-    <lastmod>${TODAY}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>`;
-  });
-
-  fs.writeFileSync(path.join(publicDir, 'sitemap-services.xml'), wrapUrlset(serviceUrls), 'utf-8');
-
-  // 3. Info Detail Pages
-  const infoSlugs = Object.keys(infoData);
-  const infoUrls = infoSlugs.map(slug => {
-    const path = `/info/${slug}`;
-    return `
-  <url>
-    <loc>${DOMAIN}${path}</loc>
-${buildHreflangTags(path)}
-    <lastmod>${TODAY}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>`;
-  });
-
-  fs.writeFileSync(path.join(publicDir, 'sitemap-info.xml'), wrapUrlset(infoUrls), 'utf-8');
-
-  // 4. Blog Posts
-  const blogUrls = blogPosts.map(post => {
-    const path = `/blog/${post.id}`;
-    return `
-  <url>
-    <loc>${DOMAIN}${path}</loc>
-${buildHreflangTags(path)}
-    <lastmod>${TODAY}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>`;
-  });
-
-  fs.writeFileSync(path.join(publicDir, 'sitemap-blogs.xml'), wrapUrlset(blogUrls), 'utf-8');
-
-  // 5. City Hub Landing Pages (Contai & Kanthi top priority)
-  const allCitiesSet = new Set(['contai', 'kanthi']);
-  Object.values(locationsByState).forEach((cities) => {
-    cities.forEach((city) => {
-      const citySlug = city.toLowerCase().trim().replace(/\s+/g, '-');
-      allCitiesSet.add(citySlug);
-    });
-  });
-
-  const uniqueCitySlugs = Array.from(allCitiesSet).sort();
-
-  const locationUrls = uniqueCitySlugs.map(citySlug => {
-    const locPath = `/location/${citySlug}`;
+  // 3. Real Location Hubs (11 - Contai Priority 0.95)
+  const realLocations = Object.keys(topLocationsMap);
+  const locationEntries = realLocations.map(citySlug => {
     const isContaiOrKanthi = citySlug === 'contai' || citySlug === 'kanthi';
-    return `
-  <url>
-    <loc>${DOMAIN}${locPath}</loc>
-${buildHreflangTags(locPath)}
-    <lastmod>${TODAY}</lastmod>
-    <changefreq>${isContaiOrKanthi ? 'daily' : 'weekly'}</changefreq>
-    <priority>${isContaiOrKanthi ? '0.95' : '0.85'}</priority>
-  </url>`;
+    return createUrlEntry(
+      `/location/${citySlug}`,
+      isContaiOrKanthi ? '0.95' : '0.85',
+      isContaiOrKanthi ? 'daily' : 'weekly'
+    );
   });
 
-  fs.writeFileSync(path.join(publicDir, 'sitemap-locations.xml'), wrapUrlset(locationUrls), 'utf-8');
+  // 4. Real Contai Localized Service Pages (5)
+  const contaiServices = [
+    '/services/web-development/in/contai',
+    '/services/app-development/in/contai',
+    '/services/seo-services/in/contai',
+    '/services/meta-ads/in/contai',
+    '/services/video-marketing/in/contai',
+  ];
+  const contaiServiceEntries = contaiServices.map(path => createUrlEntry(path, '0.90', 'daily'));
 
-  // 6. Service + Location Matrix
-  const serviceLocationUrls = [];
-  uniqueCitySlugs.forEach(citySlug => {
-    const isContaiOrKanthi = citySlug === 'contai' || citySlug === 'kanthi';
-    serviceSlugs.forEach(serviceSlug => {
-      const srvLocPath = `/services/${serviceSlug}/in/${citySlug}`;
-      serviceLocationUrls.push(`
-  <url>
-    <loc>${DOMAIN}${srvLocPath}</loc>
-${buildHreflangTags(srvLocPath)}
-    <lastmod>${TODAY}</lastmod>
-    <changefreq>${isContaiOrKanthi ? 'daily' : 'weekly'}</changefreq>
-    <priority>${isContaiOrKanthi ? '0.90' : '0.80'}</priority>
-  </url>`);
-    });
+  // 5. Real Info Detail Pages (7)
+  const realInfoSlugs = Object.keys(infoData);
+  const infoEntries = realInfoSlugs.map(slug => createUrlEntry(`/info/${slug}`, '0.80', 'weekly'));
+
+  // 6. Real Blog Posts (40)
+  const blogEntries = blogPosts.map(post => createUrlEntry(`/blog/${post.id}`, '0.85', 'weekly'));
+
+  // Combine ONLY currently existing real URLs
+  const allRealUrls = [
+    ...pageEntries,
+    ...locationEntries.filter((_, idx) => realLocations[idx] === 'contai' || realLocations[idx] === 'kanthi'),
+    ...contaiServiceEntries,
+    ...serviceEntries,
+    ...locationEntries.filter((_, idx) => realLocations[idx] !== 'contai' && realLocations[idx] !== 'kanthi'),
+    ...blogEntries,
+    ...infoEntries,
+  ];
+
+  // Write single standard sitemap.xml
+  fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), wrapUrlset(allRealUrls), 'utf-8');
+
+  // Clean up legacy multi-sitemap dummy files that are no longer needed
+  const legacyFiles = [
+    'sitemap-all.xml',
+    'sitemap-index.xml',
+    'sitemap-locations.xml',
+    'sitemap-service-locations.xml',
+    'sitemap-pages.xml',
+    'sitemap-services.xml',
+    'sitemap-blogs.xml',
+    'sitemap-info.xml'
+  ];
+
+  legacyFiles.forEach(file => {
+    const filePath = path.join(publicDir, file);
+    if (fs.existsSync(filePath)) {
+      fs.unlinkSync(filePath);
+      console.log(`🧹 Removed legacy dummy file: ${file}`);
+    }
   });
-
-  fs.writeFileSync(path.join(publicDir, 'sitemap-service-locations.xml'), wrapUrlset(serviceLocationUrls), 'utf-8');
-
-  // Separate Contai & Kanthi URLs to prioritize at the very top of sitemap.xml
-  const contaiUrls = [
-    ...locationUrls.filter(u => u.includes('/location/contai') || u.includes('/location/kanthi')),
-    ...serviceLocationUrls.filter(u => u.includes('/in/contai') || u.includes('/in/kanthi'))
-  ];
-
-  const otherLocationUrls = locationUrls.filter(u => !u.includes('/location/contai') && !u.includes('/location/kanthi'));
-  const otherServiceLocationUrls = serviceLocationUrls.filter(u => !u.includes('/in/contai') && !u.includes('/in/kanthi'));
-
-  // 7. Master Comprehensive Unified Sitemap (Ordered for Contai & Core Dominance)
-  const masterUrls = [
-    ...pageUrls,
-    ...contaiUrls,
-    ...serviceUrls,
-    ...blogUrls,
-    ...otherLocationUrls,
-    ...otherServiceLocationUrls,
-    ...infoUrls
-  ];
-
-  // 7. Write standard normal sitemap.xml with all URLs (Contai & Core prioritized)
-  fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), wrapUrlset(masterUrls), 'utf-8');
-  fs.writeFileSync(path.join(publicDir, 'sitemap-all.xml'), wrapUrlset(masterUrls), 'utf-8');
-
-  // 8. Optional Sitemap Index (for tools requesting index specifically)
-  const sitemapIndexContent = `<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>${DOMAIN}/sitemap.xml</loc>
-    <lastmod>${TODAY}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${DOMAIN}/sitemap-pages.xml</loc>
-    <lastmod>${TODAY}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${DOMAIN}/sitemap-services.xml</loc>
-    <lastmod>${TODAY}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${DOMAIN}/sitemap-locations.xml</loc>
-    <lastmod>${TODAY}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${DOMAIN}/sitemap-service-locations.xml</loc>
-    <lastmod>${TODAY}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${DOMAIN}/sitemap-blogs.xml</loc>
-    <lastmod>${TODAY}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${DOMAIN}/sitemap-info.xml</loc>
-    <lastmod>${TODAY}</lastmod>
-  </sitemap>
-</sitemapindex>
-`;
-
-  fs.writeFileSync(path.join(publicDir, 'sitemap-index.xml'), sitemapIndexContent, 'utf-8');
 
   console.log(`✅ Standard XML Sitemap generated successfully!`);
-  console.log(`- Standard Sitemap: ${DOMAIN}/sitemap.xml (${masterUrls.length} URLs)`);
-  console.log(`- Sitemap Index: ${DOMAIN}/sitemap-index.xml`);
-  console.log(`- Clean XSL Styling: ${DOMAIN}/sitemap.xsl`);
+  console.log(`- Total Real Verified URLs: ${allRealUrls.length}`);
+  console.log(`- File: ${DOMAIN}/sitemap.xml`);
+  console.log(`- Clean Standard Styling: ${DOMAIN}/sitemap.xsl`);
 }
 
 generateSitemap().catch((err) => {
